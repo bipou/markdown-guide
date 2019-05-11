@@ -5,6 +5,9 @@ description = "Markdown最佳实践指南, GitHub Mastering Markdown, Markdown�
 src = "src"
 multilingual = true
 
+[build]
+build-dir = "docs"
+
 [output.html]
 theme = "src/theme"
 # default-theme = "rust"
