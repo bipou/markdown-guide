@@ -12,7 +12,7 @@ Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，
 
 ## 将学习到内容
 
-- Markdown格式如何使样式的协作编辑变得容易
+- Markdown格式如何使样式的协作开发变得容易
 - Markdown与传统格式化处理的不同之处
 - 如何使用Markdown格式化文本
 - 如何利用GitHub提供的Markdown自动渲染机制
