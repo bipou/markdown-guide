@@ -7,7 +7,6 @@ multilingual = true
 
 [output.html]
 theme = "src/theme"
-default-theme = "rust"
 curly-quotes = true
 mathjax-support = true
 
