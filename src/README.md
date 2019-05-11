@@ -12,17 +12,17 @@ Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，
 
 ## 将学习到内容
 
-- How the Markdown format makes styled collaborative editing easy
-- How Markdown differs from traditional formatting approaches
-- How to use Markdown to format text
-- How to leverage GitHub’s automatic Markdown rendering
-- How to apply GitHub’s unique Markdown extensions
+- Markdown格式如何使样式的协作编辑变得容易
+- Markdown与传统格式化处理的不同之处
+- 如何使用Markdown格式化文本
+- 如何利用GitHub提供的Markdown自动渲染机制
+- 如何应用GitHub对Markdown的扩展
 
 希望可以帮助到读者。
 
 ## 声明
 
-水平有限，若有指教，请发issue，或者直接联系。
+水平有限，错漏难免。若有指教，请发issue，或者直接联系。
 
 > 电子邮箱：linshi@budshome.com；微信：cd-zzy；QQ：9809920。
 
