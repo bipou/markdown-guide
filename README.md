@@ -1,0 +1,2 @@
+# mastering-markdown
+GitHub平台mastering-markdown的中文翻译。Markdown是一种轻量级且易于使用的语法，用于在GitHub平台上设计所有形式的书写样式。
