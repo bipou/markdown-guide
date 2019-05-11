@@ -3,9 +3,9 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>序言 - Markdown最佳实践指南</title>
+        <title>Markdown介绍 - Markdown最佳实践指南：译自GitHub平台Mastering Markdown</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Markdown最佳实践指南, The Hitchhiker’s Guide to Markdown, Markdown实践指南, Markdown开发实践">
+        <meta name="description" content="Markdown最佳实践指南, GitHub Mastering Markdown, Markdown实践, Markdown指南, Markdown教程">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
@@ -78,7 +78,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li class="affix"><a href="index.html">关于此书</a></li><li class="affix"><a href="preface.html" class="active">序言</a></li><li class="spacer"></li><li><a href="chapter01/index.html"><strong aria-hidden="true">1.</strong> 数据分析和机器学习</a></li><li><ol class="section"><li><a href="chapter01/data-analysis.html"><strong aria-hidden="true">1.1.</strong> 数据分析</a></li><li><a href="chapter01/machine-learning.html"><strong aria-hidden="true">1.2.</strong> 机器学习</a></li></ol></li><li><a href="chapter02/index.html"><strong aria-hidden="true">2.</strong> Ray环境部署</a></li><li><ol class="section"><li><a href="chapter02/ray-intro.html"><strong aria-hidden="true">2.1.</strong> Ray的组件和特性</a></li><li><ol class="section"><li><a href="chapter02/ray-tune.html"><strong aria-hidden="true">2.1.1.</strong> Ray Tune：超参数优化框架</a></li><li><a href="chapter02/ray-rllib.html"><strong aria-hidden="true">2.1.2.</strong> Ray RLlib：可自由扩展的增强学习</a></li></ol></li><li><a href="chapter02/ray-install.html"><strong aria-hidden="true">2.2.</strong> Ray的安装和优化</a></li><li><ol class="section"><li><a href="chapter02/ray-install-pypi.html"><strong aria-hidden="true">2.2.1.</strong> 从PyPI安装Ray</a></li><li><a href="chapter02/ray-install-compile.html"><strong aria-hidden="true">2.2.2.</strong> Ray的源码编译安装</a></li><li><a href="chapter02/ray-install-docker.html"><strong aria-hidden="true">2.2.3.</strong> Docker中安装Ray</a></li><li><a href="chapter02/ray-install-qa.html"><strong aria-hidden="true">2.2.4.</strong> 安装问题收集</a></li></ol></li></ol></li><li><a href="chapter03/index.html"><strong aria-hidden="true">3.</strong> Ray入门</a></li><li><a href="chapter04/index.html"><strong aria-hidden="true">4.</strong> Actors-DataFlow模型扩展</a></li><li><a href="chapter05/index.html"><strong aria-hidden="true">5.</strong> Ray和GPUs的整合使用</a></li><li><a href="chapter06/index.html"><strong aria-hidden="true">6.</strong> Ray Web UI</a></li><li><a href="chapter07/index.html"><strong aria-hidden="true">7.</strong> Ray Tune：超参数优化框架</a></li><li><a href="chapter08/index.html"><strong aria-hidden="true">8.</strong> Ray Tune高阶</a></li><li><a href="chapter09/index.html"><strong aria-hidden="true">9.</strong> RLlib：可自由扩展的增强学习</a></li><li><a href="chapter10/index.html"><strong aria-hidden="true">10.</strong> 在Ray中使用TensorFlow</a></li><li><a href="chapter11/index.html"><strong aria-hidden="true">11.</strong> 在Ray中使用PyTorch</a></li><li><a href="chapter12/index.html"><strong aria-hidden="true">12.</strong> Ray之上的Pandas—高效数据处理</a></li><li><a href="chapter13/index.html"><strong aria-hidden="true">13.</strong> Ray实例应用</a></li><li><a href="chapter14/index.html"><strong aria-hidden="true">14.</strong> Ray的架构设计</a></li><li><a href="chapter15/index.html"><strong aria-hidden="true">15.</strong> Ray的集群使用</a></li><li><a href="chapter16/index.html"><strong aria-hidden="true">16.</strong> 附录</a></li><li class="spacer"></li></ol>
+            <ol class="chapter"><li class="affix"><a href="index.html">序言</a></li><li class="spacer"></li><li><a href="what-is-markdown.html" class="active"><strong aria-hidden="true">1.</strong> Markdown介绍</a></li><li><a href="examples.html"><strong aria-hidden="true">2.</strong> Markdown实例</a></li><li><a href="basic-syntax.html"><strong aria-hidden="true">3.</strong> Markdown语法</a></li><li><a href="gfm.html"><strong aria-hidden="true">4.</strong> GitHub对Markdown的改进</a></li><li class="spacer"></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -108,7 +108,7 @@
                             
                         </div>
 
-                        <h1 class="menu-title">Markdown最佳实践指南</h1> 
+                        <h1 class="menu-title">Markdown最佳实践指南：译自GitHub平台Mastering Markdown</h1> 
 
                         <div class="right-buttons">
                             <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -143,18 +143,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <a class="header" href="#作者自序" id="作者自序"><h1><strong>作者自序</strong></h1></a>
-<a class="header" href="#ray是什么" id="ray是什么"><h2>Ray是什么？</h2></a>
-<p>Ray是为机器学习、深度学习而开发的高可用、高性能的分布式框架。该框架旨在让基于Python的机器学习和深度学习工作负载能够实时执行，并具有类似消息传递接口(MPI)的性能和细粒度。</p>
-<p>Ray与其他分布式系统（如Spark）的相比，在深度学习领域具有很大的优势。因为目前的很多流行分布式系统都不是以构建 AI 应用为目标设计的，缺乏人工智能应用的相应支持与 API。而Ray 与 TensorFlow、PyTorch 和 MXNet 等深度学习框架互相兼容，项目应用中，在 Ray 中可以使用一个或多个深度学习框架。</p>
-<p>本书中，基于Ray分布式系统：运用Pandas进行数据分析，运用TensorFlow和PyTorch等框架进行深度学习算法方面的实战。</p>
-<p>本书中使用Python、Scala，以及Java进行例程的开发，因此读者需要具备Python、Scala、Java中任意一种语言的基础编程技能。</p>
-<a class="header" href="#背景和必要性" id="背景和必要性"><h2>背景和必要性</h2></a>
-<p>目前比较流行的分布式计算引擎Spark等都不是以构建 AI 应用为目标设计的，缺乏人工智能应用的相应支持与API。</p>
-<p>而Ray不同，Ray以构建AI应用为设计目标。同时Ray 与 TensorFlow、PyTorch 和 MXNet等深度学习框架互相兼容，项目应用中，在Ray中可以使用一个或多个深度学习框架。</p>
-<a class="header" href="#作者简介" id="作者简介"><h2>作者简介</h2></a>
-<p>张忠宇，现居成都。电子邮箱：linshi@budshome.com；微信：cd-zzy；QQ：9809920。</p>
-<p>17年以上政府、教育、电信、交通等行业大型信息化项目架构分析、开发管理经验。现主要从事大数据项目和机器学习项目的架构分析、开发管理、教学指导，以及技术顾问工作。</p>
+                        <a class="header" href="#markdown介绍" id="markdown介绍"><h1>Markdown介绍</h1></a>
 
                     </main>
 
@@ -167,7 +156,7 @@
                         
 
                         
-                            <a rel="next" href="chapter01/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="examples.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -185,7 +174,7 @@
                 
 
                 
-                    <a href="chapter01/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="examples.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
