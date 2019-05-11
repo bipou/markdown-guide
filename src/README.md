@@ -1,6 +1,6 @@
 # Markdown最佳实践指南
 
-**_——译自GitHub平台Mastering Markdown_**
+**_——译自GitHub官方Mastering Markdown_**
 
 ------
 
