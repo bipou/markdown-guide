@@ -4,7 +4,7 @@
 
 ------
 
-> 本文译自GitHub官方文档 **_Mastering Markdown_**，和GitHub官方文档基本 **_相同_**，包括GitHub平台对Markdown的改进和扩展。
+> 本文译自GitHub官方文档 **_Mastering Markdown_**，和GitHub官方文档基本 **_相同_**，包括GitHub对Markdown的改进和扩展。
 
 Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
 

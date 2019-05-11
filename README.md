@@ -4,7 +4,7 @@
 
 ------
 
-> 本文译自GitHub官方文档 **_Mastering Markdown_**，和GitHub官方文档基本 **_相同_**，包括GitHub平台对Markdown的改进和扩展。
+> 本文译自GitHub官方文档 **_Mastering Markdown_**，和GitHub官方文档基本 **_相同_**，包括GitHub对Markdown的改进和扩展。
 
 希望可以帮助到读者。
 
