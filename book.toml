@@ -1,7 +1,26 @@
 [book]
-authors = ["zzy"]
-multilingual = false
+title = "Markdown最佳实践指南"
+authors = ["张忠宇"]
+description = "Markdown最佳实践指南, The Hitchhiker’s Guide to Markdown, Markdown实践指南, Markdown开发实践"
 src = "src"
-title = "极速精通Markdown"
+multilingual = true
+
 [output.html]
 theme = "src/theme"
+default-theme = "rust"
+curly-quotes = true
+mathjax-support = true
+
+[output.html.playpen]
+editable = true
+copy-js = true
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+copy-js = true

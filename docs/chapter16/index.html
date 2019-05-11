@@ -3,43 +3,41 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>{{ title }}</title>
+        <title>附录 - Markdown最佳实践指南</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="{{ description }}">
+        <meta name="description" content="Markdown最佳实践指南, The Hitchhiker’s Guide to Markdown, Markdown实践指南, Markdown开发实践">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="shortcut icon" href="{{ path_to_root }}{{ favicon }}">
-        <link rel="stylesheet" href="{{ path_to_root }}css/variables.css">
-        <link rel="stylesheet" href="{{ path_to_root }}css/general.css">
-        <link rel="stylesheet" href="{{ path_to_root }}css/chrome.css">
-        <link rel="stylesheet" href="{{ path_to_root }}css/print.css" media="print">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="{{ path_to_root }}FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="{{ path_to_root }}highlight.css">
-        <link rel="stylesheet" href="{{ path_to_root }}tomorrow-night.css">
-        <link rel="stylesheet" href="{{ path_to_root }}ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        {{#each additional_css}}
-        <link rel="stylesheet" href="{{ ../path_to_root }}{{ this }}">
-        {{/each}}
+        
 
-        {{#if mathjax_support}}
+        
         <!-- MathJax -->
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        {{/if}}
+        
     </head>
-    <body class="rust"> <!-- {{ default_theme }} -->
+    <body class="rust"> <!-- rust -->
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "{{ path_to_root }}";
-            var default_theme = "rust"; // {{ default_theme }}
+            var path_to_root = "../";
+            var default_theme = "rust"; // rust
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -80,13 +78,13 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            {{#toc}}{{/toc}}
+            <ol class="chapter"><li class="affix"><a href="../index.html">关于此书</a></li><li class="affix"><a href="../preface.html">序言</a></li><li class="spacer"></li><li><a href="../chapter01/index.html"><strong aria-hidden="true">1.</strong> 数据分析和机器学习</a></li><li><ol class="section"><li><a href="../chapter01/data-analysis.html"><strong aria-hidden="true">1.1.</strong> 数据分析</a></li><li><a href="../chapter01/machine-learning.html"><strong aria-hidden="true">1.2.</strong> 机器学习</a></li></ol></li><li><a href="../chapter02/index.html"><strong aria-hidden="true">2.</strong> Ray环境部署</a></li><li><ol class="section"><li><a href="../chapter02/ray-intro.html"><strong aria-hidden="true">2.1.</strong> Ray的组件和特性</a></li><li><ol class="section"><li><a href="../chapter02/ray-tune.html"><strong aria-hidden="true">2.1.1.</strong> Ray Tune：超参数优化框架</a></li><li><a href="../chapter02/ray-rllib.html"><strong aria-hidden="true">2.1.2.</strong> Ray RLlib：可自由扩展的增强学习</a></li></ol></li><li><a href="../chapter02/ray-install.html"><strong aria-hidden="true">2.2.</strong> Ray的安装和优化</a></li><li><ol class="section"><li><a href="../chapter02/ray-install-pypi.html"><strong aria-hidden="true">2.2.1.</strong> 从PyPI安装Ray</a></li><li><a href="../chapter02/ray-install-compile.html"><strong aria-hidden="true">2.2.2.</strong> Ray的源码编译安装</a></li><li><a href="../chapter02/ray-install-docker.html"><strong aria-hidden="true">2.2.3.</strong> Docker中安装Ray</a></li><li><a href="../chapter02/ray-install-qa.html"><strong aria-hidden="true">2.2.4.</strong> 安装问题收集</a></li></ol></li></ol></li><li><a href="../chapter03/index.html"><strong aria-hidden="true">3.</strong> Ray入门</a></li><li><a href="../chapter04/index.html"><strong aria-hidden="true">4.</strong> Actors-DataFlow模型扩展</a></li><li><a href="../chapter05/index.html"><strong aria-hidden="true">5.</strong> Ray和GPUs的整合使用</a></li><li><a href="../chapter06/index.html"><strong aria-hidden="true">6.</strong> Ray Web UI</a></li><li><a href="../chapter07/index.html"><strong aria-hidden="true">7.</strong> Ray Tune：超参数优化框架</a></li><li><a href="../chapter08/index.html"><strong aria-hidden="true">8.</strong> Ray Tune高阶</a></li><li><a href="../chapter09/index.html"><strong aria-hidden="true">9.</strong> RLlib：可自由扩展的增强学习</a></li><li><a href="../chapter10/index.html"><strong aria-hidden="true">10.</strong> 在Ray中使用TensorFlow</a></li><li><a href="../chapter11/index.html"><strong aria-hidden="true">11.</strong> 在Ray中使用PyTorch</a></li><li><a href="../chapter12/index.html"><strong aria-hidden="true">12.</strong> Ray之上的Pandas—高效数据处理</a></li><li><a href="../chapter13/index.html"><strong aria-hidden="true">13.</strong> Ray实例应用</a></li><li><a href="../chapter14/index.html"><strong aria-hidden="true">14.</strong> Ray的架构设计</a></li><li><a href="../chapter15/index.html"><strong aria-hidden="true">15.</strong> Ray的集群使用</a></li><li><a href="../chapter16/index.html" class="active"><strong aria-hidden="true">16.</strong> 附录</a></li><li class="spacer"></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                {{> header}}
+                
                 <div id="menu-bar" class="menu-bar">
                     <div id="menu-bar-sticky-container">
                         <div class="left-buttons">
@@ -97,35 +95,31 @@
                                 <i class="fa fa-paint-brush"></i>
                             </button>
                             <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                                <li role="none"><button role="menuitem" class="theme" id="light">{{ theme_option "Light" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="rust">{{ theme_option "Rust" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="coal">{{ theme_option "Coal" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="navy">{{ theme_option "Navy" }}</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="ayu">{{ theme_option "Ayu" }}</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                             </ul>
-                            {{#if search_enabled}}
+                            
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                                 <i class="fa fa-search"></i>
                             </button>
-                            {{/if}}
+                            
                         </div>
 
-                        <h1 class="menu-title">{{ book_title }}</h1> 
+                        <h1 class="menu-title">Markdown最佳实践指南</h1> 
 
                         <div class="right-buttons">
-                            <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
                                 <i id="print-button" class="fa fa-print"></i>
                             </a>
-                            {{#if git_repository_url}}
-                            <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
-                                <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
-                            </a>
-                            {{/if}}
+                            
                         </div>
                     </div>
                 </div>
 
-                {{#if search_enabled}}
+                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
                         <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
@@ -136,7 +130,7 @@
                         </ul>
                     </div>
                 </div>
-                {{/if}}
+                
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
@@ -149,22 +143,19 @@
 
                 <div id="content" class="content">
                     <main>
-                        {{{ content }}}
+                        <a class="header" href="#附录" id="附录"><h1>附录</h1></a>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        {{#previous}}
-                            <a rel="prev" href="{{ path_to_root }}{{link}}" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        
+                            <a rel="prev" href="../chapter15/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        {{/previous}}
+                        
 
-                        {{#next}}
-                            <a rel="next" href="{{ path_to_root }}{{link}}" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        {{/next}}
+                        
 
                         <div style="clear: both"></div>
                     </nav>
@@ -172,25 +163,21 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                {{#previous}}
-                    <a href="{{ path_to_root }}{{link}}" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                
+                    <a href="../chapter15/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                {{/previous}}
+                
 
-                {{#next}}
-                    <a href="{{ path_to_root }}{{link}}" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                {{/next}}
+                
             </nav>
 
         </div>
 
-        {{#if livereload}}
+        
         <!-- Livereload script (if served using the cli tool) -->
         <script type="text/javascript">
-            var socket = new WebSocket("{{{livereload}}}");
+            var socket = new WebSocket("ws://localhost:3001");
             socket.onmessage = function (event) {
                 if (event.data === "reload") {
                     socket.close();
@@ -202,67 +189,32 @@
                 socket.close();
             }
         </script>
-        {{/if}}
+        
 
-        {{#if google_analytics}}
-        <!-- Google Analytics Tag -->
-        <script type="text/javascript">
-            var localAddrs = ["localhost", "127.0.0.1", ""];
+        
 
-            // make sure we don't activate google analytics if the developer is
-            // inspecting the book locally...
-            if (localAddrs.indexOf(document.location.hostname) === -1) {
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        
 
-                ga('create', '{{google_analytics}}', 'auto');
-                ga('send', 'pageview');
-            }
-        </script>
-        {{/if}}
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
 
-        {{#if playpen_js}}
-        <script src="{{ path_to_root }}ace.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}editor.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}mode-rust.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}theme-dawn.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
-        {{/if}}
-
-        {{#if search_js}}
-        <script src="{{ path_to_root }}elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}searcher.js" type="text/javascript" charset="utf-8"></script>
-        {{/if}}
-
-        <script src="{{ path_to_root }}clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="{{ path_to_root }}book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        {{#each additional_js}}
-        <script type="text/javascript" src="{{ ../path_to_root }}{{this}}"></script>
-        {{/each}}
+        
 
-        {{#if is_print}}
-        {{#if mathjax_support}}
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            MathJax.Hub.Register.StartupHook('End', function() {
-                window.setTimeout(window.print, 100);
-            });
-        });
-        </script>
-        {{else}}
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
-        {{/if}}
-        {{/if}}
+        
 
     </body>
 </html>
