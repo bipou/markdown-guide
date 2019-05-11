@@ -1,5 +1,5 @@
 [book]
-title = "Markdown最佳实践指南（译自GitHub平台Mastering Markdown）"
+title = "Markdown最佳实践指南（译自GitHub官方Mastering Markdown）"
 authors = ["张忠宇"]
 description = "Markdown最佳实践指南, GitHub Mastering Markdown, Markdown实践, Markdown指南, Markdown教程"
 src = "src"
@@ -7,6 +7,7 @@ multilingual = true
 
 [output.html]
 theme = "src/theme"
+# default-theme = "rust"
 curly-quotes = true
 mathjax-support = true
 
