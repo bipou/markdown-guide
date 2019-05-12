@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>精通Markdown</title>
+        <title>Markdown工具链 - 精通Markdown</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Markdown语法, Markdown实例, Markdown实践, Markdown指南, Markdown教程">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -88,7 +88,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li><a href="intro.html"><strong aria-hidden="true">1.</strong> Markdown介绍</a></li><li><a href="basic-syntax-examples.html"><strong aria-hidden="true">2.</strong> Markdown语法和实例</a></li><li><a href="gfm.html"><strong aria-hidden="true">3.</strong> GitHub对Markdown的扩展</a></li><li><a href="toolchain.html"><strong aria-hidden="true">4.</strong> Markdown工具链</a></li></ol>
+            <ol class="chapter"><li><a href="intro.html"><strong aria-hidden="true">1.</strong> Markdown介绍</a></li><li><a href="basic-syntax-examples.html"><strong aria-hidden="true">2.</strong> Markdown语法和实例</a></li><li><a href="gfm.html"><strong aria-hidden="true">3.</strong> GitHub对Markdown的扩展</a></li><li><a href="toolchain.html" class="active"><strong aria-hidden="true">4.</strong> Markdown工具链</a></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -153,67 +153,16 @@
 
                 <div id="content" class="content">
                     <main>
-                        <a class="header" href="#精通markdown" id="精通markdown"><h1>精通Markdown</h1></a>
-<p><strong>——翻译和结构重组自GitHub官方 <em>Mastering Markdown</em></strong></p>
-<hr />
-<blockquote>
-<p>本文翻译和结构重组自GitHub官方文档 <strong><em>Mastering Markdown</em></strong>，和GitHub官方文档基本 <strong><em>相同</em></strong>，包括GitHub对Markdown的改进和扩展。</p>
-</blockquote>
-<a class="header" href="#markdown介绍" id="markdown介绍"><h2>Markdown介绍</h2></a>
-<p>Markdown是一种在web上设置文本样式的方法：使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
-<p>你可以使用Markdown对文档的展示格式进行排版：如将文本格式化为粗体或斜体、添加图像，以及创建列表等。大多数情况下，Markdown只是一些普通文本加上一些非字母字符，比如 <code>#</code> 或者 <code>*</code>。</p>
-<p>Markdown文档可以通过一些如mdBook、gitBook等应用转换为HTML、PDF、DOC等格式，提供给不同的应用场景。</p>
-<p>Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此使用非常广泛。如GitHub、WordPress等，使用Markdown对平台上的写作形式进行样式化，提供了Markdown文档直接展示的功能。比如你可以在GitHub的大部分场景中使用Markdown：</p>
-<ul>
-<li>Gists；</li>
-<li>对Issues和拉取请求的评论；</li>
-<li>扩展名为<code>.md</code>或者<code>.markdown</code>的文件；</li>
-</ul>
-<p>若希望了解更多在GitHub中编写Markdown的信息，请查阅GitHub帮助文档：<a href="https://help.github.com/en/categories/writing-on-github">在GitHub上写作（Writing on GitHub）</a>。</p>
-<a class="header" href="#将学习到内容" id="将学习到内容"><h2>将学习到内容</h2></a>
-<ul>
-<li>Markdown格式如何使样式的协作开发变得容易</li>
-<li>Markdown与传统格式化处理的不同之处</li>
-<li>如何使用Markdown格式化文本</li>
-<li>如何利用GitHub提供的Markdown自动渲染机制</li>
-<li>如何应用GitHub对Markdown的扩展</li>
-</ul>
-<a class="header" href="#声明" id="声明"><h2>声明</h2></a>
-<p>水平有限，错漏难免。若有指教，请发issue，或者直接联系。</p>
-<blockquote>
-<p>电子邮箱：linshi@budshome.com；微信：cd-zzy；QQ：9809920。</p>
-</blockquote>
-<p>译者无意侵犯GitHub及任何人的权利和利益，故若有不适，请联系我。</p>
-<hr />
-<a class="header" href="#markdown语法和实例" id="markdown语法和实例"><h1>Markdown语法和实例</h1></a>
-<a class="header" href="#标题" id="标题"><h2>标题</h2></a>
-<p>Markdown中共有6级标题，从 <code>#</code>、<code>##</code>、依次类推到 <code>######</code>。</p>
-<blockquote>
-<p>实例代码</p>
-</blockquote>
-<pre><code class="language-Markdown"># 一级标题
-## 二级级标题
-### 三级标题
-#### 四级级标题
-##### 五级标题
-###### 六级标题
-</code></pre>
-<blockquote>
-<p>效果展示（注意一级标题会自动产生底线）</p>
-</blockquote>
-<a class="header" href="#一级标题" id="一级标题"><h1>一级标题</h1></a>
-<a class="header" href="#二级级标题" id="二级级标题"><h2>二级级标题</h2></a>
-<a class="header" href="#三级标题" id="三级标题"><h3>三级标题</h3></a>
-<a class="header" href="#四级级标题" id="四级级标题"><h4>四级级标题</h4></a>
-<a class="header" href="#五级标题" id="五级标题"><h5>五级标题</h5></a>
-<a class="header" href="#六级标题" id="六级标题"><h6>六级标题</h6></a>
-<a class="header" href="#github对markdown的改进" id="github对markdown的改进"><h1>GitHub对Markdown的改进</h1></a>
-<a class="header" href="#markdown工具链" id="markdown工具链"><h1>Markdown工具链</h1></a>
+                        <a class="header" href="#markdown工具链" id="markdown工具链"><h1>Markdown工具链</h1></a>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="gfm.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
                         
 
                         
@@ -224,6 +173,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="gfm.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
                 
 
                 
@@ -271,16 +224,6 @@
         <!-- Custom JS scripts -->
         
 
-        
-        
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            MathJax.Hub.Register.StartupHook('End', function() {
-                window.setTimeout(window.print, 100);
-            });
-        });
-        </script>
-        
         
 
     </body>
