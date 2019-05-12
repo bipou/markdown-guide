@@ -4,10 +4,6 @@
 
 ------
 
-> 本文翻译和结构重组自GitHub官方文档 **_Mastering Markdown_**，和GitHub官方文档基本 **_相同_**，包括GitHub对Markdown的改进和扩展。
-
-> 本文增加了Markdown工具链内容。
-
 ## Markdown介绍
 
 Markdown是一种在web上设置文本样式的方法：使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
