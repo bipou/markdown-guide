@@ -6,7 +6,7 @@
 
 > 本文翻译和结构重组自GitHub官方文档 **_Mastering Markdown_**，和GitHub官方文档基本 **_相同_**，包括GitHub对Markdown的扩展。
 
-另外增加了Markdown工具链内容，希望可以帮助到读者。
+本文增加了Markdown工具链内容，希望可以帮助到读者。
 
 ## 声明
 

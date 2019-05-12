@@ -1,10 +1,10 @@
 # 精通Markdown
 
-**——翻译和结构重组自GitHub官方 _Mastering Markdown_**
+**——翻译和结构重组自GitHub官方 _Mastering Markdown_，增加了Markdown工具链内容**
 
 ------
 
-> 本文翻译和结构重组自GitHub官方文档 **_Mastering Markdown_**，和GitHub官方文档基本 **_相同_**，包括GitHub对Markdown的改进和扩展。
+> 本文翻译和结构重组自GitHub官方文档 **_Mastering Markdown_**，和GitHub官方文档基本 **_相同_**，包括GitHub对Markdown的改进和扩展。本文增加了Markdown工具链内容，希望可以帮助到读者。
 
 ## Markdown介绍
 
