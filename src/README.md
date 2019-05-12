@@ -1,4 +1,4 @@
-# Markdown最佳实践指南
+# 精通Markdown
 
 **_——译自GitHub官方Mastering Markdown_**
 

@@ -1,6 +1,6 @@
-# Markdown最佳实践指南
+# 精通Markdown
 
-[Markdown最佳实践指南-https://markdown.budshome.com](https://markdown.budshome.com)，译自GitHub官方Mastering Markdown。
+[精通Markdown-https://markdown.budshome.com](https://markdown.budshome.com)，译自GitHub官方Mastering Markdown。
 
 ------
 
