@@ -1,6 +1,6 @@
 [book]
 title = "精通Markdown"
-authors = ["张忠宇"]
+authors = ["zzy"]
 description = "Markdown语法, Markdown实例, Markdown实践, Markdown指南, Markdown教程"
 src = "src"
 multilingual = true
