@@ -10,4 +10,4 @@ Markdown文档可以通过一些如mdBook、gitBook等应用转换为HTML、PDF�
 - 对Issues和拉取请求的评论；
 - 扩展名为`.md`或者`.markdown`的文件；
 
-若希望了解更多在GitHub中编写Markdown的信息，请查阅GitHub帮助文档[在GitHub上写作(Writing on GitHub)](https://help.github.com/en/categories/writing-on-github)。
+若希望了解更多在GitHub中编写Markdown的信息，请查阅GitHub帮助文档[在GitHub上写作（Writing on GitHub）](https://help.github.com/en/categories/writing-on-github)。
