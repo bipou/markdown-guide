@@ -1,10 +1,10 @@
 # 精通Markdown
 
-[精通Markdown-https://markdown.budshome.com](https://markdown.budshome.com)，译自GitHub官方Mastering Markdown。
+[精通Markdown-https://markdown.budshome.com](https://markdown.budshome.com)，翻译和结构重组自GitHub官方Mastering Markdown文档。
 
 ------
 
-> 本文译自GitHub官方文档 **_Mastering Markdown_**，和GitHub官方文档基本 **_相同_**，包括GitHub对Markdown的改进和扩展。
+> 本文翻译和结构重组自GitHub官方文档 **_Mastering Markdown_**，和GitHub官方文档基本 **_相同_**，包括GitHub对Markdown的改进和扩展。
 
 希望可以帮助到读者。
 
