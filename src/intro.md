@@ -1,10 +1,4 @@
-# 精通Markdown
-
-**——翻译和结构重组自GitHub官方 _Mastering Markdown_，增加了Markdown工具链内容**
-
-------
-
-## Markdown介绍
+# Markdown介绍
 
 Markdown是一种在web上设置文本样式的方法：使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
 
@@ -27,13 +21,5 @@ Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，
 - 如何使用Markdown格式化文本
 - 如何利用GitHub提供的Markdown自动渲染机制
 - 如何应用GitHub对Markdown的扩展
-
-## 声明
-
-水平有限，错漏难免。若有指教，请发issue，或者直接联系。
-
-> 电子邮箱：linshi@budshome.com；微信：cd-zzy；QQ：9809920。
-
-译者无意侵犯GitHub及任何人的权利和利益，故若有不适，请联系我。
 
 ------
