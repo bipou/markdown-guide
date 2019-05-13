@@ -1,1 +1,1 @@
-# GitHub对Markdown的改进
+# GitHub对Markdown的扩展
