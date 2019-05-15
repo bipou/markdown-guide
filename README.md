@@ -10,7 +10,7 @@
 
 ## 声明
 
-水平有限，错漏难免。若有指教，请发issue，或者直接联系。
+水平有限，错漏难免。若有指教，请[发issue到GitHub](https://github.com/zzy/mastering-markdown)，或者直接联系。
 
 > 电子邮箱：linshi@budshome.com；微信：cd-zzy；QQ：9809920。
 
