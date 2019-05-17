@@ -2,8 +2,9 @@
   "line-length": false,
   "no-inline-html": false,
   "single-title": false,
-  "no-trailing-punctuation": false,
+  "no-duplicate-heading": false,
+  "no-emphasis-as-heading": false,
   "commands-show-output": false,
-  "no-duplicate-heading": false
+  "no-trailing-punctuation": false
 }
   
