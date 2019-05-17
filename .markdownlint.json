@@ -1,9 +1,9 @@
 {
-    "line-length": false,
-    "no-inline-html": false,
-    "no-trailing-punctuation": false,
-    "commands-show-output": false
-  }
-  
-  
+  "line-length": false,
+  "no-inline-html": false,
+  "single-title": false,
+  "no-trailing-punctuation": false,
+  "commands-show-output": false,
+  "no-duplicate-heading": false
+}
   
