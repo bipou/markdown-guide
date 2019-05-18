@@ -155,7 +155,7 @@
                     <main>
                         <a class="header" href="#精通markdown" id="精通markdown"><h1>精通Markdown</h1></a>
 <p><a href="https://markdown.budshome.com">精通Markdown-https://markdown.budshome.com</a>，基础内容译自GitHub官方Mastering Markdown文档。</p>
-<p>笔者进行了结构重组、实例中文化、补充了部分官方文档未包括的Markdown语法、增加了Markdown和HTML融合应用，以及Markdown工具链等内容。</p>
+<p>笔者进行了结构重组、实例中文化、补充了官方文档未包括的Markdown语法、增加了Markdown和HTML融合应用，以及Markdown工具链等内容。</p>
 <p>本文目的为整理Markdown知识，希望可以帮助到读者。</p>
 <hr />
 <a class="header" href="#声明" id="声明"><h2>声明</h2></a>
@@ -309,38 +309,19 @@ markdown.budshome.com
 <p><a href="https://markdown.budshome.com">markdown.budshome.com</a></p>
 </div>
 <a class="header" href="#锚点anchors" id="锚点anchors"><h2>锚点（Anchors）</h2></a>
-<p>格式：<code>[锚点文本](#锚点链接)</code>。</p>
-<p>需要注意的是欲定位的锚点链接必须是标题，即<code>#</code>、<code>###</code>等定义的6级标题；同时，中文锚点需要省略<code>（</code>、<code>、</code>等中文标点符号。</p>
+<p>格式：<code>[锚点文本](#锚点链接)</code>。需要注意如下几点：</p>
+<ul>
+<li>欲定位的锚点链接必须是标题，即<code>#</code>、<code>###</code>等定义的6级标题；</li>
+<li>不管标题大小写，锚点均为小写；</li>
+<li>可以使用中文做锚点，中文锚点需要省略<code>（</code>、<code>、</code>等中文标点符号。</li>
+</ul>
 <a class="header" href="#1-实例代码-6" id="1-实例代码-6"><h3>1. 实例代码</h3></a>
-<pre><code class="language-Markdown">&gt; 一级文本引用
-&gt;&gt; 二级文本引用
-
-引用中嵌套无序列表
-
-&gt;&gt; * 这是第一项
-&gt;&gt; * 这是第二项
+<pre><code class="language-Markdown">标题：锚点（Anchors）
+锚点：[锚点（Anchors）](#锚点anchors)
 </code></pre>
 <a class="header" href="#2-呈现效果-6" id="2-呈现效果-6"><h3>2. 呈现效果</h3></a>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
-<p>不同工具和输出呈现效果有差别，如下两种——</p>
-<p><strong>Markdown预览呈现</strong></p>
-<p><img src="./theme/blockquotes.png" alt="blockquotes" /></p>
-<p><strong>输出HTML呈现</strong></p>
-<blockquote>
-<p>一级文本引用</p>
-<blockquote>
-<p>二级文本引用</p>
-</blockquote>
-</blockquote>
-<p>引用中嵌套无序列表</p>
-<blockquote>
-<blockquote>
-<ul>
-<li>这是第一项</li>
-<li>这是第二项</li>
-</ul>
-</blockquote>
-</blockquote>
+<p><a href="#%E9%94%9A%E7%82%B9anchors">锚点（Anchors）</a></p>
 </div>
 <a class="header" href="#引用blockquotes" id="引用blockquotes"><h2>引用（Blockquotes）</h2></a>
 <p>Markdown中通过<code>&gt;</code>实现引用。引用可以多级嵌套：<code>&gt;&gt;</code>,<code>&gt;&gt;&gt;</code>；也可以和其它Markdown语法嵌套，比如无序列表。</p>
