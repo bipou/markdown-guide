@@ -310,9 +310,9 @@ markdown.budshome.com
 <a class="header" href="#2-呈现效果-6" id="2-呈现效果-6"><h3>2. 呈现效果</h3></a>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p>不同工具和输出呈现效果有差别，如下两种——</p>
-<p><strong>Markdown展示工具效果</strong></p>
+<p><strong>Markdown预览呈现</strong></p>
 <p><img src="./theme/blockquotes.png" alt="blockquotes" /></p>
-<p><strong>输出为HTML效果</strong></p>
+<p><strong>输出HTML呈现</strong></p>
 <blockquote>
 <p>一级文本引用</p>
 <blockquote>
@@ -328,6 +328,46 @@ markdown.budshome.com
 </ul>
 </blockquote>
 </blockquote>
+</div>
+<a class="header" href="#七代码" id="七代码"><h2>七、代码</h2></a>
+<p>Markdown中代码格式化可以通过三种方式：</p>
+<ul>
+<li>行内式：通过一对 ` 包裹单行代码实现；</li>
+<li>代码块：通过一对 ``` 包括实现，可以指定编程语言，支持语法高亮；</li>
+<li>缩进式：通过缩进 <code>&gt;=</code> 4空格实现，不推荐，部分支持语法高亮。</li>
+</ul>
+<a class="header" href="#1-实例代码-7" id="1-实例代码-7"><h3>1. 实例代码</h3></a>
+<pre><code class="language-Markdown">行内式代码：`import os, sys`
+
+代码块（无需缩进）：
+    ``` Python
+    import os, sys
+
+    sys.path
+
+    print(os)
+    ```
+
+缩进式（不推荐）：
+    if (isAwesome){
+      return true
+    }
+</code></pre>
+<a class="header" href="#2-呈现效果-7" id="2-呈现效果-7"><h3>2. 呈现效果</h3></a>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>行内式代码：<code>import os, sys</code></p>
+<p>代码块（无需缩进）：</p>
+<pre><code class="language-Python">import os, sys
+
+sys.path
+
+print(os)
+</code></pre>
+<p>缩进式（不推荐）：</p>
+<pre><code>if (isAwesome){
+    return true
+}
+</code></pre>
 </div>
 <a class="header" href="#github对markdown的扩展" id="github对markdown的扩展"><h1>GitHub对Markdown的扩展</h1></a>
 <a class="header" href="#markdown和html融合" id="markdown和html融合"><h1>Markdown和HTML融合</h1></a>
