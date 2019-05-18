@@ -5,6 +5,7 @@
   "no-duplicate-heading": false,
   "no-emphasis-as-heading": false,
   "no-trailing-punctuation": false,
+  "no-blanks-blockquote": false,
   "commands-show-output": false
 }
   
