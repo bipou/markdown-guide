@@ -14,7 +14,7 @@ Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，
 
 若希望了解更多在GitHub中编写Markdown的信息，请查阅GitHub帮助文档：[在GitHub上写作（Writing on GitHub）](https://help.github.com/en/categories/writing-on-github)。
 
-## 将学习到内容
+## 内容要点
 
 - Markdown格式如何使样式的协作开发变得容易
 - Markdown与传统格式化处理的不同之处
