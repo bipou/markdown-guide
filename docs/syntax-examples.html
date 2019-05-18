@@ -267,33 +267,27 @@ markdown.budshome.com
 <a class="header" href="#六引用" id="六引用"><h2>六、引用</h2></a>
 <p>Markdown中通过<code>&gt;</code>实现引用。引用可以多级嵌套：<code>&gt;&gt;</code>,<code>&gt;&gt;&gt;</code>；也可以和其它Markdown语法嵌套，比如无序列表。</p>
 <a class="header" href="#1-实例代码-6" id="1-实例代码-6"><h3>1. 实例代码</h3></a>
-<pre><code class="language-Markdown">&gt; 一级引用
-&gt;&gt; 二级引用
-&gt;&gt;&gt; 三级引用
+<pre><code class="language-Markdown">&gt; 一级文本引用
+&gt;&gt; 二级文本引用
 
-&gt;&gt; 二级引用
+引用中嵌套无序列表
 
 &gt;&gt; * 这是第一项
 &gt;&gt; * 这是第二项
-
-&gt; 一级引用
 </code></pre>
 <a class="header" href="#2-呈现效果-6" id="2-呈现效果-6"><h3>2. 呈现效果</h3></a>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>不同工具和输出呈现效果有差别，如下两种——</p>
+<p>Markdown展示工具效果</p>
+<p><img src="./theme/blockquotes.png" alt="blockquotes" /></p>
+<p>输出为HTML效果</p>
 <blockquote>
-<p>一级引用</p>
+<p>一级文本引用</p>
 <blockquote>
-<p>二级引用</p>
-<blockquote>
-<p>三级引用</p>
+<p>二级文本引用</p>
 </blockquote>
 </blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>二级引用</p>
-</blockquote>
-</blockquote>
+<p>引用中嵌套无序列表</p>
 <blockquote>
 <blockquote>
 <ul>
@@ -301,9 +295,6 @@ markdown.budshome.com
 <li>这是第二项</li>
 </ul>
 </blockquote>
-</blockquote>
-<blockquote>
-<p>一级引用</p>
 </blockquote>
 </div>
 
