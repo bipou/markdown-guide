@@ -248,7 +248,7 @@ _这行文本是 **粗体** + 斜体_
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p><img src="./theme/demo-image.png" alt="Demo Image" /></p>
 </div>
-<a class="header" href="#四链接" id="四链接"><h2>四、链接</h2></a>
+<a class="header" href="#五链接" id="五链接"><h2>五、链接</h2></a>
 <p>Markdown中可对url链接自动识别，但有些Markdown工具不支持（GitHub支持自动识别）。</p>
 <p>若需指定url链接文本，格式：<code>[文本](url)</code>。</p>
 <a class="header" href="#1-实例代码-5" id="1-实例代码-5"><h3>1. 实例代码</h3></a>
@@ -263,6 +263,45 @@ markdown.budshome.com
 <p><a href="https://markdown.budshome.com">精通Markdown</a></p>
 <p><a href="https://markdown.budshome.com">https://markdown.budshome.com</a></p>
 <p><a href="https://markdown.budshome.com">markdown.budshome.com</a></p>
+</div>
+<a class="header" href="#六引用" id="六引用"><h2>六、引用</h2></a>
+<p>Markdown中通过<code>&gt;</code>实现引用。引用可以嵌套：<code>&gt;&gt;</code>,<code>&gt;&gt;&gt;</code>。</p>
+<a class="header" href="#1-实例代码-6" id="1-实例代码-6"><h3>1. 实例代码</h3></a>
+<pre><code class="language-Markdown">&gt; 一级引用
+
+&gt;&gt; 二级引用
+
+&gt;&gt;&gt; 三级引用
+
+&gt;&gt; 二级引用
+
+&gt; 一级引用
+</code></pre>
+<a class="header" href="#2-呈现效果-6" id="2-呈现效果-6"><h3>2. 呈现效果</h3></a>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<blockquote>
+<p>一级引用</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>二级引用</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>三级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>二级引用</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>一级引用</p>
+</blockquote>
 </div>
 
                     </main>
