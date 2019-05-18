@@ -210,12 +210,12 @@ _这行文本是 **粗体** + 斜体_
 <a class="header" href="#列表lists" id="列表lists"><h2>列表（Lists）</h2></a>
 <p>列表分为<code>无序列表</code>和<code>有序列表</code>。</p>
 <a class="header" href="#无序列表" id="无序列表"><h3>无序列表</h3></a>
-<p>无序列表中，<strong>下级列表相对于上级 <code>缩进空格 &gt;= 2</code></strong></p>
+<p>无序列表用<code>-</code>定义，<strong>下级列表相对于上级 <code>缩进空格 &gt;= 2</code></strong></p>
 <a class="header" href="#1-实例代码-2" id="1-实例代码-2"><h4>1. 实例代码</h4></a>
-<pre><code class="language-Markdown">* 第一节
-* 第二节
-  * 第一条（缩进空格2个）
-  * 第二条
+<pre><code class="language-Markdown">- 第一节
+- 第二节
+  - 第一条（缩进空格2个）
+  - 第二条
 </code></pre>
 <a class="header" href="#2-呈现效果-2" id="2-呈现效果-2"><h4>2. 呈现效果</h4></a>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
@@ -230,7 +230,7 @@ _这行文本是 **粗体** + 斜体_
 </ul>
 </div>
 <a class="header" href="#有序列表" id="有序列表"><h3>有序列表</h3></a>
-<p>有序列表中，<strong>下级列表相对于上级 <code>缩进空格 &gt; 2</code></strong></p>
+<p>有序列表<code>数字.</code>定义，<strong>下级列表相对于上级 <code>缩进空格 &gt; 2</code></strong></p>
 <a class="header" href="#1-实例代码-3" id="1-实例代码-3"><h4>1. 实例代码</h4></a>
 <pre><code class="language-Markdown">1. 第一节
 1. 第二节
@@ -329,7 +329,7 @@ markdown.budshome.com
 <ul>
 <li>行内式：通过一对 ` 包裹单行代码实现；</li>
 <li>代码块：通过一对 ``` 包裹实现，可以指定编程语言，支持语法高亮；</li>
-<li>缩进式：通过缩进 <code>&gt;=</code> 4空格实现，部分支持语法高亮，<strong>不推荐</strong>。</li>
+<li>缩进式：通过缩进 <code>&gt;=</code> 4空格实现，部分支持语法高亮。</li>
 </ul>
 <a class="header" href="#1-实例代码-8" id="1-实例代码-8"><h3>1. 实例代码</h3></a>
 <pre><code class="language-Markdown">行内式代码：`import os, sys`
@@ -343,7 +343,7 @@ markdown.budshome.com
     print(os)
     ```
 
-缩进式（不推荐）：
+缩进式：
     if (isAwesome){
       return true
     }
@@ -358,7 +358,7 @@ sys.path
 
 print(os)
 </code></pre>
-<p>缩进式（不推荐）：</p>
+<p>缩进式：</p>
 <pre><code>if (isAwesome){
     return true
 }
