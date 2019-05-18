@@ -141,7 +141,7 @@ _这行文本是 **粗体** + 斜体_
 
 </div>
 
-## 四、链接
+## 五、链接
 
 Markdown中可对url链接自动识别，但有些Markdown工具不支持（GitHub支持自动识别）。
 
@@ -166,5 +166,39 @@ markdown.budshome.com
 [https://markdown.budshome.com](https://markdown.budshome.com)
 
 [markdown.budshome.com](https://markdown.budshome.com)
+
+</div>
+
+## 六、引用
+
+Markdown中通过`>`实现引用。引用可以嵌套：`>>`,`>>>`。
+
+### 1. 实例代码
+
+``` Markdown
+> 一级引用
+
+>> 二级引用
+
+>>> 三级引用
+
+>> 二级引用
+
+> 一级引用
+```
+
+### 2. 呈现效果
+
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+
+> 一级引用
+
+>> 二级引用
+
+>>> 三级引用
+
+>> 二级引用
+
+> 一级引用
 
 </div>
