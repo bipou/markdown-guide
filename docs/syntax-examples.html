@@ -265,15 +265,16 @@ markdown.budshome.com
 <p><a href="https://markdown.budshome.com">markdown.budshome.com</a></p>
 </div>
 <a class="header" href="#六引用" id="六引用"><h2>六、引用</h2></a>
-<p>Markdown中通过<code>&gt;</code>实现引用。引用可以嵌套：<code>&gt;&gt;</code>,<code>&gt;&gt;&gt;</code>。</p>
+<p>Markdown中通过<code>&gt;</code>实现引用。引用可以多级嵌套：<code>&gt;&gt;</code>,<code>&gt;&gt;&gt;</code>；也可以和其它Markdown语法嵌套，比如无序列表。</p>
 <a class="header" href="#1-实例代码-6" id="1-实例代码-6"><h3>1. 实例代码</h3></a>
 <pre><code class="language-Markdown">&gt; 一级引用
-
 &gt;&gt; 二级引用
-
 &gt;&gt;&gt; 三级引用
 
 &gt;&gt; 二级引用
+
+&gt;&gt; * 这是第一项
+&gt;&gt; * 这是第二项
 
 &gt; 一级引用
 </code></pre>
@@ -281,14 +282,8 @@ markdown.budshome.com
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <blockquote>
 <p>一级引用</p>
-</blockquote>
-<blockquote>
 <blockquote>
 <p>二级引用</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
 <blockquote>
 <p>三级引用</p>
 </blockquote>
@@ -297,6 +292,14 @@ markdown.budshome.com
 <blockquote>
 <blockquote>
 <p>二级引用</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<ul>
+<li>这是第一项</li>
+<li>这是第二项</li>
+</ul>
 </blockquote>
 </blockquote>
 <blockquote>
