@@ -191,11 +191,11 @@ Markdown中通过`>`实现引用。引用可以多级嵌套：`>>`,`>>>`；也�
 
 不同工具和输出呈现效果有差别，如下两种——
 
-**Markdown展示工具效果**
+**Markdown预览呈现**
 
 ![blockquotes](./theme/blockquotes.png)
 
-**输出为HTML效果**
+**输出HTML呈现**
 
 > 一级文本引用
 >> 二级文本引用
@@ -204,5 +204,57 @@ Markdown中通过`>`实现引用。引用可以多级嵌套：`>>`,`>>>`；也�
 
 >> * 这是第一项
 >> * 这是第二项
+
+</div>
+
+## 七、代码
+
+Markdown中代码格式化可以通过三种方式：
+
+* 行内式：通过一对 ` 包裹单行代码实现；
+* 代码块：通过一对 ``` 包括实现，可以指定编程语言，支持语法高亮；
+* 缩进式：通过缩进 `>=` 4空格实现，不推荐，部分支持语法高亮。
+
+### 1. 实例代码
+
+``` Markdown
+行内式代码：`import os, sys`
+
+代码块（无需缩进）：
+    ``` Python
+    import os, sys
+
+    sys.path
+
+    print(os)
+    ```
+
+缩进式（不推荐）：
+    if (isAwesome){
+      return true
+    }
+```
+
+### 2. 呈现效果
+
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+
+行内式代码：`import os, sys`
+
+代码块（无需缩进）：
+
+``` Python
+import os, sys
+
+sys.path
+
+print(os)
+```
+
+缩进式（不推荐）：
+
+    if (isAwesome){
+        return true
+    }
 
 </div>
