@@ -88,7 +88,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li><a href="index.html"><strong aria-hidden="true">1.</strong> 序言</a></li><li><a href="intro.html"><strong aria-hidden="true">2.</strong> Markdown介绍</a></li><li><a href="syntax-examples.html"><strong aria-hidden="true">3.</strong> Markdown语法和实例</a></li><li><a href="gfm.html"><strong aria-hidden="true">4.</strong> GitHub对Markdown的扩展</a></li><li><a href="html.html"><strong aria-hidden="true">5.</strong> Markdown和HTML融合</a></li><li><a href="toolchain.html"><strong aria-hidden="true">6.</strong> Markdown工具链</a></li></ol>
+            <ol class="chapter"><li><a href="index.html"><strong aria-hidden="true">1.</strong> 序言</a></li><li><a href="intro.html"><strong aria-hidden="true">2.</strong> Markdown介绍</a></li><li><a href="syntax-examples.html"><strong aria-hidden="true">3.</strong> Markdown基础语法和实例</a></li><li><a href="gfm.html"><strong aria-hidden="true">4.</strong> GitHub扩展语法和实例</a></li><li><a href="html.html"><strong aria-hidden="true">5.</strong> Markdown和HTML融合</a></li><li><a href="toolchain.html"><strong aria-hidden="true">6.</strong> Markdown工具链</a></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -155,7 +155,7 @@
                     <main>
                         <a class="header" href="#精通markdown" id="精通markdown"><h1>精通Markdown</h1></a>
 <p><a href="https://markdown.budshome.com">精通Markdown-https://markdown.budshome.com</a>，基础内容译自GitHub官方Mastering Markdown文档。</p>
-<p>笔者进行了结构重组、实例中文化、增加了Markdown和HTML融合应用，以及Markdown工具链等内容。</p>
+<p>笔者进行了结构重组、实例中文化、补充了部分官方文档未包括的Markdown语法、增加了Markdown和HTML融合应用，以及Markdown工具链等内容。</p>
 <p>本文目的为整理Markdown知识，希望可以帮助到读者。</p>
 <hr />
 <a class="header" href="#声明" id="声明"><h2>声明</h2></a>
@@ -176,7 +176,7 @@
 <li>扩展名为<code>.md</code>或者<code>.markdown</code>的文件；</li>
 </ul>
 <p>若希望了解更多在GitHub中编写Markdown的信息，请查阅GitHub帮助文档：<a href="https://help.github.com/en/categories/writing-on-github">在GitHub上写作（Writing on GitHub）</a>。</p>
-<a class="header" href="#将学习到内容" id="将学习到内容"><h2>将学习到内容</h2></a>
+<a class="header" href="#内容要点" id="内容要点"><h2>内容要点</h2></a>
 <ul>
 <li>Markdown格式如何使样式的协作开发变得容易</li>
 <li>Markdown与传统格式化处理的不同之处</li>
@@ -186,7 +186,19 @@
 </ul>
 <hr />
 <a class="header" href="#markdown语法和实例" id="markdown语法和实例"><h1>Markdown语法和实例</h1></a>
-<a class="header" href="#一标题" id="一标题"><h2>一、标题</h2></a>
+<p>本章包括以下内容：</p>
+<ul>
+<li><a href="#%E6%A0%87%E9%A2%98headers">标题（Headers）</a></li>
+<li><a href="#%E5%AD%97%E4%BD%93emphasis">字体（Emphasis）</a></li>
+<li><a href="#%E5%88%97%E8%A1%A8lists">列表（Lists）</a></li>
+<li><a href="#%E5%9B%BE%E5%83%8Fimages">图像（Images）</a></li>
+<li><a href="#%E9%93%BE%E6%8E%A5links">链接（Links）</a></li>
+<li><a href="#%E9%94%9A%E7%82%B9anchors">锚点（Anchors）</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8blockquotes">引用（Blockquotes）</a></li>
+<li><a href="#%E4%BB%A3%E7%A0%81code">代码（Code）</a></li>
+</ul>
+<hr />
+<a class="header" href="#标题headers" id="标题headers"><h2>标题（Headers）</h2></a>
 <p>Markdown中共有6级标题，从 <code>#</code>、<code>##</code>、依次类推到 <code>######</code>。</p>
 <a class="header" href="#1-实例代码" id="1-实例代码"><h3>1. 实例代码</h3></a>
 <pre><code class="language-Markdown"># 一级标题
@@ -205,7 +217,7 @@
 <a class="header" href="#五级标题" id="五级标题"><h5>五级标题</h5></a>
 <a class="header" href="#六级标题" id="六级标题"><h6>六级标题</h6></a>
 </div>
-<a class="header" href="#二字体" id="二字体"><h2>二、字体</h2></a>
+<a class="header" href="#字体emphasis" id="字体emphasis"><h2>字体（Emphasis）</h2></a>
 <p>用 <code>*</code> 或者 <code>_</code> 包裹文本进行 <em>斜体</em> 格式化，用 <code>**</code> 或者 <code>__</code> 包裹文本进行 <strong>粗体</strong> 格式化。</p>
 <p><code>**</code> 或者 <code>__</code> 可以和  <code>*</code> 或者 <code>_</code> <strong><em>组合使用</em></strong>。</p>
 <a class="header" href="#1-实例代码-1" id="1-实例代码-1"><h3>1. 实例代码</h3></a>
@@ -227,7 +239,7 @@ _这行文本是 **粗体** + 斜体_
 <p><strong>这行文本是粗体</strong></p>
 <p><em>这行文本是 <strong>粗体</strong> + 斜体</em></p>
 </div>
-<a class="header" href="#三列表" id="三列表"><h2>三、列表</h2></a>
+<a class="header" href="#列表lists" id="列表lists"><h2>列表（Lists）</h2></a>
 <p>列表分为<code>无序列表</code>和<code>有序列表</code>。</p>
 <a class="header" href="#无序列表" id="无序列表"><h3>无序列表</h3></a>
 <p>无序列表中，<strong>下级列表相对于上级 <code>缩进空格 &gt;= 2</code></strong></p>
@@ -271,7 +283,7 @@ _这行文本是 **粗体** + 斜体_
 </li>
 </ol>
 </div>
-<a class="header" href="#四图像" id="四图像"><h2>四、图像</h2></a>
+<a class="header" href="#图像images" id="图像images"><h2>图像（Images）</h2></a>
 <p>格式：<code>Format: ![Alt Text](url)</code></p>
 <a class="header" href="#1-实例代码-4" id="1-实例代码-4"><h3>1. 实例代码</h3></a>
 <pre><code class="language-Markdown">![Demo Image](./theme/demo-image.png)
@@ -280,7 +292,7 @@ _这行文本是 **粗体** + 斜体_
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p><img src="./theme/demo-image.png" alt="Demo Image" /></p>
 </div>
-<a class="header" href="#五链接" id="五链接"><h2>五、链接</h2></a>
+<a class="header" href="#链接links" id="链接links"><h2>链接（Links）</h2></a>
 <p>Markdown中可对url链接自动识别，但有些Markdown工具不支持（GitHub支持自动识别）。</p>
 <p>若需指定url链接文本，格式：<code>[文本](url)</code>。</p>
 <a class="header" href="#1-实例代码-5" id="1-实例代码-5"><h3>1. 实例代码</h3></a>
@@ -296,8 +308,9 @@ markdown.budshome.com
 <p><a href="https://markdown.budshome.com">https://markdown.budshome.com</a></p>
 <p><a href="https://markdown.budshome.com">markdown.budshome.com</a></p>
 </div>
-<a class="header" href="#六引用" id="六引用"><h2>六、引用</h2></a>
-<p>Markdown中通过<code>&gt;</code>实现引用。引用可以多级嵌套：<code>&gt;&gt;</code>,<code>&gt;&gt;&gt;</code>；也可以和其它Markdown语法嵌套，比如无序列表。</p>
+<a class="header" href="#锚点anchors" id="锚点anchors"><h2>锚点（Anchors）</h2></a>
+<p>格式：<code>[锚点文本](#锚点链接)</code>。</p>
+<p>需要注意的是欲定位的锚点链接必须是标题，即<code>#</code>、<code>###</code>等定义的6级标题；同时，中文锚点需要省略<code>（</code>、<code>、</code>等中文标点符号。</p>
 <a class="header" href="#1-实例代码-6" id="1-实例代码-6"><h3>1. 实例代码</h3></a>
 <pre><code class="language-Markdown">&gt; 一级文本引用
 &gt;&gt; 二级文本引用
@@ -329,14 +342,47 @@ markdown.budshome.com
 </blockquote>
 </blockquote>
 </div>
-<a class="header" href="#七代码" id="七代码"><h2>七、代码</h2></a>
+<a class="header" href="#引用blockquotes" id="引用blockquotes"><h2>引用（Blockquotes）</h2></a>
+<p>Markdown中通过<code>&gt;</code>实现引用。引用可以多级嵌套：<code>&gt;&gt;</code>,<code>&gt;&gt;&gt;</code>；也可以和其它Markdown语法嵌套，比如无序列表。</p>
+<a class="header" href="#1-实例代码-7" id="1-实例代码-7"><h3>1. 实例代码</h3></a>
+<pre><code class="language-Markdown">&gt; 一级文本引用
+&gt;&gt; 二级文本引用
+
+引用中嵌套无序列表
+
+&gt;&gt; * 这是第一项
+&gt;&gt; * 这是第二项
+</code></pre>
+<a class="header" href="#2-呈现效果-7" id="2-呈现效果-7"><h3>2. 呈现效果</h3></a>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>不同工具和输出呈现效果有差别，如下两种——</p>
+<p><strong>Markdown预览呈现</strong></p>
+<p><img src="./theme/blockquotes.png" alt="blockquotes" /></p>
+<p><strong>输出HTML呈现</strong></p>
+<blockquote>
+<p>一级文本引用</p>
+<blockquote>
+<p>二级文本引用</p>
+</blockquote>
+</blockquote>
+<p>引用中嵌套无序列表</p>
+<blockquote>
+<blockquote>
+<ul>
+<li>这是第一项</li>
+<li>这是第二项</li>
+</ul>
+</blockquote>
+</blockquote>
+</div>
+<a class="header" href="#代码code" id="代码code"><h2>代码（Code）</h2></a>
 <p>Markdown中代码格式化可以通过三种方式：</p>
 <ul>
 <li>行内式：通过一对 ` 包裹单行代码实现；</li>
-<li>代码块：通过一对 ``` 包括实现，可以指定编程语言，支持语法高亮；</li>
-<li>缩进式：通过缩进 <code>&gt;=</code> 4空格实现，不推荐，部分支持语法高亮。</li>
+<li>代码块：通过一对 ``` 包裹实现，可以指定编程语言，支持语法高亮；</li>
+<li>缩进式：通过缩进 <code>&gt;=</code> 4空格实现，部分支持语法高亮，<strong>不推荐</strong>。</li>
 </ul>
-<a class="header" href="#1-实例代码-7" id="1-实例代码-7"><h3>1. 实例代码</h3></a>
+<a class="header" href="#1-实例代码-8" id="1-实例代码-8"><h3>1. 实例代码</h3></a>
 <pre><code class="language-Markdown">行内式代码：`import os, sys`
 
 代码块（无需缩进）：
@@ -353,7 +399,7 @@ markdown.budshome.com
       return true
     }
 </code></pre>
-<a class="header" href="#2-呈现效果-7" id="2-呈现效果-7"><h3>2. 呈现效果</h3></a>
+<a class="header" href="#2-呈现效果-8" id="2-呈现效果-8"><h3>2. 呈现效果</h3></a>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p>行内式代码：<code>import os, sys</code></p>
 <p>代码块（无需缩进）：</p>
@@ -369,7 +415,7 @@ print(os)
 }
 </code></pre>
 </div>
-<a class="header" href="#github对markdown的扩展" id="github对markdown的扩展"><h1>GitHub对Markdown的扩展</h1></a>
+<a class="header" href="#github扩展语法和实例" id="github扩展语法和实例"><h1>GitHub扩展语法和实例</h1></a>
 <a class="header" href="#markdown和html融合" id="markdown和html融合"><h1>Markdown和HTML融合</h1></a>
 <a class="header" href="#markdown工具链" id="markdown工具链"><h1>Markdown工具链</h1></a>
 
