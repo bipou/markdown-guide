@@ -193,7 +193,7 @@ markdown.budshome.com
 ### 1. 实例代码
 
 ``` Markdown
-标题：锚点（Anchors）
+标题：## 锚点（Anchors）
 锚点：[锚点（Anchors）](#锚点anchors)
 ```
 
