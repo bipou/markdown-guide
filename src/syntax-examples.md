@@ -163,7 +163,7 @@ Markdown中可对url链接自动识别，但有些Markdown工具不支持（GitH
 ### 1. 实例代码
 
 ``` Markdown
-[精通Markdown](https://markdown.budshome.com)
+[Markdown指南](https://markdown.budshome.com)
 
 https://markdown.budshome.com
 
@@ -174,7 +174,7 @@ markdown.budshome.com
 
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 
-[精通Markdown](https://markdown.budshome.com)
+[Markdown指南](https://markdown.budshome.com)
 
 [https://markdown.budshome.com](https://markdown.budshome.com)
 
