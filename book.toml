@@ -1,7 +1,7 @@
 [book]
 title = "Markdown指南"
 authors = ["zzy"]
-description = "Markdown指南, Markdown教程, Markdown语法, Markdown实例, Markdown实践"
+description = "Markdown指南, 精通Markdown, Markdown教程, Markdown语法, Markdown实例, Markdown实践"
 src = "src"
 multilingual = true
 
