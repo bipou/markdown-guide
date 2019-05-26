@@ -1,12 +1,12 @@
 # Markdown语法和实例
 
-本章节包括Markdown基础语法，以及GitHub风格Markdown（GitHub Flavored Markdown，简称为`GFM`）。
+包括Markdown基础语法，以及GitHub风格Markdown（GitHub Flavored Markdown，简称`GFM`）。
 
-GitHub风格Markdown（GitHub Flavored Markdown，简称为`GFM`）是GitHub官方为了在GitHub.com上更容易地进行文本内容格式化展示，而提供的一组Markdown语法扩展及特性支持。
+GitHub风格Markdown（GitHub Flavored Markdown，简称`GFM`）是GitHub官方为了在GitHub.com上更容易地进行文本内容格式化展示，而提供的一组Markdown语法扩展及特性支持。
 
 > 💥 目前，GitHub风格Markdown（GitHub Flavored Markdown，简称`GFM`）已经成为Markdown的通用标准，兼容于各种Markdown工具链和各类Markdown展示支持网站。
 
-GFM对于Markdown的语法和特性有些为语法扩展，有些为新增特性。已经成为通用标准，各类Markdown工具链和网站兼容支持很完善，因此合并介绍。
+GFM对于Markdown的语法和特性有些为语法扩展，有些为新增特性。已经成为通用标准，各类Markdown工具链和展示网站兼容支持很完善，因此合并介绍。
 
 - [标题（Headers）](#标题headers)
 - [字体（Emphasis）](#字体emphasis)
