@@ -11,9 +11,10 @@ build-dir = "docs"
 [output.html]
 theme = "src/theme"
 # default-theme = "rust"
-git_repository_url = "https://github.com/zzy/markdown-guide"
 curly-quotes = true
 mathjax-support = true
+# git_repository_url = "https://github.com/zzy/markdown-guide"
+# git-repository-icon = "fa-code-fork"
 
 [output.html.playpen]
 editable = true
