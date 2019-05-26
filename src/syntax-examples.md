@@ -1,6 +1,6 @@
 # Markdown语法和实例
 
-包括Markdown基础语法，以及GitHub风格Markdown（GitHub Flavored Markdown，简称`GFM`）。
+本章节语法和实例包括Markdown基础语法和实例，以及GitHub风格Markdown（GitHub Flavored Markdown，简称`GFM`）的语法扩展和特性实例。
 
 GitHub风格Markdown（GitHub Flavored Markdown，简称`GFM`）是GitHub官方为了在GitHub.com上更容易地进行文本内容格式化展示，而提供的一组Markdown语法扩展及特性支持。
 
