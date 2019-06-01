@@ -343,8 +343,7 @@ print(os)
 
 ### 2. 呈现效果
 
-<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
-<br />
+
 
 表头一  | 表头二  | 表头三
 ------ | ------ | ------
@@ -353,11 +352,14 @@ print(os)
 三行描述部分一 | 三行描述部分二 | 三行描述部分三
 
 <br />
-</div>
+
 
 16c999e8c71134401a78d4d46435517b2271d6ac
+
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo/
+
+github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 
 <br /><br /><br />
 
