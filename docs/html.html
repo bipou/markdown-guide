@@ -154,6 +154,108 @@
                 <div id="content" class="content">
                     <main>
                         <a class="header" href="#markdown和html融合" id="markdown和html融合"><h1>Markdown和HTML融合</h1></a>
+<p>Markdown中，可以直接嵌入<code>HTML</code>内容，包括：<code>tags</code>，<code>css</code>等。</p>
+<ul>
+<li><a href="#%E5%B5%8C%E5%85%A5html-tags">嵌入HTML-tags</a></li>
+<li><a href="#%E5%B5%8C%E5%85%A5css">嵌入CSS</a></li>
+</ul>
+<a class="header" href="#嵌入html-tags" id="嵌入html-tags"><h2>嵌入HTML-tags</h2></a>
+<a class="header" href="#1-实例代码" id="1-实例代码"><h3>1. 实例代码</h3></a>
+<pre><code class="language-HTML">&lt;div style=&quot;border:1px solid;margin:0px;padding:0px 0px 0px 15px&quot;&gt;
+
+&lt;strong&gt;1.做个耐心的聆听者。&lt;/strong&gt;
+
+2.永远不要流露出厌烦的表情。
+
+&lt;del&gt;3.等待，直到他人表明观点，然后附和他们。&lt;/del&gt;
+
+4.让他人表明宗教立场，而后发表同样的观点。
+
+&lt;del&gt;5.可以暗示涉及“性”的话题，但若对方没有表示出强烈的兴趣，就不要继续下去。&lt;/del&gt;
+
+6.永远不要谈论疾病，除非对方特别关心。
+
+7.永远不要刺探个人隐私，对方最终会告诉你一切。
+
+8.永远不要自吹自擂。
+
+9.拒绝邋遢。
+
+10.永远别喝醉。
+
+&lt;br /&gt;
+
+&lt;/div&gt;
+</code></pre>
+<a class="header" href="#2-呈现效果" id="2-呈现效果"><h3>2. 呈现效果</h3></a>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p><strong>1.做个耐心的聆听者。</strong></p>
+<p>2.永远不要流露出厌烦的表情。</p>
+<p><del>3.等待，直到他人表明观点，然后附和他们。</del></p>
+<p>4.让他人表明宗教立场，而后发表同样的观点。</p>
+<p><del>5.可以暗示涉及“性”的话题，但若对方没有表示出强烈的兴趣，就不要继续下去。</del></p>
+<p>6.永远不要谈论疾病，除非对方特别关心。</p>
+<p>7.永远不要刺探个人隐私，对方最终会告诉你一切。</p>
+<p>8.永远不要自吹自擂。</p>
+<p>9.拒绝邋遢。</p>
+<p>10.永远别喝醉。
+<br /></p>
+</div>
+<a class="header" href="#嵌入css" id="嵌入css"><h2>嵌入CSS</h2></a>
+<a class="header" href="#1-实例代码-1" id="1-实例代码-1"><h3>1. 实例代码</h3></a>
+<pre><code class="language-HTML">&lt;div style=&quot;border:1px solid;margin:0px;padding:0px 0px 0px 15px&quot;&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+    p {
+        text-indent:2em;
+    }
+
+    .indent-background {
+        text-indent:2em;
+        background: red;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;
+我在自己的一生里也曾经历过被遗弃和背叛的痛苦。可是有一种东西却救了我：我的生活永远是有目的、有意义的，这就是为社会主义而奋斗。
+&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;b&gt;&lt;i&gt;保尔·柯察金（Павел Корчагин, 英文：Pavel Korchagin）&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;
+&lt;br /&gt;
+
+&lt;div class=&quot;indent-background&quot;&gt;
+生活赋予我们的一种巨大的和无限高贵的礼品，这就是青春：充满着力量，充满着期待、志愿，充满着求知和斗争的志向，充满着希望、信心的青春。
+&lt;/div&gt;
+
+&lt;br /&gt;
+
+&lt;/div&gt;
+</code></pre>
+<a class="header" href="#2-呈现效果-1" id="2-呈现效果-1"><h3>2. 呈现效果</h3></a>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<style type="text/css">
+    p {
+        text-indent:2em;
+    }
+
+    .indent-background {
+        text-indent:2em;
+        background: red;
+    }
+</style>
+<p>
+我在自己的一生里也曾经历过被遗弃和背叛的痛苦。可是有一种东西却救了我：我的生活永远是有目的、有意义的，这就是为社会主义而奋斗。
+</p>
+<div align="center">
+<b><i>保尔·柯察金（Павел Корчагин, 英文：Pavel Korchagin）</i></b></div>
+<br />
+<div class="indent-background">
+生活赋予我们的一种巨大的和无限高贵的礼品，这就是青春：充满着力量，充满着期待、志愿，充满着求知和斗争的志向，充满着希望、信心的青春。
+</div>
+<p><br /></p>
+</div>
+<p><br /><br /><br /></p>
 <hr />
 
                     </main>
