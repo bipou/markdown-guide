@@ -17,7 +17,13 @@ GFM对于Markdown的语法和特性有些为语法扩展，有些为新增特性
 - [引用（Blockquotes）](#引用blockquotes)
 - [代码（Code）](#代码code)
 - [表格（Tables）](#表格tables)
+
+*主要应用于GitHub的Markdown扩展——*
+
 - [SHA引用](#SHA引用)
+- [Issue引用](#issue引用)
+- [通知用户（@mentions）](#通知用户mentions)
+
 
 ------
 
@@ -356,7 +362,11 @@ print(os)
 <br />
 </div>
 
-## SHA引用
+
+
+## 主要应用于GitHub的Markdown扩展
+
+### SHA引用
 
 GitHub仓库中，任何对提交（git commit）的SHA-1散列（哈希值）的引用都将自动转换为指向GitHub上提交的链接。
 
@@ -365,6 +375,22 @@ GitHub仓库中，任何对提交（git commit）的SHA-1散列（哈希值）�
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 ```
+
+### Issue引用
+
+在GitHub仓库中，任何涉及`Issue`或`拉请求`的数字都将自动转换为链接。
+
+``` Markdown
+#1
+mojombo#1
+mojombo/github-flavored-markdown#1
+```
+
+### 通知用户（@mentions）
+
+在GitHub仓库的Issues中，`@`符号后输入用户名，就会通知此用户来查看评论。GitHub中称此为`@mention`。
+
+不仅可以通知用户，还可以`@`通知*所在组织*中的团队。
 
 
 
