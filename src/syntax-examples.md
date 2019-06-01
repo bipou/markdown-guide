@@ -402,10 +402,15 @@ mojombo/github-flavored-markdown#1
 
 GitHub支持[表情符号](https://help.github.com/en/articles/basic-writing-and-formatting-syntax#using-emoji)，格式为：`:EMOJICODE:`。
 
+``` Markdown
 @zzy :+1: 这个PR看起来非常好 - 可以合并到主仓库了！ :shipit:
+```
 
 在GitHub中，会展示为如下效果——
-![emoji](./theme/blockquotes.png)
+
+![emoji](./theme/emoji.png)
+
+GitHub支持的表情符号很多，详细请查看[表情符号清单](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)。
 
 <br /><br /><br />
 
