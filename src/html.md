@@ -72,29 +72,18 @@ Markdown中，可以直接嵌入`HTML`内容，包括：`tags`，`css`等。
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 
 <style type="text/css">
-    p {
-        text-indent:2em;
-    }
-
     .indent-background {
         text-indent:2em;
         background: red;
     }
 </style>
 
-<p>
-我在自己的一生里也曾经历过被遗弃和背叛的痛苦。可是有一种东西却救了我：我的生活永远是有目的、有意义的，这就是为社会主义而奋斗。
-</p>
-
-<div align="center">
-<b><i>保尔·柯察金（Павел Корчагин, 英文：Pavel Korchagin）</i></b></div>
-<br />
-
-<div class="indent-background">
+<div class="indent-background" style="margin:10px">
 生活赋予我们的一种巨大的和无限高贵的礼品，这就是青春：充满着力量，充满着期待、志愿，充满着求知和斗争的志向，充满着希望、信心的青春。
 </div>
 
-<br />
+<div align="center" style="padding:10px">
+<b><i>保尔·柯察金（Павел Корчагин, 英文：Pavel Korchagin）</i></b></div>
 
 </div>
 ```
@@ -104,29 +93,18 @@ Markdown中，可以直接嵌入`HTML`内容，包括：`tags`，`css`等。
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 
 <style type="text/css">
-    p {
-        text-indent:2em;
-    }
-
     .indent-background {
         text-indent:2em;
         background: red;
     }
 </style>
 
-<p>
-我在自己的一生里也曾经历过被遗弃和背叛的痛苦。可是有一种东西却救了我：我的生活永远是有目的、有意义的，这就是为社会主义而奋斗。
-</p>
-
-<div align="center">
-<b><i>保尔·柯察金（Павел Корчагин, 英文：Pavel Korchagin）</i></b></div>
-<br />
-
-<div class="indent-background">
+<div class="indent-background" style="margin:10px">
 生活赋予我们的一种巨大的和无限高贵的礼品，这就是青春：充满着力量，充满着期待、志愿，充满着求知和斗争的志向，充满着希望、信心的青春。
 </div>
 
-<br />
+<div align="center" style="padding:10px">
+<b><i>保尔·柯察金（Павел Корчагин, 英文：Pavel Korchagin）</i></b></div>
 
 </div>
 
