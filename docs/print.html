@@ -203,6 +203,13 @@
 <li><a href="#%E4%BB%A3%E7%A0%81code">代码（Code）</a></li>
 <li><a href="#%E8%A1%A8%E6%A0%BCtables">表格（Tables）</a></li>
 </ul>
+<p><em>主要应用于GitHub的Markdown扩展——</em></p>
+<ul>
+<li><a href="#SHA%E5%BC%95%E7%94%A8">SHA引用</a></li>
+<li><a href="#issue%E5%BC%95%E7%94%A8">Issue引用</a></li>
+<li><a href="#%E7%94%A8%E6%88%B7%E9%80%9A%E7%9F%A5mentions">用户通知（@mentions）</a></li>
+<li><a href="#%E8%A1%A8%E6%83%85%E7%AC%A6%E5%8F%B7emoji">表情符号（Emoji）</a></li>
+</ul>
 <hr />
 <a class="header" href="#标题headers" id="标题headers"><h2>标题（Headers）</h2></a>
 <p>Markdown中共有6级标题，从 <code>#</code>、<code>##</code>、依次类推到 <code>######</code>。</p>
@@ -224,8 +231,12 @@
 <a class="header" href="#六级标题" id="六级标题"><h6>六级标题</h6></a>
 </div>
 <a class="header" href="#字体emphasis" id="字体emphasis"><h2>字体（Emphasis）</h2></a>
-<p>用 <code>*</code> 或者 <code>_</code> 包裹文本进行 <em>斜体</em> 格式化，用 <code>**</code> 或者 <code>__</code> 包裹文本进行 <strong>粗体</strong> 格式化。</p>
-<p><code>**</code> 或者 <code>__</code> 可以和  <code>*</code> 或者 <code>_</code> <strong><em>组合使用</em></strong>。</p>
+<ul>
+<li><em>斜体</em>：用 <code>*</code> 或者 <code>_</code> 包裹文本进行 <em>斜体</em> 格式化。</li>
+<li><strong>粗体</strong>：用 <code>**</code> 或者 <code>__</code> 包裹文本进行 <strong>粗体</strong> 格式化。</li>
+<li><del>删除线</del>：用<code>~~</code>包裹文本进行<del>删除线</del>格式化，部分工具和网站不支持展示。</li>
+</ul>
+<p><code>**</code> 或者 <code>__</code>、<code>*</code> 或者 <code>_</code>，以及<code>~~</code> 可以 <del><strong><em>组合使用</em></strong></del>。</p>
 <a class="header" href="#1-实例代码-1" id="1-实例代码-1"><h3>1. 实例代码</h3></a>
 <pre><code class="language-Markdown">*这行文本是斜体*
 
@@ -236,6 +247,8 @@ _这行文本是斜体_
 __这行文本是粗体__
 
 _这行文本是 **粗体** + 斜体_
+
+~~_这行文本是 **粗体** + 斜体_ + 删除线~~
 </code></pre>
 <a class="header" href="#2-呈现效果-1" id="2-呈现效果-1"><h3>2. 呈现效果</h3></a>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
@@ -244,6 +257,7 @@ _这行文本是 **粗体** + 斜体_
 <p><strong>这行文本是粗体</strong></p>
 <p><strong>这行文本是粗体</strong></p>
 <p><em>这行文本是 <strong>粗体</strong> + 斜体</em></p>
+<p><del><em>这行文本是 <strong>粗体</strong> + 斜体</em> + 删除线</del></p>
 </div>
 <a class="header" href="#列表lists" id="列表lists"><h2>列表（Lists）</h2></a>
 <p>列表分为<code>无序列表</code>、<code>有序列表</code>，以及<code>任务列表</code>。</p>
@@ -438,6 +452,29 @@ print(os)
 </tbody></table>
 <p><br /></p>
 </div>
+<a class="header" href="#主要应用于github的markdown扩展" id="主要应用于github的markdown扩展"><h2>主要应用于GitHub的Markdown扩展</h2></a>
+<a class="header" href="#sha引用" id="sha引用"><h3>SHA引用</h3></a>
+<p>GitHub仓库中，任何对提交（git commit）的SHA-1散列（哈希值）的引用都将自动转换为指向GitHub上提交的链接。</p>
+<pre><code class="language-Markdown">16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
+</code></pre>
+<a class="header" href="#issue引用" id="issue引用"><h3>Issue引用</h3></a>
+<p>在GitHub仓库中，任何涉及<code>Issue</code>或<code>拉请求</code>的数字都将自动转换为链接。</p>
+<pre><code class="language-Markdown">#1
+mojombo#1
+mojombo/github-flavored-markdown#1
+</code></pre>
+<a class="header" href="#用户通知mentions" id="用户通知mentions"><h3>用户通知（@mentions）</h3></a>
+<p>在GitHub仓库的Issues中，<code>@</code>符号后输入用户名，就会通知此用户来查看评论。GitHub中称此为<code>@mention</code>。</p>
+<p>不仅可以通知用户，还可以<code>@</code>通知<em>所在组织</em>中的团队。</p>
+<a class="header" href="#表情符号emoji" id="表情符号emoji"><h3>表情符号（Emoji）</h3></a>
+<p>GitHub支持<a href="https://help.github.com/en/articles/basic-writing-and-formatting-syntax#using-emoji">表情符号</a>，格式为：<code>:EMOJICODE:</code>。</p>
+<pre><code class="language-Markdown">@zzy :+1: 这个PR看起来非常好 - 可以合并到主仓库了！ :shipit:
+</code></pre>
+<p>在GitHub中，会展示为如下效果——</p>
+<p><img src="./theme/emoji.png" alt="emoji" /></p>
+<p>GitHub支持的表情符号很多，详细请查看<a href="https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md">表情符号清单</a>。</p>
 <p><br /><br /><br /></p>
 <hr />
 <a class="header" href="#markdown和html融合" id="markdown和html融合"><h1>Markdown和HTML融合</h1></a>
