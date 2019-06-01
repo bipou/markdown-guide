@@ -17,6 +17,7 @@ GFM对于Markdown的语法和特性有些为语法扩展，有些为新增特性
 - [引用（Blockquotes）](#引用blockquotes)
 - [代码（Code）](#代码code)
 - [表格（Tables）](#表格tables)
+- [SHA引用](#SHA引用)
 
 ------
 
@@ -343,7 +344,8 @@ print(os)
 
 ### 2. 呈现效果
 
-
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<br />
 
 表头一  | 表头二  | 表头三
 ------ | ------ | ------
@@ -352,14 +354,19 @@ print(os)
 三行描述部分一 | 三行描述部分二 | 三行描述部分三
 
 <br />
+</div>
 
+## SHA引用
 
+GitHub仓库中，任何对提交（git commit）的SHA-1散列（哈希值）的引用都将自动转换为指向GitHub上提交的链接。
+
+``` Markdown
 16c999e8c71134401a78d4d46435517b2271d6ac
-
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo/
+mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
+```
 
-github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
+
 
 <br /><br /><br />
 
