@@ -22,8 +22,8 @@ GFM对于Markdown的语法和特性有些为语法扩展，有些为新增特性
 
 - [SHA引用](#SHA引用)
 - [Issue引用](#issue引用)
-- [通知用户（@mentions）](#通知用户mentions)
-
+- [用户通知（@mentions）](#用户通知mentions)
+- [表情符号（Emoji）](#表情符号emoji)
 
 ------
 
@@ -392,15 +392,18 @@ mojombo#1
 mojombo/github-flavored-markdown#1
 ```
 
-### 通知用户（@mentions）
+### 用户通知（@mentions）
 
 在GitHub仓库的Issues中，`@`符号后输入用户名，就会通知此用户来查看评论。GitHub中称此为`@mention`。
 
 不仅可以通知用户，还可以`@`通知*所在组织*中的团队。
 
-### 
+### 表情符号（Emoji）
 
-~~this~~
+GitHub支持[表情符号](https://help.github.com/en/articles/basic-writing-and-formatting-syntax#using-emoji)，格式为：`:EMOJICODE:`。
+
+@octocat :+1: 这个PR看起来非常好 - 可以合并到主仓库了！ :shipit:
+
 
 <br /><br /><br />
 
