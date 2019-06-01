@@ -90,7 +90,9 @@ _这行文本是 **粗体** + 斜体_
 
 ## 列表（Lists）
 
-列表分为`无序列表`和`有序列表`。
+列表分为`无序列表`、`有序列表`，以及`任务列表`。
+
+*注*：`任务列表`在部分Markdown工具软件或者网站不支持展示。
 
 ### 无序列表
 
@@ -303,10 +305,10 @@ print(os)
 
 <br /><br /><br />
 
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+- [x] 表情符号、引用API，以及<del>标签</del>已被支持。
+- [x] 语法分析已经完成。
+- [x] 此项已完成。
+- [ ] 此项未完成。
 
 First Header | Second Header
 ------------ | -------------
