@@ -26,7 +26,7 @@ gitBook是开源软件，可以在[GitHub上找到源代码](https://github.com/
 
 ## 编辑器
 
-市面上我们可以找到很多 Markdown 编辑器，比如Typora、MacDown、Bear、MarkdownPad、MarkdownX、JetBrains’s IDE（需要安装插件）、Atom、简书、CSDN以及GitBook自家的GitBook Editor等等。
+Markdown编辑器众多，简单易用。比如vsCode、JetBrains IDE和Eclipse IDE（需要安装插件）、typora、macDown、bear、markdownPad、markdownX、Atom、简书、CSDN以及GitBook自家的GitBook Editor等等。
 
 下表是整理的代表性Markdown编辑器，仅供参考。
 
