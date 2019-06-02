@@ -16,7 +16,7 @@
 
 `mdBook`提供更低层次API的封装，除了编写书籍、文档外，还可以由Rustdoc生成API文档。
 
-`mdBook`是免费的开源软件，可以在[GitHub上找到源代码](https://github.com/rust-lang-nursery/mdBook)。开发团队非常活跃，响应和维护都很积极，使用问题和Bug可以发布在[GitHub Issue](https://github.com/rust-lang-nursery/mdBook/issues)跟踪器上。
+`mdBook`是免费的开源软件，可以在[GitHub上找到源代码](https://github.com/rust-lang-nursery/mdBook)。开发团队非常活跃，响应和维护都很积极，使用问题和Bug可以发布在[GitHub Issue跟踪器](https://github.com/rust-lang-nursery/mdBook/issues)。
 
 ### gitBook
 
