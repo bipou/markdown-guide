@@ -12,7 +12,7 @@
 
 `mdBook`是一个命令行工具，可以使用`Markdown`文件创建书籍。采用[Rust](http://www.rust-lang.org)语言编写，运行速度非常快。
 
-可以输出`HTML``PDF``eBook`等格式的电子书，功能强大，使用方便。
+可以输出`HTML`、`PDF`、`eBook`等格式的电子书，功能强大，使用方便。
 
 `mdBook`提供更低层次API的封装，除了编写书籍、文档外，还可以由Rustdoc生成API文档。
 
@@ -20,7 +20,7 @@
 
 ### gitBook
 
-gitBook是一个基于Node.js的命令行工具，开发周期长，比较成熟。支持Markdown和AsciiDoc两种语法格式，可以输出HTMLPDF、eBook等格式的电子书。
+gitBook是一个基于Node.js的命令行工具，开发周期长，比较成熟。支持Markdown和AsciiDoc两种语法格式，可以输出HTML、PDF、eBook等格式的电子书。
 
 gitBook是开源软件，可以在[GitHub上找到源代码](https://github.com/GitbookIO/gitbook)。
 
@@ -32,11 +32,11 @@ gitBook是开源软件，可以在[GitHub上找到源代码](https://github.com/
 
 名称  | 说明 | 运行平台 | 是否免费
 ------ | ------ | ------ | ------
-typora | 所见即所得的编辑器 | macOS、Windows、Linux | 免费
-macDown | macOS上强大的编辑器 | macOS | 免费
-markdownX | Android上的轻量编辑器 | Android | 免费
 gitBook Editor | 和gitBook无缝集成的编辑器 | macOS、Windows、Linux | 免费 + 收费
 markdownPad | Windows上强大的编辑器 | Windows | 免费 + 收费
 bear | 功能齐全的编辑器 | iPhone、iPad、macOS | 免费 + 内购
+typora | 所见即所得的编辑器 | macOS、Windows、Linux | 免费
+macDown | macOS上强大的编辑器 | macOS | 免费
+markdownX | Android上的轻量编辑器 | Android | 免费
 
 ------
