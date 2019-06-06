@@ -347,6 +347,8 @@ Markdown中注释可以通过二种方式实现：
 - HTML标签：用HTML标签显示属性`style='display: none'`标签来实现注释；
 - HACK方法：用`Markdown解析原理`来实现注释。
 
+_注：HACK方法基于`Markdown解析原理`，相较于`HTML注释`和`HTML标签显示属性`要稳定得多，但语义化差。_
+
 ### 1. 实例代码
 
 ``` Markdown
