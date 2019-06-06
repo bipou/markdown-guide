@@ -201,6 +201,7 @@
 <li><a href="#%E9%94%9A%E7%82%B9anchors">锚点（Anchors）</a></li>
 <li><a href="#%E5%BC%95%E7%94%A8blockquotes">引用（Blockquotes）</a></li>
 <li><a href="#%E4%BB%A3%E7%A0%81code">代码（Code）</a></li>
+<li><a href="#%E6%B3%A8%E9%87%8Acomment">注释（Comment）</a></li>
 <li><a href="#%E8%A1%A8%E6%A0%BCtables">表格（Tables）</a></li>
 </ul>
 <p><em>主要应用于GitHub的Markdown扩展——</em></p>
@@ -429,20 +430,78 @@ print(os)
 }
 </code></pre>
 </div>
+<a class="header" href="#注释comment" id="注释comment"><h2>注释（Comment）</h2></a>
+<p>Markdown中注释可以通过二种方式实现：</p>
+<ul>
+<li>HTML注释：用<code>&lt;!--...--&gt;</code>标签来实现注释；</li>
+<li>HTML标签：用HTML标签显示属性<code>style='display: none'</code>标签来实现注释；</li>
+<li>HACK方法：用<code>Markdown解析原理</code>来实现注释。</li>
+</ul>
+<a class="header" href="#1-实例代码-10" id="1-实例代码-10"><h3>1. 实例代码</h3></a>
+<pre><code class="language-Markdown">HTML注释 &lt;!--...--&gt;：
+
+&lt;!-- 我是单行注释，不会在浏览器中显示。--&gt;
+
+&lt;!--
+我是多行，
+段落注释，
+不会在浏览器中显示。
+--&gt;
+
+HTML标签实现注释：
+
+&lt;div style='display: none'&gt;
+我是注释，
+多行段落，
+不会在浏览器中显示。
+&lt;/div&gt;
+
+HACK方法注释：
+
+[](我是注释，不会在浏览器中显示。)
+
+[注释关键字]:(注释描述。)
+
+[#]:&lt;&gt; (我是注释，不会在浏览器中显示。)
+[#]:# (我是注释，不会在浏览器中显示。)
+[注释]:&lt;&gt; (我是注释，不会在浏览器中显示。)
+[注释]:# (我是注释，不会在浏览器中显示。)
+[注释]:// (我是注释，不会在浏览器中显示。)
+[//]:&lt;&gt; (我是注释，不会在浏览器中显示。)
+[//]:# (我是注释，不会在浏览器中显示。)
+</code></pre>
+<a class="header" href="#2-呈现效果-10" id="2-呈现效果-10"><h3>2. 呈现效果</h3></a>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>HTML注释 <!--...-->：</p>
+<!-- 我是单行注释，不会在浏览器中显示。-->
+<!--
+我是多行，
+段落注释，
+不会在浏览器中显示。
+-->
+<p>HTML标签实现注释：</p>
+<div style='display: none'>
+我是注释，
+多行段落，
+不会在浏览器中显示。
+</div>
+<p>HACK方法注释：</p>
+<p><a href="%E6%88%91%E6%98%AF%E6%B3%A8%E9%87%8A%EF%BC%8C%E4%B8%8D%E4%BC%9A%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E6%98%BE%E7%A4%BA%E3%80%82"></a></p>
+</div>
 <a class="header" href="#表格tables" id="表格tables"><h2>表格（Tables）</h2></a>
 <ul>
 <li>通过字符组合单元格，用管道分隔符 <code>|</code> 来分割单元格；无需上下对齐。</li>
 <li>通过连字符 <code>-</code> 来声明表头，仅第一行底部需要。</li>
 <li>通常情况下，表格默认<strong>居中</strong>。</li>
 </ul>
-<a class="header" href="#1-实例代码-10" id="1-实例代码-10"><h3>1. 实例代码</h3></a>
+<a class="header" href="#1-实例代码-11" id="1-实例代码-11"><h3>1. 实例代码</h3></a>
 <pre><code class="language-Markdown">表头一 | 表头二 | 表头三
 ------- | ------ | ------
 一行单元格一 | 一行单元格二 | 一行单元格三
 二行内容一 | 二行内容二 | 二行内容三
 三行描述部分一 | 三行描述部分二 | 三行描述部分三
 </code></pre>
-<a class="header" href="#2-呈现效果-10" id="2-呈现效果-10"><h3>2. 呈现效果</h3></a>
+<a class="header" href="#2-呈现效果-11" id="2-呈现效果-11"><h3>2. 呈现效果</h3></a>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <br />
 <table><thead><tr><th>表头一  </th><th> 表头二  </th><th> 表头三</th></tr></thead><tbody>
@@ -484,7 +543,7 @@ mojombo/github-flavored-markdown#1
 <li><a href="#%E5%B5%8C%E5%85%A5css">嵌入CSS</a></li>
 </ul>
 <a class="header" href="#嵌入html-tags" id="嵌入html-tags"><h2>嵌入HTML-tags</h2></a>
-<a class="header" href="#1-实例代码-11" id="1-实例代码-11"><h3>1. 实例代码</h3></a>
+<a class="header" href="#1-实例代码-12" id="1-实例代码-12"><h3>1. 实例代码</h3></a>
 <pre><code class="language-HTML">&lt;div style=&quot;border:1px solid;margin:0px;padding:0px 0px 0px 15px&quot;&gt;
 
 &lt;strong&gt;1.做个耐心的聆听者。&lt;/strong&gt;
@@ -511,7 +570,7 @@ mojombo/github-flavored-markdown#1
 
 &lt;/div&gt;
 </code></pre>
-<a class="header" href="#2-呈现效果-11" id="2-呈现效果-11"><h3>2. 呈现效果</h3></a>
+<a class="header" href="#2-呈现效果-12" id="2-呈现效果-12"><h3>2. 呈现效果</h3></a>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p><strong>1.做个耐心的聆听者。</strong></p>
 <p>2.永远不要流露出厌烦的表情。</p>
@@ -526,7 +585,7 @@ mojombo/github-flavored-markdown#1
 <br /></p>
 </div>
 <a class="header" href="#嵌入css" id="嵌入css"><h2>嵌入CSS</h2></a>
-<a class="header" href="#1-实例代码-12" id="1-实例代码-12"><h3>1. 实例代码</h3></a>
+<a class="header" href="#1-实例代码-13" id="1-实例代码-13"><h3>1. 实例代码</h3></a>
 <pre><code class="language-HTML">&lt;div style=&quot;border:1px solid;margin:0px;padding:0px 0px 0px 15px&quot;&gt;
 
 &lt;style type=&quot;text/css&quot;&gt;
@@ -545,7 +604,7 @@ mojombo/github-flavored-markdown#1
 
 &lt;/div&gt;
 </code></pre>
-<a class="header" href="#2-呈现效果-12" id="2-呈现效果-12"><h3>2. 呈现效果</h3></a>
+<a class="header" href="#2-呈现效果-13" id="2-呈现效果-13"><h3>2. 呈现效果</h3></a>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <style type="text/css">
     .indent-background {
@@ -615,6 +674,21 @@ mojombo/github-flavored-markdown#1
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
         
         
