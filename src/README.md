@@ -2,7 +2,7 @@
 
 [Markdown指南-https://markdown.budshome.com](https://markdown.budshome.com)，基础内容译自GitHub官方Mastering Markdown文档。
 
-💥 笔者进行了结构重组、实例中文化、补充了官方文档未提及的Markdown语法、增加了Markdown和HTML融合应用，以及Markdown工具链等内容。
+💥 笔者补充了GitHub官方文档未提及的Markdown语法、重组了内容结构、将实例中文化、增加了Markdown和HTML融合应用，以及Markdown工具链等内容。
 
 本文目的为整理Markdown知识，希望可以帮助到读者。
 
