@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Markdown和HTML融合 - Markdown指南 - Markdown Guide</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Markdown指南, markdown guide, 精通Markdown, Markdown教程, Markdown语法, Markdown实例, Markdown实践">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+        
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?3face5470342fbe2d269ac2b6fb30a9d";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+    <body class="default_theme">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="index.html"><strong aria-hidden="true">1.</strong> 序言</a></li><li><a href="intro.html"><strong aria-hidden="true">2.</strong> Markdown介绍</a></li><li><a href="syntax-examples.html"><strong aria-hidden="true">3.</strong> Markdown语法和实例</a></li><li><a href="html.html" class="active"><strong aria-hidden="true">4.</strong> Markdown和HTML融合</a></li><li><a href="toolchain.html"><strong aria-hidden="true">5.</strong> Markdown工具链</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Markdown指南 - Markdown Guide</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#markdown和html融合" id="markdown和html融合"><h1>Markdown和HTML融合</h1></a>
+<p>Markdown中，可以直接嵌入<code>HTML</code>内容，包括：<code>tags</code>，<code>css</code>等。</p>
+<ul>
+<li><a href="#%E5%B5%8C%E5%85%A5html-tags">嵌入HTML-tags</a></li>
+<li><a href="#%E5%B5%8C%E5%85%A5css">嵌入CSS</a></li>
+</ul>
+<a class="header" href="#嵌入html-tags" id="嵌入html-tags"><h2>嵌入HTML-tags</h2></a>
+<a class="header" href="#1-实例代码" id="1-实例代码"><h3>1. 实例代码</h3></a>
+<pre><code class="language-HTML">&lt;div style=&quot;border:1px solid;margin:0px;padding:0px 0px 0px 15px&quot;&gt;
+
+&lt;strong&gt;1.做个耐心的聆听者。&lt;/strong&gt;
+
+2.永远不要流露出厌烦的表情。
+
+&lt;del&gt;3.等待，直到他人表明观点，然后附和他们。&lt;/del&gt;
+
+4.让他人表明宗教立场，而后发表同样的观点。
+
+&lt;del&gt;5.可以暗示涉及“性”的话题，但若对方没有表示出强烈的兴趣，就不要继续下去。&lt;/del&gt;
+
+6.永远不要谈论疾病，除非对方特别关心。
+
+7.永远不要刺探个人隐私，对方最终会告诉你一切。
+
+8.永远不要自吹自擂。
+
+9.拒绝邋遢。
+
+10.永远别喝醉。
+
+&lt;br /&gt;
+
+&lt;/div&gt;
+</code></pre>
+<a class="header" href="#2-呈现效果" id="2-呈现效果"><h3>2. 呈现效果</h3></a>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p><strong>1.做个耐心的聆听者。</strong></p>
+<p>2.永远不要流露出厌烦的表情。</p>
+<p><del>3.等待，直到他人表明观点，然后附和他们。</del></p>
+<p>4.让他人表明宗教立场，而后发表同样的观点。</p>
+<p><del>5.可以暗示涉及“性”的话题，但若对方没有表示出强烈的兴趣，就不要继续下去。</del></p>
+<p>6.永远不要谈论疾病，除非对方特别关心。</p>
+<p>7.永远不要刺探个人隐私，对方最终会告诉你一切。</p>
+<p>8.永远不要自吹自擂。</p>
+<p>9.拒绝邋遢。</p>
+<p>10.永远别喝醉。
+<br /></p>
+</div>
+<a class="header" href="#嵌入css" id="嵌入css"><h2>嵌入CSS</h2></a>
+<a class="header" href="#1-实例代码-1" id="1-实例代码-1"><h3>1. 实例代码</h3></a>
+<pre><code class="language-HTML">&lt;div style=&quot;border:1px solid;margin:0px;padding:0px 0px 0px 15px&quot;&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+    .indent-background {
+        text-indent:2em;
+        background: red;
+    }
+&lt;/style&gt;
+
+&lt;div class=&quot;indent-background&quot; style=&quot;margin:10px&quot;&gt;
+生活赋予我们的一种巨大的和无限高贵的礼品，这就是青春：充满着力量，充满着期待、志愿，充满着求知和斗争的志向，充满着希望、信心的青春。
+&lt;/div&gt;
+
+&lt;div align=&quot;center&quot; style=&quot;padding:10px&quot;&gt;
+&lt;b&gt;&lt;i&gt;保尔·柯察金（Павел Корчагин, 英文：Pavel Korchagin）&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+<a class="header" href="#2-呈现效果-1" id="2-呈现效果-1"><h3>2. 呈现效果</h3></a>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<style type="text/css">
+    .indent-background {
+        text-indent:2em;
+        background: red;
+    }
+</style>
+<div class="indent-background" style="margin:10px">
+生活赋予我们的一种巨大的和无限高贵的礼品，这就是青春：充满着力量，充满着期待、志愿，充满着求知和斗争的志向，充满着希望、信心的青春。
+</div>
+<div align="center" style="padding:10px">
+<b><i>保尔·柯察金（Павел Корчагин, 英文：Pavel Korchagin）</i></b></div>
+</div>
+<p><br /><br /><br /></p>
+<hr />
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="syntax-examples.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="toolchain.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="syntax-examples.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="toolchain.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        
+        
+        <script src="ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+
+</html>
