@@ -1,2 +1,2 @@
+*.md linguist-language=Markdown
 *.md linguist-detectable=true
-*.js linguist-vendored=false
