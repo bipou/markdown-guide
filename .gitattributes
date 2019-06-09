@@ -1,2 +1,2 @@
-*.rb linguist-language=Java
 *.md linguist-detectable=true
+* linguist-language=Markdown
