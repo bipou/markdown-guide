@@ -3,3 +3,5 @@
 *.swp
 
 book
+
+.markdownlint.json
