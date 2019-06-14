@@ -1,6 +1,6 @@
 # Markdown指南
 
-[Markdown指南-http://markdown.budshome.com](http://markdown.budshome.com)，基础内容译自GitHub官方Mastering Markdown文档。
+[Markdown指南-https://markdown.budshome.com](https://markdown.budshome.com)，基础内容译自GitHub官方Mastering Markdown文档。
 
 💥 笔者补充了GitHub官方文档未提及的Markdown语法、重组了内容结构、将实例中文化、增加了Markdown和HTML融合应用，以及Markdown工具链等内容。
 
