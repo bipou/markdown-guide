@@ -163,13 +163,14 @@
 <ul>
 <li><a href="#%E6%A0%87%E9%A2%98headers">标题（Headers）</a></li>
 <li><a href="#%E5%AD%97%E4%BD%93emphasis">字体（Emphasis）</a></li>
-<li><a href="#%E5%88%97%E8%A1%A8lists">列表（Lists）</a></li>
+<li><a href="#%E5%8F%98%E9%87%8FVariables">变量（Variables）</a></li>
 <li><a href="#%E5%9B%BE%E5%83%8Fimages">图像（Images）</a></li>
 <li><a href="#%E9%93%BE%E6%8E%A5links">链接（Links）</a></li>
 <li><a href="#%E9%94%9A%E7%82%B9anchors">锚点（Anchors）</a></li>
 <li><a href="#%E5%BC%95%E7%94%A8blockquotes">引用（Blockquotes）</a></li>
 <li><a href="#%E4%BB%A3%E7%A0%81code">代码（Code）</a></li>
 <li><a href="#%E6%B3%A8%E9%87%8Acomment">注释（Comment）</a></li>
+<li><a href="#%E5%88%97%E8%A1%A8lists">列表（Lists）</a></li>
 <li><a href="#%E8%A1%A8%E6%A0%BCtables">表格（Tables）</a></li>
 </ul>
 <p><em>主要应用于GitHub的Markdown扩展——</em></p>
@@ -228,83 +229,47 @@ _这行文本是 **粗体** + 斜体_
 <p><em>这行文本是 <strong>粗体</strong> + 斜体</em></p>
 <p><del><em>这行文本是 <strong>粗体</strong> + 斜体</em> + 删除线</del></p>
 </div>
-<h2><a class="header" href="#列表lists" id="列表lists">列表（Lists）</a></h2>
-<p>列表分为<code>无序列表</code>、<code>有序列表</code>，以及<code>任务列表</code>。</p>
-<h3><a class="header" href="#无序列表" id="无序列表">无序列表</a></h3>
-<p>无序列表用<code>-</code>定义，<strong>下级列表相对于上级 <code>缩进空格 &gt;= 2</code></strong></p>
-<h4><a class="header" href="#1-实例代码-2" id="1-实例代码-2">1. 实例代码</a></h4>
-<pre><code class="language-Markdown">- 第一节
-- 第二节
-  - 第一条（缩进空格2个）
-  - 第二条
-</code></pre>
-<h4><a class="header" href="#2-呈现效果-2" id="2-呈现效果-2">2. 呈现效果</a></h4>
-<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<h2><a class="header" href="#变量variables" id="变量variables">变量（Variables）</a></h2>
+<p>Markdown 中支持<strong>变量定义</strong>和<strong>变量引用</strong>，且支持<strong>中文</strong>。</p>
 <ul>
-<li>第一节</li>
-<li>第二节
-<ul>
-<li>第一条（缩进空格2个）</li>
-<li>第二条</li>
+<li>变量定义：<code>[key]: value</code></li>
+<li>变量引用：<code>[key]</code>、<code>[text][key]</code></li>
 </ul>
-</li>
-</ul>
-</div>
-<h3><a class="header" href="#有序列表" id="有序列表">有序列表</a></h3>
-<p>有序列表<code>数字.</code>定义，<strong>下级列表相对于上级 <code>缩进空格 &gt; 2</code></strong></p>
-<h4><a class="header" href="#1-实例代码-3" id="1-实例代码-3">1. 实例代码</a></h4>
-<pre><code class="language-Markdown">1. 第一节
-1. 第二节
-1. 第三节
-   1. 第一条（缩进空格3个）
-   1. 第二条
+<h3><a class="header" href="#1-实例代码-2" id="1-实例代码-2">1. 实例代码</a></h3>
+<pre><code class="language-Markdown">定义链接：[Markdown指南]: https://markdown.budshome.com
+
+引用链接：
+
+key引用：[Markdown指南]
+
+value引用：[未定义文本][Markdown指南]
 </code></pre>
-<h4><a class="header" href="#2-呈现效果-3" id="2-呈现效果-3">2. 呈现效果</a></h4>
+<h3><a class="header" href="#2-呈现效果-2" id="2-呈现效果-2">2. 呈现效果</a></h3>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
-<ol>
-<li>第一节</li>
-<li>第二节</li>
-<li>第三节
-<ol>
-<li>第一条（缩进空格3个）</li>
-<li>第二条</li>
-</ol>
-</li>
-</ol>
-</div>
-<h3><a class="header" href="#任务列表" id="任务列表">任务列表</a></h3>
-<p><code>任务列表</code>是一个任务进度指示器，也可使用与拉取请求。</p>
-<p><em>注</em>：<code>任务列表</code>仅在部分Markdown工具软件或者网站支持展示，如GitHub；不是全部，使用前需要验证是否被支持。</p>
-<h4><a class="header" href="#1-实例代码-4" id="1-实例代码-4">1. 实例代码</a></h4>
-<pre><code class="language-Markdown">- [x] 表情符号、引用API，以及&lt;del&gt;标签&lt;/del&gt;已被支持。
-- [x] 语法分析已经完成。
-- [x] 此项已完成。
-- [ ] 此项未完成。
-</code></pre>
-<h4><a class="header" href="#2-呈现效果-4" id="2-呈现效果-4">2. 呈现效果</a></h4>
-<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
-<p><img src="./theme/tasklists.png" alt="task lists" /></p>
+<p>引用链接：</p>
+<p>key引用：<a href="https://markdown.budshome.com">Markdown指南</a></p>
+<p>value引用：<a href="https://markdown.budshome.com">未定义文本</a></p>
 </div>
 <h2><a class="header" href="#图像images" id="图像images">图像（Images）</a></h2>
-<p>格式：<code>Format: ![Alt Text](url)</code></p>
-<h3><a class="header" href="#1-实例代码-5" id="1-实例代码-5">1. 实例代码</a></h3>
+<p>格式：<code>![Alt Text](url)</code></p>
+<h3><a class="header" href="#1-实例代码-3" id="1-实例代码-3">1. 实例代码</a></h3>
 <pre><code class="language-Markdown">![Demo Image](./theme/demo-image.png)
 </code></pre>
-<h3><a class="header" href="#2-呈现效果-5" id="2-呈现效果-5">2. 呈现效果</a></h3>
+<h3><a class="header" href="#2-呈现效果-3" id="2-呈现效果-3">2. 呈现效果</a></h3>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p><img src="./theme/demo-image.png" alt="Demo Image" /></p>
 </div>
 <h2><a class="header" href="#链接links" id="链接links">链接（Links）</a></h2>
 <p>Markdown中可对url链接自动识别，但有些Markdown工具不支持（GitHub支持自动识别）。</p>
 <p>若需指定url链接文本，格式：<code>[文本](url)</code>。</p>
-<h3><a class="header" href="#1-实例代码-6" id="1-实例代码-6">1. 实例代码</a></h3>
+<h3><a class="header" href="#1-实例代码-4" id="1-实例代码-4">1. 实例代码</a></h3>
 <pre><code class="language-Markdown">[Markdown指南](https://markdown.budshome.com)
 
 https://markdown.budshome.com
 
 markdown.budshome.com
 </code></pre>
-<h3><a class="header" href="#2-呈现效果-6" id="2-呈现效果-6">2. 呈现效果</a></h3>
+<h3><a class="header" href="#2-呈现效果-4" id="2-呈现效果-4">2. 呈现效果</a></h3>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p><a href="https://markdown.budshome.com">Markdown指南</a></p>
 <p><a href="https://markdown.budshome.com">https://markdown.budshome.com</a></p>
@@ -317,17 +282,17 @@ markdown.budshome.com
 <li>不管标题大小写，锚点均为小写；</li>
 <li>可以使用中文做锚点，中文锚点需要省略<code>（</code>、<code>、</code>等中文标点符号。</li>
 </ul>
-<h3><a class="header" href="#1-实例代码-7" id="1-实例代码-7">1. 实例代码</a></h3>
+<h3><a class="header" href="#1-实例代码-5" id="1-实例代码-5">1. 实例代码</a></h3>
 <pre><code class="language-Markdown">标题：## 锚点（Anchors）
 锚点：[锚点（Anchors）](#锚点anchors)
 </code></pre>
-<h3><a class="header" href="#2-呈现效果-7" id="2-呈现效果-7">2. 呈现效果</a></h3>
+<h3><a class="header" href="#2-呈现效果-5" id="2-呈现效果-5">2. 呈现效果</a></h3>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p><a href="#%E9%94%9A%E7%82%B9anchors">锚点（Anchors）</a></p>
 </div>
 <h2><a class="header" href="#引用blockquotes" id="引用blockquotes">引用（Blockquotes）</a></h2>
 <p>Markdown中通过<code>&gt;</code>实现引用。引用可以多级嵌套：<code>&gt;&gt;</code>,<code>&gt;&gt;&gt;</code>；也可以和其它Markdown语法嵌套，比如无序列表。</p>
-<h3><a class="header" href="#1-实例代码-8" id="1-实例代码-8">1. 实例代码</a></h3>
+<h3><a class="header" href="#1-实例代码-6" id="1-实例代码-6">1. 实例代码</a></h3>
 <pre><code class="language-Markdown">&gt; 一级文本引用
 &gt;&gt; 二级文本引用
 
@@ -336,7 +301,7 @@ markdown.budshome.com
 &gt;&gt; * 这是第一项
 &gt;&gt; * 这是第二项
 </code></pre>
-<h3><a class="header" href="#2-呈现效果-8" id="2-呈现效果-8">2. 呈现效果</a></h3>
+<h3><a class="header" href="#2-呈现效果-6" id="2-呈现效果-6">2. 呈现效果</a></h3>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p>不同工具和输出呈现效果有差别，如下两种——</p>
 <p><strong>Markdown预览呈现</strong></p>
@@ -365,7 +330,7 @@ markdown.budshome.com
 <li>代码块：通过一对 ``` 包裹实现，可以指定代码的编程语言，如<code>Python</code>、<code>JavaScript</code>、<code>Rust</code>等，且支持<strong>语法高亮</strong>；</li>
 <li>缩进式：通过缩进 <code>&gt;=</code> 4空格实现，部分支持语法高亮。</li>
 </ul>
-<h3><a class="header" href="#1-实例代码-9" id="1-实例代码-9">1. 实例代码</a></h3>
+<h3><a class="header" href="#1-实例代码-7" id="1-实例代码-7">1. 实例代码</a></h3>
 <pre><code class="language-Markdown">行内式代码：`import os, sys`
 
 代码块（无需缩进）：
@@ -382,7 +347,7 @@ markdown.budshome.com
       return true
     }
 </code></pre>
-<h3><a class="header" href="#2-呈现效果-9" id="2-呈现效果-9">2. 呈现效果</a></h3>
+<h3><a class="header" href="#2-呈现效果-7" id="2-呈现效果-7">2. 呈现效果</a></h3>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p>行内式代码：<code>import os, sys</code></p>
 <p>代码块（无需缩进）：</p>
@@ -409,7 +374,7 @@ print(os)
 <blockquote>
 <p>HACK方法注释写法很灵活，基于Markdown解析原理即可。以下实例代码仅试举几例，读者可自由组合。</p>
 </blockquote>
-<h3><a class="header" href="#1-实例代码-10" id="1-实例代码-10">1. 实例代码</a></h3>
+<h3><a class="header" href="#1-实例代码-8" id="1-实例代码-8">1. 实例代码</a></h3>
 <pre><code class="language-Markdown">HTML注释 &lt;!--...--&gt;：
 
 &lt;!-- 我是单行注释，不会在浏览器中显示。--&gt;
@@ -442,7 +407,7 @@ HACK方法注释（此处仅是举例，读者可以利用Markdown解析原理�
 [//]:&lt;&gt; (我是注释，不会在浏览器中显示。)
 [//]:# (我是注释，不会在浏览器中显示。)
 </code></pre>
-<h3><a class="header" href="#2-呈现效果-10" id="2-呈现效果-10">2. 呈现效果</a></h3>
+<h3><a class="header" href="#2-呈现效果-8" id="2-呈现效果-8">2. 呈现效果</a></h3>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p>HTML注释 <!--...-->：</p>
 <!-- 我是单行注释，不会在浏览器中显示。-->
@@ -460,20 +425,77 @@ HACK方法注释（此处仅是举例，读者可以利用Markdown解析原理�
 <p>HACK方法注释（此处仅是举例，读者可以利用Markdown解析原理自由组合语法）：</p>
 <p><a href="%E6%88%91%E6%98%AF%E6%B3%A8%E9%87%8A%EF%BC%8C%E4%B8%8D%E4%BC%9A%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E6%98%BE%E7%A4%BA%E3%80%82"></a></p>
 </div>
+<h2><a class="header" href="#列表lists" id="列表lists">列表（Lists）</a></h2>
+<p>列表分为<code>无序列表</code>、<code>有序列表</code>，以及<code>任务列表</code>。</p>
+<h3><a class="header" href="#无序列表" id="无序列表">无序列表</a></h3>
+<p>无序列表用<code>-</code>定义，<strong>下级列表相对于上级 <code>缩进空格 &gt;= 2</code></strong></p>
+<h4><a class="header" href="#1-实例代码-9" id="1-实例代码-9">1. 实例代码</a></h4>
+<pre><code class="language-Markdown">- 第一节
+- 第二节
+  - 第一条（缩进空格2个）
+  - 第二条
+</code></pre>
+<h4><a class="header" href="#2-呈现效果-9" id="2-呈现效果-9">2. 呈现效果</a></h4>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<ul>
+<li>第一节</li>
+<li>第二节
+<ul>
+<li>第一条（缩进空格2个）</li>
+<li>第二条</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a class="header" href="#有序列表" id="有序列表">有序列表</a></h3>
+<p>有序列表<code>数字.</code>定义，<strong>下级列表相对于上级 <code>缩进空格 &gt; 2</code></strong></p>
+<h4><a class="header" href="#1-实例代码-10" id="1-实例代码-10">1. 实例代码</a></h4>
+<pre><code class="language-Markdown">1. 第一节
+1. 第二节
+1. 第三节
+   1. 第一条（缩进空格3个）
+   1. 第二条
+</code></pre>
+<h4><a class="header" href="#2-呈现效果-10" id="2-呈现效果-10">2. 呈现效果</a></h4>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<ol>
+<li>第一节</li>
+<li>第二节</li>
+<li>第三节
+<ol>
+<li>第一条（缩进空格3个）</li>
+<li>第二条</li>
+</ol>
+</li>
+</ol>
+</div>
+<h3><a class="header" href="#任务列表" id="任务列表">任务列表</a></h3>
+<p><code>任务列表</code>是一个任务进度指示器，也可使用与拉取请求。</p>
+<p><em>注</em>：<code>任务列表</code>仅在部分Markdown工具软件或者网站支持展示，如GitHub；不是全部，使用前需要验证是否被支持。</p>
+<h4><a class="header" href="#1-实例代码-11" id="1-实例代码-11">1. 实例代码</a></h4>
+<pre><code class="language-Markdown">- [x] 表情符号、引用API，以及&lt;del&gt;标签&lt;/del&gt;已被支持。
+- [x] 语法分析已经完成。
+- [x] 此项已完成。
+- [ ] 此项未完成。
+</code></pre>
+<h4><a class="header" href="#2-呈现效果-11" id="2-呈现效果-11">2. 呈现效果</a></h4>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p><img src="./theme/tasklists.png" alt="task lists" /></p>
+</div>
 <h2><a class="header" href="#表格tables" id="表格tables">表格（Tables）</a></h2>
 <ul>
 <li>通过字符组合单元格，用管道分隔符 <code>|</code> 来分割单元格；无需上下对齐。</li>
 <li>通过连字符 <code>-</code> 来声明表头，仅第一行底部需要。</li>
 <li>通常情况下，表格默认<strong>居中</strong>。</li>
 </ul>
-<h3><a class="header" href="#1-实例代码-11" id="1-实例代码-11">1. 实例代码</a></h3>
+<h3><a class="header" href="#1-实例代码-12" id="1-实例代码-12">1. 实例代码</a></h3>
 <pre><code class="language-Markdown">表头一 | 表头二 | 表头三
 ------- | ------ | ------
 一行单元格一 | 一行单元格二 | 一行单元格三
 二行内容一 | 二行内容二 | 二行内容三
 三行描述部分一 | 三行描述部分二 | 三行描述部分三
 </code></pre>
-<h3><a class="header" href="#2-呈现效果-11" id="2-呈现效果-11">2. 呈现效果</a></h3>
+<h3><a class="header" href="#2-呈现效果-12" id="2-呈现效果-12">2. 呈现效果</a></h3>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <br />
 <table><thead><tr><th>表头一</th><th>表头二</th><th>表头三</th></tr></thead><tbody>

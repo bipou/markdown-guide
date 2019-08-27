@@ -10,13 +10,14 @@ GFM对于Markdown的语法和特性有些为语法扩展，有些为新增特性
 
 - [标题（Headers）](#标题headers)
 - [字体（Emphasis）](#字体emphasis)
-- [列表（Lists）](#列表lists)
+- [变量（Variables）](#变量Variables)
 - [图像（Images）](#图像images)
 - [链接（Links）](#链接links)
 - [锚点（Anchors）](#锚点anchors)
 - [引用（Blockquotes）](#引用blockquotes)
 - [代码（Code）](#代码code)
 - [注释（Comment）](#注释comment)
+- [列表（Lists）](#列表lists)
 - [表格（Tables）](#表格tables)
 
 *主要应用于GitHub的Markdown扩展——*
@@ -103,86 +104,42 @@ _这行文本是 **粗体** + 斜体_
 
 </div>
 
-## 列表（Lists）
+## 变量（Variables）
 
-列表分为`无序列表`、`有序列表`，以及`任务列表`。
+Markdown 中支持**变量定义**和**变量引用**，且支持**中文**。
 
-### 无序列表
+- 变量定义：`[key]: value`
+- 变量引用：`[key]`、`[text][key]`
 
-无序列表用`-`定义，**下级列表相对于上级 `缩进空格 >= 2`**
-
-#### 1. 实例代码
+### 1. 实例代码
 
 ``` Markdown
-- 第一节
-- 第二节
-  - 第一条（缩进空格2个）
-  - 第二条
+定义链接：[Markdown指南]: https://markdown.budshome.com
+
+引用链接：
+
+key引用：[Markdown指南]
+
+value引用：[未定义文本][Markdown指南]
 ```
 
-#### 2. 呈现效果
+### 2. 呈现效果
 
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 
-- 第一节
-- 第二节
-  - 第一条（缩进空格2个）
-  - 第二条
+[Markdown指南]: https://markdown.budshome.com
 
-</div>
+引用链接：
 
-### 有序列表
+key引用：[Markdown指南]
 
-有序列表`数字.`定义，**下级列表相对于上级 `缩进空格 > 2`**
-
-#### 1. 实例代码
-
-``` Markdown
-1. 第一节
-1. 第二节
-1. 第三节
-   1. 第一条（缩进空格3个）
-   1. 第二条
-```
-
-#### 2. 呈现效果
-
-<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
-
-1. 第一节
-1. 第二节
-1. 第三节
-   1. 第一条（缩进空格3个）
-   1. 第二条
-
-</div>
-
-### 任务列表
-
-`任务列表`是一个任务进度指示器，也可使用与拉取请求。
-
-*注*：`任务列表`仅在部分Markdown工具软件或者网站支持展示，如GitHub；不是全部，使用前需要验证是否被支持。
-
-#### 1. 实例代码
-
-``` Markdown
-- [x] 表情符号、引用API，以及<del>标签</del>已被支持。
-- [x] 语法分析已经完成。
-- [x] 此项已完成。
-- [ ] 此项未完成。
-```
-
-#### 2. 呈现效果
-
-<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
-
-![task lists](./theme/tasklists.png)
+value引用：[未定义文本][Markdown指南]
 
 </div>
 
 ## 图像（Images）
 
-格式：`Format: ![Alt Text](url)`
+格式：`![Alt Text](url)`
 
 ### 1. 实例代码
 
@@ -422,6 +379,83 @@ HACK方法注释（此处仅是举例，读者可以利用Markdown解析原理�
 [注释]:// (我是注释，不会在浏览器中显示。)
 [//]:<> (我是注释，不会在浏览器中显示。)
 [//]:# (我是注释，不会在浏览器中显示。)
+
+</div>
+
+## 列表（Lists）
+
+列表分为`无序列表`、`有序列表`，以及`任务列表`。
+
+### 无序列表
+
+无序列表用`-`定义，**下级列表相对于上级 `缩进空格 >= 2`**
+
+#### 1. 实例代码
+
+``` Markdown
+- 第一节
+- 第二节
+  - 第一条（缩进空格2个）
+  - 第二条
+```
+
+#### 2. 呈现效果
+
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+
+- 第一节
+- 第二节
+  - 第一条（缩进空格2个）
+  - 第二条
+
+</div>
+
+### 有序列表
+
+有序列表`数字.`定义，**下级列表相对于上级 `缩进空格 > 2`**
+
+#### 1. 实例代码
+
+``` Markdown
+1. 第一节
+1. 第二节
+1. 第三节
+   1. 第一条（缩进空格3个）
+   1. 第二条
+```
+
+#### 2. 呈现效果
+
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+
+1. 第一节
+1. 第二节
+1. 第三节
+   1. 第一条（缩进空格3个）
+   1. 第二条
+
+</div>
+
+### 任务列表
+
+`任务列表`是一个任务进度指示器，也可使用与拉取请求。
+
+*注*：`任务列表`仅在部分Markdown工具软件或者网站支持展示，如GitHub；不是全部，使用前需要验证是否被支持。
+
+#### 1. 实例代码
+
+``` Markdown
+- [x] 表情符号、引用API，以及<del>标签</del>已被支持。
+- [x] 语法分析已经完成。
+- [x] 此项已完成。
+- [ ] 此项未完成。
+```
+
+#### 2. 呈现效果
+
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+
+![task lists](./theme/tasklists.png)
 
 </div>
 
