@@ -10,7 +10,7 @@ GFM对于Markdown的语法和特性有些为语法扩展，有些为新增特性
 
 - [标题（Headers）](#标题headers)
 - [字体（Emphasis）](#字体emphasis)
-- [变量（Variables）](#变量Variables)
+- [变量（Variables）](#变量variables)
 - [图像（Images）](#图像images)
 - [链接（Links）](#链接links)
 - [锚点（Anchors）](#锚点anchors)
