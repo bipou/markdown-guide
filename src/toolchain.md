@@ -28,7 +28,7 @@ gitBook是开源软件，可以在[GitHub上找到源代码](https://github.com/
 
 Markdown编辑器众多，简单易用。
 
-- 通过安装插件支持Markdown开发：vsCode、vim、sublime text、JetBrains IDE和Eclipse IDE等。
+1. 通过安装插件支持Markdown开发：vsCode、vim、sublime text、JetBrains IDE和Eclipse IDE等。
 
 下表是笔者推荐的、较受欢迎的、通过插件支持Markdown开发的编辑器，仅供参考。
 
@@ -38,7 +38,7 @@ Visual Studio Code | 插件很多，如：</br>Markdownlint、</br>Markdown All 
 Vim | 插件很多，如：</br>vim-markdown、</br>markdown-preview、</br>vim-instant-markdown | macOS、Windows、Linux | 免费
 Sublime Text | 插件很多，如：</br>MarkdownEditing、</br>OmniMarkupPreviewer | macOS、Windows、Linux | 免费+收费
 
-- 专用于支持Markdown开发：typora、macDown、bear、markdownPad、markdownX、Atom、简书、CSDN以及GitBook自家的GitBook Editor等等。
+2. 专用于支持Markdown开发：typora、macDown、bear、markdownPad、markdownX、Atom、简书、CSDN以及GitBook自家的GitBook Editor等等。
 
 下表是部分较受欢迎的、专用于支持Markdown开发的编辑器，仅供参考。
 
