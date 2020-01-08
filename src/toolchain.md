@@ -37,6 +37,7 @@ Markdown编辑器众多，简单易用。
 Visual Studio Code | 插件很多，如：</br>Markdownlint、</br>Markdown All in One、</br>Markdown PDF | macOS、Windows、Linux | 免费
 Vim | 插件很多，如：</br>vim-markdown、</br>markdown-preview、</br>vim-instant-markdown | macOS、Windows、Linux | 免费
 Sublime Text | 插件很多，如：</br>MarkdownEditing、</br>OmniMarkupPreviewer | macOS、Windows、Linux | 免费+收费
+JetBrains IDE、</br>Eclipse IDE | 可从IDE市场搜索插件，</br>官方和开发者均有提供 | macOS、Windows、Linux | 免费+收费
 
 2. 专用于支持Markdown开发：typora、macDown、bear、markdownPad、markdownX、Atom、简书、CSDN以及GitBook自家的GitBook Editor等等。
 
