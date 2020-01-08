@@ -34,7 +34,7 @@ Markdown编辑器众多，简单易用。
 
 名称  | 插件 | 运行平台 | 是否免费
 ------ | ------ | ------ | ------
-Visual Studio Code | 插件很多，如：</br>Markdownlint、Markdown All in One，</br> | macOS、Windows、Linux | 免费
+Visual Studio Code | 插件很多，如：</br>Markdownlint、</br>Markdown All in One、</br>Markdown PDF | macOS、Windows、Linux | 免费
 Vim | 插件很多，如：</br>vim-markdown、</br>markdown-preview、</br>vim-instant-markdown | macOS、Windows、Linux | 免费
 Sublime Text | 插件很多，如：</br>MarkdownEditing、</br>OmniMarkupPreviewer | macOS、Windows、Linux | 免费+收费
 
