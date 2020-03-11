@@ -154,6 +154,156 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#markdown数学公式" id="markdown数学公式">Markdown数学公式</a></h1>
+<p>Markdown中，支持完整的<code>LaTeX</code>数学公式语法。</p>
+<blockquote>
+<p><em>注：</em> 此章节包含<code>LaTeX</code>数学公式语法，须通过工具（如 <a href="https://mdbook.budshome.com">mdBook</a>、gitBook），或者已嵌<code>LaTeX</code>公式的编辑器，方可预览或构建（<a href="https://markdown.budshome.com/formula.html">阅读已构建电子书</a>）。</p>
+</blockquote>
+<ul>
+<li><a href="#%E5%85%AC%E5%BC%8F%E6%A0%B7%E5%BC%8F%E5%8F%8A%E6%B3%A8%E9%87%8A">公式样式及注释</a></li>
+<li><a href="#%E4%B8%8A%E6%A0%87%E5%92%8C%E4%B8%8B%E6%A0%87">上标和下标</a></li>
+<li><a href="#%E4%B8%8A%E5%88%92%E7%BA%BF%E4%B8%8E%E4%B8%8B%E5%88%92%E7%BA%BF">上划线与下划线</a></li>
+<li><a href="#%E5%88%86%E6%95%B0">分数</a></li>
+<li><a href="#%E6%96%B9%E7%A8%8B%E7%BB%84">方程组</a></li>
+<li><a href="#%E8%BF%90%E7%AE%97%E7%AC%A6">运算符</a></li>
+<li><a href="#%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7">特殊符号</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8html%E8%AF%AD%E6%B3%95%E8%A1%A8%E8%BE%BE%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F">使用<code>HTML</code>语法表达数学公式</a></li>
+</ul>
+<h2><a class="header" href="#公式样式及注释" id="公式样式及注释">公式样式及注释</a></h2>
+<blockquote>
+<p>数学公式样式的支持程度，取决于你使用的构建工具（如 <a href="https://mdbook.budshome.com">mdBook</a>、gitBook）或编辑器。</p>
+</blockquote>
+<ul>
+<li>换行：<code>\\</code>、<code>\\\\</code></li>
+<li>空格：<code>\</code>、<code>\,</code>、<code>\;</code>、<code>\quad</code>、<code>\qquad</code></li>
+<li>居中：用 <code>$$</code> 包裹</li>
+<li>字体样式：加粗（<code>\mathbf</code>）、斜体（<code>\mathit</code>）</li>
+<li>字体大小：<code>\tiny</code>、<code>\scriptsize</code>、<code>\small</code>、<code>\normalsize</code>、<code>\large</code>、<code>\Large</code>、<code>\huge</code>、<code>\Huge</code></li>
+<li>颜色：<code>\color{颜色值}{数/字/符}</code></li>
+<li>注释：<code>\text{内容}</code></li>
+</ul>
+<h3><a class="header" href="#1-实例代码" id="1-实例代码">1. 实例代码</a></h3>
+<pre><code class="language-Markdown">$$
+a \ b \\
+a \quad b \\
+a \qquad b \\
+\mathit{a} + \mathbf{b} \\
+X^{2m}_{3n} \\
+\text{注意和下面默认大小对比——} \\
+\tiny X^{2m}_{3n} \\
+\scriptsize X^{2m}_{3n} \\
+\small X^{2m}_{3n} \\
+\normalsize X^{2m}_{3n} \text{（默认大小）} \\
+\large X^{2m}_{3n}  \\
+\Large X^{2m}_{3n}  \\
+\huge X^{2m}_{3n}  \\
+\Huge X^{2m}_{3n}  \\
+$$
+</code></pre>
+<h3><a class="header" href="#2-呈现效果" id="2-呈现效果">2. 呈现效果</a></h3>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>$$ 
+a \ b \\
+a \quad b \\
+a \qquad b \\
+\mathit{a} + \mathbf{b} \\
+X^{2m}_{3n} \\
+\text{注意和下面默认大小对比——}
+$$</p>
+<p>$$ \tiny X^{2m}_{3n} $$</p>
+<p>$$ \scriptsize X^{2m}_{3n} $$</p>
+<p>$$ \small X^{2m}_{3n} $$</p>
+<p>$$ \normalsize X^{2m}_{3n} \text{（默认大小）} $$</p>
+<p>$$ \large X^{2m}_{3n} $$</p>
+<p>$$ \Large X^{2m}_{3n} $$</p>
+<p>$$ \huge X^{2m}_{3n} $$</p>
+<p>$$ \Huge X^{2m}_{3n} $$</p>
+</div>
+<h2><a class="header" href="#上标和下标" id="上标和下标">上标和下标</a></h2>
+<ul>
+<li>上标：使用 <strong><code>^</code></strong> 连接数/字/符和其上标值；</li>
+<li>下标：使用 <strong><code>-</code></strong> 连接数/字/符和其下标值；</li>
+<li>较为复杂的表达式用 <code>{}</code> 包含。</li>
+</ul>
+<h3><a class="header" href="#1-实例代码-1" id="1-实例代码-1">1. 实例代码</a></h3>
+<pre><code class="language-Markdown">上标： $$ x^2 $$
+下标： $$ Y_1 $$
+综合：$$ X^{2m}_{3n} $$
+</code></pre>
+<h3><a class="header" href="#2-呈现效果-1" id="2-呈现效果-1">2. 呈现效果</a></h3>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>$$
+上标：x^2 \\
+下标：Y_1 \\
+综合：X^{2m}_{3n} a^g_h
+$$</p>
+</div>
+<h2><a class="header" href="#上划线与下划线" id="上划线与下划线">上划线与下划线</a></h2>
+<ul>
+<li>上划线：<code>\overline{}</code></li>
+<li>下划线：<code>\underline{}</code></li>
+</ul>
+<h3><a class="header" href="#1-实例代码-2" id="1-实例代码-2">1. 实例代码</a></h3>
+<pre><code class="language-Markdown">上划线：$$ \overline{x^2+a+b} $$
+下划线：$$ \underline{Y_1-c-d} $$
+</code></pre>
+<h3><a class="header" href="#2-呈现效果-2" id="2-呈现效果-2">2. 呈现效果</a></h3>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>上划线：$$ \overline{x^2+a+b} $$</p>
+<p>下划线：$$ \underline{Y_1-c-d} $$</p>
+</div>
+<h2><a class="header" href="#分数" id="分数">分数</a></h2>
+<p>分数使用 <code>\frac{partI}{partII}</code> 转义表达。</p>
+<h3><a class="header" href="#1-实例代码-3" id="1-实例代码-3">1. 实例代码</a></h3>
+<pre><code class="language-Markdown">$$ \frac{2x+3}{3y-1} $$
+</code></pre>
+<h3><a class="header" href="#2-呈现效果-3" id="2-呈现效果-3">2. 呈现效果</a></h3>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>$$ \frac{2x+3}{3y-1} $$</p>
+</div>
+<h2><a class="header" href="#方程组" id="方程组">方程组</a></h2>
+<ul>
+<li>方式一：<code>\begin{array}{c} 表达式一\\表达式二... \end{array}</code></li>
+<li>方式二：<code>\begin{cases}…\end{cases}</code></li>
+</ul>
+<h3><a class="header" href="#1-实例代码-4" id="1-实例代码-4">1. 实例代码</a></h3>
+<pre><code class="language-Markdown">$$ \begin{array}{c} 表达式一\\表达式二... \end{array} $$
+</code></pre>
+<h3><a class="header" href="#2-呈现效果-4" id="2-呈现效果-4">2. 呈现效果</a></h3>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>$$ \begin{array}{c} a+b \\ c+d \end{array} $$</p>
+</div>
+<h2><a class="header" href="#运算符" id="运算符">运算符</a></h2>
+<table><thead><tr><th>运算符</th><th>表达式（转义）</th><th>运算符</th><th>表达式（转义）</th></tr></thead><tbody>
+<tr><td>$$ \pm $$</td><td>\pm</td><td>$$ \times $$</td><td>\times</td></tr>
+<tr><td>$$ \div $$</td><td>\div</td><td>$$ \cdot $$</td><td>\cdot</td></tr>
+<tr><td>$$ \leq $$</td><td>\leq</td><td>$$ \geq $$</td><td>\geq</td></tr>
+<tr><td>$$ \neq $$</td><td>\neq</td><td>$$ \approx $$</td><td>\approx</td></tr>
+<tr><td>$$ \equiv $$</td><td>\equiv</td><td>$$ \in $$</td><td>\in</td></tr>
+<tr><td>$$ \notin $$</td><td>\notin</td><td>$$ \subset $$</td><td>\subset</td></tr>
+<tr><td>$$ \supset $$</td><td>\supset</td><td>$$ \bigcap $$</td><td>\bigcap</td></tr>
+<tr><td>$$ \bigcup $$</td><td>\bigcup</td><td>-</td><td>-</td></tr>
+</tbody></table>
+<h2><a class="header" href="#特殊符号" id="特殊符号">特殊符号</a></h2>
+<table><thead><tr><th>含义</th><th>符号</th><th>表达式（转义）</th><th>示例</th></tr></thead><tbody>
+<tr><td>求和符号</td><td>$$ \sum $$</td><td>\sum</td><td>$$ \sum_{m=0}^\infty $$</td></tr>
+<tr><td>积分符号</td><td>$$ \int $$</td><td>\int</td><td>$$ \int_0^1 $$</td></tr>
+<tr><td>极限符号</td><td>$$ \lim $$</td><td>\lim</td><td>$$ \lim_{1 \to 6} \sum_{m=0}^\infty $$</td></tr>
+<tr><td>向量符号</td><td>$$ \vec{} $$</td><td>\vec{}</td><td>$$ \vec{M} $$</td></tr>
+<tr><td>开根号</td><td>$$ \sqrt[]{} $$</td><td>\sqrt[]{}</td><td>$$ \sqrt[5]{6} $$</td></tr>
+</tbody></table>
+<h2><a class="header" href="#使用html语法表达数学公式" id="使用html语法表达数学公式">使用<code>HTML</code>语法表达数学公式</a></h2>
+<p>使用<code>HTML</code>标签表达上标（<code>&lt;sup&gt;</code>）、下标（<code>&lt;sub&gt;</code>），以及上划线（<code>&lt;span&gt;</code>）。</p>
+<h3><a class="header" href="#1-实例代码-5" id="1-实例代码-5">1. 实例代码</a></h3>
+<pre><code class="language-Markdown">上标：&lt;span&gt;x&lt;sup&gt;2&lt;/sup&gt;&lt;/span&gt;
+下标：&lt;span&gt;x&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;
+上划线：&lt;span style=&quot;text-decoration: overline&quot;&gt;a + b + c&lt;/SPAN&gt;
+</code></pre>
+<h3><a class="header" href="#2-呈现效果-5" id="2-呈现效果-5">2. 呈现效果</a></h3>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>上标：<span>x<sup>2</sup></span></p>
+<p>下标：<span>y<sub>3</sub></span></p>
+<p>上划线：<span style="text-decoration: overline">a + b + c</SPAN></p>
+</div>
 
                     </main>
 
