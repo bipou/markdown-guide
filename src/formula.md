@@ -2,7 +2,7 @@
 
 Markdown中，支持完整的`LaTeX`数学公式语法。
 
-> *注：* 此章节包含`LaTeX`数学公式语法，须通过工具（如 [mdBook](https://mdbook.budshome.com)、gitBook），或者已嵌`LaTeX`公式的编辑器，方可预览或构建。
+> *注：* 此章节包含`LaTeX`数学公式语法，须通过工具（如 [mdBook](https://mdbook.budshome.com)、gitBook），或者已嵌`LaTeX`公式的编辑器，方可预览或构建（[阅读已构建电子书](https://markdown.budshome.com/formula.html)）。
 
 - [公式样式及注释](#公式样式及注释)
 - [上标和下标](#上标和下标)
