@@ -260,7 +260,7 @@ $$ \approx $$ | \approx | $$ \equiv $$ | \equiv
 运算符 | 表达式（转义） | 运算符  | 表达式（转义）
 ------ | ------ | ------ | ------
 $$ \oint $$ | \oint | $$ \infty $$ | \infty
-$$ \nabla $$ | \nabla | - | -
+$$ \nabla $$ | \nabla | $$ - $$ | -
 
 ## 逻辑符号
 
