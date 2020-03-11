@@ -4,18 +4,21 @@ Markdown中，支持完整的`LaTeX`数学公式语法。
 
 *注：* 此章节包含`LaTeX`数学公式语法，须通过工具（如 [mdBook](https://mdbook.budshome.com)、gitBook），或者已嵌`LaTeX`公式的编辑器，方可预览或构建。
 
-- [公式样式](#公式样式)
+- [公式样式及注释](#公式样式及注释)
 - [上标和下标](#上标和下标)
+- [上划线与下划线](#上划线与下划线)
 - [分数](#分数)
+- [运算符](#运算符)
 
-## 公式样式
+## 公式样式及注释
 
 - 换行：`\\`、`\\\\`
-- 空格：`\`
+- 空格：`\`、`\,`、`\;`、`\quad`、`\qquad`
 - 居中：用 `$$` 包裹
-- 字体样式：加粗（`mathbf`）、斜体（`mathit`）
-- 字体大小：`tiny`、`scriptsize`、`small`、`normalsize`、`large`、`Large`、`huge`、`Huge`
-- 颜色：`color{颜色值}{数/字/符}`
+- 字体样式：加粗（`\mathbf`）、斜体（`\mathit`）
+- 字体大小：`\tiny`、`\scriptsize`、`\small`、`\normalsize`、`\large`、`\Large`、`\huge`、`\Huge`
+- 颜色：`\color{颜色值}{数/字/符}`
+- 注释：`\text{内容}`
 
 *注：* 数学公式样式的支持程度，取决于你使用的构建工具（如 [mdBook](https://mdbook.budshome.com)、gitBook）或编辑器。
 
@@ -23,14 +26,16 @@ Markdown中，支持完整的`LaTeX`数学公式语法。
 
 ``` Markdown
 $$
-x^2 \ y_3 \ z^3_2 \\
-\mathit{M_1} + \mathbf{N^3} \\
+a \ b \\
+a \quad b \\
+a \qquad b \\
+\mathit{a} + \mathbf{b} \\
 X^{2m}_{3n} \\
-注意和下面默认大小对比—— \\
+\text{注意和下面默认大小对比——} \\
 \tiny X^{2m}_{3n} \\
 \scriptsize X^{2m}_{3n} \\
 \small X^{2m}_{3n} \\
-\normalsize X^{2m}_{3n} （默认大小）  \\
+\normalsize X^{2m}_{3n} \text{（默认大小）} \\
 \large X^{2m}_{3n}  \\
 \Large X^{2m}_{3n}  \\
 \huge X^{2m}_{3n}  \\
@@ -43,10 +48,12 @@ $$
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 
 $$ 
-x^2 \ y_3 \ z^3_2 \\\\
-\mathit{M_1} + \mathbf{N^3} \\\\
+a \ b \\\\
+a \quad b \\\\
+a \qquad b \\\\
+\mathit{a} + \mathbf{b} \\\\
 X^{2m}_{3n} \\\\
-注意和下面默认大小对比——
+\text{注意和下面默认大小对比——}
 $$
 
 $$ \tiny X^{2m}_{3n} $$
@@ -55,7 +62,7 @@ $$ \scriptsize X^{2m}_{3n} $$
 
 $$ \small X^{2m}_{3n} $$
 
-$$ \normalsize X^{2m}_{3n} （默认大小） $$
+$$ \normalsize X^{2m}_{3n} \text{（默认大小）} $$
 
 $$ \large X^{2m}_{3n} $$
 
@@ -93,9 +100,31 @@ $$
 
 </div>
 
+## 上划线与下划线
+
+- 上划线：`\overline{}`
+- 下划线：`\underline{}`
+
+### 1. 实例代码
+
+``` Markdown
+上划线：$$ \overline{x^2+a+b} $$
+下划线：$$ \underline{Y_1-c-d} $$
+```
+
+### 2. 呈现效果
+
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+
+上划线：$$ \overline{x^2+a+b} $$
+
+下划线：$$ \underline{Y_1-c-d} $$
+
+</div>
+
 ## 分数
 
-分数使用 `frac{partI}{partII}` 转义表达。
+分数使用 `\frac{partI}{partII}` 转义表达。
 
 ### 1. 实例代码
 
@@ -110,3 +139,25 @@ $$ \frac{2x+3}{3y-1} $$
 $$ \frac{2x+3}{3y-1} $$
 
 </div>
+
+## 运算符
+
+运算符 | 表达式（转义） | 运算符  | 表达式（转义）
+------ | ------ | ------ | ------
+$$ \pm $$ | \pm | $$ \times $$ | \times
+$$ \div $$ | \div | $$ \cdot $$ | \cdot
+$$ \leq $$ | \leq | $$ \geq $$ | \geq
+$$ \neq $$ | \neq | $$ \approx $$ | \approx
+$$ \equiv $$ | \equiv | $$ \in $$ | \in
+$$ \notin $$ | \notin | $$ \subset $$ | \subset
+$$ \supset $$ | \supset | $$ \bigcap $$ | \bigcap
+$$ \bigcup $$ | \bigcup | - | -
+
+## 特殊符号
+
+含义 | 符号 | 表达式（转义） | 示例
+------ | ------ | ------ | ------
+求和符号 | $$ \sum $$ | \sum | $$ \sum_{m=0}^\infty $$
+积分符号 | $$ \int $$ | \int | $$ \int_0^1 $$
+极限符号 | $$ \lim $$ | \lim | $$ \lim_{1 \to 6} \sum_{m=0}^\infty $$
+向量符号 | $$ \vec{} $$ | \vec{} | $$ \vec{M} $$
