@@ -8,7 +8,10 @@ Markdown中，支持完整的`LaTeX`数学公式语法。
 - [上标和下标](#上标和下标)
 - [上划线与下划线](#上划线与下划线)
 - [分数](#分数)
+- [方程组](#方程组)
 - [运算符](#运算符)
+- [特殊符号](#特殊符号)
+- [使用`HTML`语法表达数学公式](#使用html语法表达数学公式)
 
 ## 公式样式及注释
 
@@ -140,6 +143,25 @@ $$ \frac{2x+3}{3y-1} $$
 
 </div>
 
+## 方程组
+
+- 方式一：`\begin{array}{c} 表达式一\\表达式二... \end{array}`
+- 方式二：`\begin{cases}…\end{cases}`
+
+### 1. 实例代码
+
+``` Markdown
+$$ \begin{array}{c} 表达式一\\表达式二... \end{array} $$
+```
+
+### 2. 呈现效果
+
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+
+$$ \begin{array}{c} a+b \\\\ c+d \end{array} $$
+
+</div>
+
 ## 运算符
 
 运算符 | 表达式（转义） | 运算符  | 表达式（转义）
@@ -161,3 +183,28 @@ $$ \bigcup $$ | \bigcup | - | -
 积分符号 | $$ \int $$ | \int | $$ \int_0^1 $$
 极限符号 | $$ \lim $$ | \lim | $$ \lim_{1 \to 6} \sum_{m=0}^\infty $$
 向量符号 | $$ \vec{} $$ | \vec{} | $$ \vec{M} $$
+开根号 | $$ \sqrt[]{} $$ | \sqrt[]{} | $$ \sqrt[5]{6} $$
+
+## 使用`HTML`语法表达数学公式
+
+使用`HTML`标签表达上标（`<sup>`）、下标（`<sub>`），以及上划线（`<span>`）。
+
+### 1. 实例代码
+
+``` Markdown
+上标：<span>x<sup>2</sup></span>
+下标：<span>x<sub>2</sub></span>
+上划线：<span style="text-decoration: overline">a + b + c</SPAN>
+```
+
+### 2. 呈现效果
+
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+
+上标：<span>x<sup>2</sup></span>
+
+下标：<span>y<sub>3</sub></span>
+
+上划线：<span style="text-decoration: overline">a + b + c</SPAN>
+
+</div>
