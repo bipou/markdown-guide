@@ -9,7 +9,12 @@ Markdown中，支持完整的`LaTeX`数学公式语法。
 - [上划线与下划线](#上划线与下划线)
 - [分数](#分数)
 - [方程组](#方程组)
+- [大括号](#大括号)
+- [开根号](#开根号)
+- [希腊字母](#希腊字母)
 - [运算符](#运算符)
+- [微积分符号](#微积分符号)
+- [逻辑符号](#逻辑符号)
 - [特殊符号](#特殊符号)
 - [使用`HTML`语法表达数学公式](#使用html语法表达数学公式)
 
@@ -86,8 +91,8 @@ $$ \Huge X^{2m}_{3n} $$
 ### 1. 实例代码
 
 ``` Markdown
-上标： $$ x^2 $$
-下标： $$ Y_1 $$
+上标：$$ x^2 $$
+下标：$$ Y_1 $$
 综合：$$ X^{2m}_{3n} $$
 ```
 
@@ -162,18 +167,107 @@ $$ \begin{array}{c} a+b \\\\ c+d \end{array} $$
 
 </div>
 
+## 大括号
+
+- 左大括号（`\left`）、右大括号（`\right`）
+- 格式：`\left(表达式\right)`
+
+### 1. 实例代码
+
+``` Markdown
+$$ \left(\frac{2x+3}{3y-1}\right) $$
+```
+
+### 2. 呈现效果
+
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+
+$$ \left(\frac{2x+3}{3y-1}\right) $$
+
+</div>
+
+## 开根号
+
+格式：`\sqrt[n]{x}`，其中`n`表示开根次数，`x`表示被开方项。
+
+### 1. 实例代码
+
+``` Markdown
+$$ \sqrt[5]{6} $$
+```
+
+### 2. 呈现效果
+
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+
+$$ \sqrt[5]{6} $$
+
+</div>
+
+## 希腊字母
+
+- 大写：首字母大写`\Gamma`转义
+- 小写：首字母小写`\gamma`转义
+
+希腊字母 | 表达式 | 希腊字母  | 表达式
+------ | ------ | ------ | ------
+$$ A $$ | A | $$ \alpha $$ | \alpha
+$$ B $$ | B | $$ \beta $$ | \beta
+$$ \Gamma $$ | \Gamma | $$ \gamma $$ | \gamma
+$$ \Delta $$ | \Delta | $$ \delta $$ | \delta
+$$ E $$ | E | $$ \epsilon $$ | \epsilon
+$$ Z $$ | Z | $$ \varepsilon $$ | \varepsilon
+$$ H $$ | H | $$ \eta $$ | \eta
+$$ \Theta $$ | \Theta | $$ \theta $$ | \theta
+$$ I $$ | I | $$ \iota $$ | \iota
+$$ K $$ | K | $$ \kappa $$ | \kappa
+$$ \Lambda $$ | \Lambda | $$ \lambda $$ | \lambda
+$$ M $$ | M | $$ \mu $$ | \mu
+$$ N $$ | N | $$ \nu $$ | \nu
+$$ \Xi $$ | \Xi | $$ \xi $$ | \xi
+$$ O $$ | O | $$ \omicron $$ | \omicron
+$$ \Pi $$ | \Pi | $$ \pi $$ | \pi
+$$ P $$ | P | $$ \rho $$ | \rho
+$$ \Sigma $$ | \Sigma | $$ \sigma $$ | \sigma
+$$ T $$ | T | $$ \tau $$ | \tau
+$$ \Upsilon $$ | \Upsilon | $$ \upsilon $$ | \upsilon
+$$ \Phi $$ | \Phi | $$ \phi $$ | \phi
+- | - | $$ \varphi $$ | \varphi
+$$ X $$ | X | $$ \chi $$ | \chi
+$$ \Psi $$ | \Psi | $$ \psi $$ | \psi
+$$ \Omega $$ | \Omega | $$ \omega $$ | \omega
+
 ## 运算符
 
 运算符 | 表达式（转义） | 运算符  | 表达式（转义）
 ------ | ------ | ------ | ------
-$$ \pm $$ | \pm | $$ \times $$ | \times
-$$ \div $$ | \div | $$ \cdot $$ | \cdot
-$$ \leq $$ | \leq | $$ \geq $$ | \geq
-$$ \neq $$ | \neq | $$ \approx $$ | \approx
-$$ \equiv $$ | \equiv | $$ \in $$ | \in
-$$ \notin $$ | \notin | $$ \subset $$ | \subset
-$$ \supset $$ | \supset | $$ \bigcap $$ | \bigcap
-$$ \bigcup $$ | \bigcup | - | -
+$$ \pm $$ | \pm | $$ \emptyset $$ | \emptyset
+$$ \times $$ | \times | $$ \in $$ | \in
+$$ \div $$ | \div | $$ \notin $$ | \notin
+$$ \mid $$ | \mid | $$ \subset $$ | \subset
+$$ \cdot $$ | \cdot | $$ \supset $$ | \supset
+$$ \circ $$ | \circ | $$ \subseteq $$ | \subseteq
+$$ \ast $$ | \ast | $$ \supseteq $$ | \supseteq
+$$ \bigodot $$ | \bigodot | $$ \bigcap $$ | \bigcap
+$$ \bigotimes $$ | \bigotimes | $$ \bigcup $$ | \bigcup
+$$ \bigoplus $$ | \bigoplus | $$ \bigvee $$ | \bigvee
+$$ \leq $$ | \leq | $$ \bigwedge $$ | \bigwedge
+$$ \geq $$ | \geq | $$ \neq $$ | \neq
+$$ \approx $$ | \approx | $$ \equiv $$ | \equiv
+
+## 微积分符号
+
+运算符 | 表达式（转义） | 运算符  | 表达式（转义）
+------ | ------ | ------ | ------
+$$ \oint $$ | \oint | $$ \infty $$ | \infty
+$$ \nabla $$ | \nabla | - | -
+
+## 逻辑符号
+
+运算符 | 表达式（转义） | 运算符  | 表达式（转义）
+------ | ------ | ------ | ------
+$$ \because $$ | \because | $$ \therefore $$ | \therefore
+$$ \forall $$ | \forall | $$ \exists $$ | \exists
 
 ## 特殊符号
 
@@ -183,7 +277,6 @@ $$ \bigcup $$ | \bigcup | - | -
 积分符号 | $$ \int $$ | \int | $$ \int_0^1 $$
 极限符号 | $$ \lim $$ | \lim | $$ \lim_{1 \to 6} \sum_{m=0}^\infty $$
 向量符号 | $$ \vec{} $$ | \vec{} | $$ \vec{M} $$
-开根号 | $$ \sqrt[]{} $$ | \sqrt[]{} | $$ \sqrt[5]{6} $$
 
 ## 使用`HTML`语法表达数学公式
 
