@@ -232,7 +232,7 @@ $$ \Sigma $$ | \Sigma | $$ \sigma $$ | \sigma
 $$ T $$ | T | $$ \tau $$ | \tau
 $$ \Upsilon $$ | \Upsilon | $$ \upsilon $$ | \upsilon
 $$ \Phi $$ | \Phi | $$ \phi $$ | \phi
-- | - | $$ \varphi $$ | \varphi
+$$ - $$ | - | $$ \varphi $$ | \varphi
 $$ X $$ | X | $$ \chi $$ | \chi
 $$ \Psi $$ | \Psi | $$ \psi $$ | \psi
 $$ \Omega $$ | \Omega | $$ \omega $$ | \omega
