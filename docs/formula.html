@@ -164,7 +164,12 @@
 <li><a href="#%E4%B8%8A%E5%88%92%E7%BA%BF%E4%B8%8E%E4%B8%8B%E5%88%92%E7%BA%BF">上划线与下划线</a></li>
 <li><a href="#%E5%88%86%E6%95%B0">分数</a></li>
 <li><a href="#%E6%96%B9%E7%A8%8B%E7%BB%84">方程组</a></li>
+<li><a href="#%E5%A4%A7%E6%8B%AC%E5%8F%B7">大括号</a></li>
+<li><a href="#%E5%BC%80%E6%A0%B9%E5%8F%B7">开根号</a></li>
+<li><a href="#%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D">希腊字母</a></li>
 <li><a href="#%E8%BF%90%E7%AE%97%E7%AC%A6">运算符</a></li>
+<li><a href="#%E5%BE%AE%E7%A7%AF%E5%88%86%E7%AC%A6%E5%8F%B7">微积分符号</a></li>
+<li><a href="#%E9%80%BB%E8%BE%91%E7%AC%A6%E5%8F%B7">逻辑符号</a></li>
 <li><a href="#%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7">特殊符号</a></li>
 <li><a href="#%E4%BD%BF%E7%94%A8html%E8%AF%AD%E6%B3%95%E8%A1%A8%E8%BE%BE%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F">使用<code>HTML</code>语法表达数学公式</a></li>
 </ul>
@@ -225,8 +230,8 @@ $$</p>
 <li>较为复杂的表达式用 <code>{}</code> 包含。</li>
 </ul>
 <h3><a class="header" href="#1-实例代码-1" id="1-实例代码-1">1. 实例代码</a></h3>
-<pre><code class="language-Markdown">上标： $$ x^2 $$
-下标： $$ Y_1 $$
+<pre><code class="language-Markdown">上标：$$ x^2 $$
+下标：$$ Y_1 $$
 综合：$$ X^{2m}_{3n} $$
 </code></pre>
 <h3><a class="header" href="#2-呈现效果-1" id="2-呈现效果-1">2. 呈现效果</a></h3>
@@ -272,16 +277,84 @@ $$</p>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p>$$ \begin{array}{c} a+b \\ c+d \end{array} $$</p>
 </div>
+<h2><a class="header" href="#大括号" id="大括号">大括号</a></h2>
+<ul>
+<li>左大括号（<code>\left</code>）、右大括号（<code>\right</code>）</li>
+<li>格式：<code>\left(表达式\right)</code></li>
+</ul>
+<h3><a class="header" href="#1-实例代码-5" id="1-实例代码-5">1. 实例代码</a></h3>
+<pre><code class="language-Markdown">$$ \left(\frac{2x+3}{3y-1}\right) $$
+</code></pre>
+<h3><a class="header" href="#2-呈现效果-5" id="2-呈现效果-5">2. 呈现效果</a></h3>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>$$ \left(\frac{2x+3}{3y-1}\right) $$</p>
+</div>
+<h2><a class="header" href="#开根号" id="开根号">开根号</a></h2>
+<p>格式：<code>\sqrt[n]{x}</code>，其中<code>n</code>表示开根次数，<code>x</code>表示被开方项。</p>
+<h3><a class="header" href="#1-实例代码-6" id="1-实例代码-6">1. 实例代码</a></h3>
+<pre><code class="language-Markdown">$$ \sqrt[5]{6} $$
+</code></pre>
+<h3><a class="header" href="#2-呈现效果-6" id="2-呈现效果-6">2. 呈现效果</a></h3>
+<div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
+<p>$$ \sqrt[5]{6} $$</p>
+</div>
+<h2><a class="header" href="#希腊字母" id="希腊字母">希腊字母</a></h2>
+<ul>
+<li>大写：首字母大写<code>\Gamma</code>转义</li>
+<li>小写：首字母小写<code>\gamma</code>转义</li>
+</ul>
+<table><thead><tr><th>希腊字母</th><th>表达式</th><th>希腊字母</th><th>表达式</th></tr></thead><tbody>
+<tr><td>$$ A $$</td><td>A</td><td>$$ \alpha $$</td><td>\alpha</td></tr>
+<tr><td>$$ B $$</td><td>B</td><td>$$ \beta $$</td><td>\beta</td></tr>
+<tr><td>$$ \Gamma $$</td><td>\Gamma</td><td>$$ \gamma $$</td><td>\gamma</td></tr>
+<tr><td>$$ \Delta $$</td><td>\Delta</td><td>$$ \delta $$</td><td>\delta</td></tr>
+<tr><td>$$ E $$</td><td>E</td><td>$$ \epsilon $$</td><td>\epsilon</td></tr>
+<tr><td>$$ Z $$</td><td>Z</td><td>$$ \varepsilon $$</td><td>\varepsilon</td></tr>
+<tr><td>$$ H $$</td><td>H</td><td>$$ \eta $$</td><td>\eta</td></tr>
+<tr><td>$$ \Theta $$</td><td>\Theta</td><td>$$ \theta $$</td><td>\theta</td></tr>
+<tr><td>$$ I $$</td><td>I</td><td>$$ \iota $$</td><td>\iota</td></tr>
+<tr><td>$$ K $$</td><td>K</td><td>$$ \kappa $$</td><td>\kappa</td></tr>
+<tr><td>$$ \Lambda $$</td><td>\Lambda</td><td>$$ \lambda $$</td><td>\lambda</td></tr>
+<tr><td>$$ M $$</td><td>M</td><td>$$ \mu $$</td><td>\mu</td></tr>
+<tr><td>$$ N $$</td><td>N</td><td>$$ \nu $$</td><td>\nu</td></tr>
+<tr><td>$$ \Xi $$</td><td>\Xi</td><td>$$ \xi $$</td><td>\xi</td></tr>
+<tr><td>$$ O $$</td><td>O</td><td>$$ \omicron $$</td><td>\omicron</td></tr>
+<tr><td>$$ \Pi $$</td><td>\Pi</td><td>$$ \pi $$</td><td>\pi</td></tr>
+<tr><td>$$ P $$</td><td>P</td><td>$$ \rho $$</td><td>\rho</td></tr>
+<tr><td>$$ \Sigma $$</td><td>\Sigma</td><td>$$ \sigma $$</td><td>\sigma</td></tr>
+<tr><td>$$ T $$</td><td>T</td><td>$$ \tau $$</td><td>\tau</td></tr>
+<tr><td>$$ \Upsilon $$</td><td>\Upsilon</td><td>$$ \upsilon $$</td><td>\upsilon</td></tr>
+<tr><td>$$ \Phi $$</td><td>\Phi</td><td>$$ \phi $$</td><td>\phi</td></tr>
+<tr><td>-</td><td>-</td><td>$$ \varphi $$</td><td>\varphi</td></tr>
+<tr><td>$$ X $$</td><td>X</td><td>$$ \chi $$</td><td>\chi</td></tr>
+<tr><td>$$ \Psi $$</td><td>\Psi</td><td>$$ \psi $$</td><td>\psi</td></tr>
+<tr><td>$$ \Omega $$</td><td>\Omega</td><td>$$ \omega $$</td><td>\omega</td></tr>
+</tbody></table>
 <h2><a class="header" href="#运算符" id="运算符">运算符</a></h2>
 <table><thead><tr><th>运算符</th><th>表达式（转义）</th><th>运算符</th><th>表达式（转义）</th></tr></thead><tbody>
-<tr><td>$$ \pm $$</td><td>\pm</td><td>$$ \times $$</td><td>\times</td></tr>
-<tr><td>$$ \div $$</td><td>\div</td><td>$$ \cdot $$</td><td>\cdot</td></tr>
-<tr><td>$$ \leq $$</td><td>\leq</td><td>$$ \geq $$</td><td>\geq</td></tr>
-<tr><td>$$ \neq $$</td><td>\neq</td><td>$$ \approx $$</td><td>\approx</td></tr>
-<tr><td>$$ \equiv $$</td><td>\equiv</td><td>$$ \in $$</td><td>\in</td></tr>
-<tr><td>$$ \notin $$</td><td>\notin</td><td>$$ \subset $$</td><td>\subset</td></tr>
-<tr><td>$$ \supset $$</td><td>\supset</td><td>$$ \bigcap $$</td><td>\bigcap</td></tr>
-<tr><td>$$ \bigcup $$</td><td>\bigcup</td><td>-</td><td>-</td></tr>
+<tr><td>$$ \pm $$</td><td>\pm</td><td>$$ \emptyset $$</td><td>\emptyset</td></tr>
+<tr><td>$$ \times $$</td><td>\times</td><td>$$ \in $$</td><td>\in</td></tr>
+<tr><td>$$ \div $$</td><td>\div</td><td>$$ \notin $$</td><td>\notin</td></tr>
+<tr><td>$$ \mid $$</td><td>\mid</td><td>$$ \subset $$</td><td>\subset</td></tr>
+<tr><td>$$ \cdot $$</td><td>\cdot</td><td>$$ \supset $$</td><td>\supset</td></tr>
+<tr><td>$$ \circ $$</td><td>\circ</td><td>$$ \subseteq $$</td><td>\subseteq</td></tr>
+<tr><td>$$ \ast $$</td><td>\ast</td><td>$$ \supseteq $$</td><td>\supseteq</td></tr>
+<tr><td>$$ \bigodot $$</td><td>\bigodot</td><td>$$ \bigcap $$</td><td>\bigcap</td></tr>
+<tr><td>$$ \bigotimes $$</td><td>\bigotimes</td><td>$$ \bigcup $$</td><td>\bigcup</td></tr>
+<tr><td>$$ \bigoplus $$</td><td>\bigoplus</td><td>$$ \bigvee $$</td><td>\bigvee</td></tr>
+<tr><td>$$ \leq $$</td><td>\leq</td><td>$$ \bigwedge $$</td><td>\bigwedge</td></tr>
+<tr><td>$$ \geq $$</td><td>\geq</td><td>$$ \neq $$</td><td>\neq</td></tr>
+<tr><td>$$ \approx $$</td><td>\approx</td><td>$$ \equiv $$</td><td>\equiv</td></tr>
+</tbody></table>
+<h2><a class="header" href="#微积分符号" id="微积分符号">微积分符号</a></h2>
+<table><thead><tr><th>运算符</th><th>表达式（转义）</th><th>运算符</th><th>表达式（转义）</th></tr></thead><tbody>
+<tr><td>$$ \oint $$</td><td>\oint</td><td>$$ \infty $$</td><td>\infty</td></tr>
+<tr><td>$$ \nabla $$</td><td>\nabla</td><td>-</td><td>-</td></tr>
+</tbody></table>
+<h2><a class="header" href="#逻辑符号" id="逻辑符号">逻辑符号</a></h2>
+<table><thead><tr><th>运算符</th><th>表达式（转义）</th><th>运算符</th><th>表达式（转义）</th></tr></thead><tbody>
+<tr><td>$$ \because $$</td><td>\because</td><td>$$ \therefore $$</td><td>\therefore</td></tr>
+<tr><td>$$ \forall $$</td><td>\forall</td><td>$$ \exists $$</td><td>\exists</td></tr>
 </tbody></table>
 <h2><a class="header" href="#特殊符号" id="特殊符号">特殊符号</a></h2>
 <table><thead><tr><th>含义</th><th>符号</th><th>表达式（转义）</th><th>示例</th></tr></thead><tbody>
@@ -289,16 +362,15 @@ $$</p>
 <tr><td>积分符号</td><td>$$ \int $$</td><td>\int</td><td>$$ \int_0^1 $$</td></tr>
 <tr><td>极限符号</td><td>$$ \lim $$</td><td>\lim</td><td>$$ \lim_{1 \to 6} \sum_{m=0}^\infty $$</td></tr>
 <tr><td>向量符号</td><td>$$ \vec{} $$</td><td>\vec{}</td><td>$$ \vec{M} $$</td></tr>
-<tr><td>开根号</td><td>$$ \sqrt[]{} $$</td><td>\sqrt[]{}</td><td>$$ \sqrt[5]{6} $$</td></tr>
 </tbody></table>
 <h2><a class="header" href="#使用html语法表达数学公式" id="使用html语法表达数学公式">使用<code>HTML</code>语法表达数学公式</a></h2>
 <p>使用<code>HTML</code>标签表达上标（<code>&lt;sup&gt;</code>）、下标（<code>&lt;sub&gt;</code>），以及上划线（<code>&lt;span&gt;</code>）。</p>
-<h3><a class="header" href="#1-实例代码-5" id="1-实例代码-5">1. 实例代码</a></h3>
+<h3><a class="header" href="#1-实例代码-7" id="1-实例代码-7">1. 实例代码</a></h3>
 <pre><code class="language-Markdown">上标：&lt;span&gt;x&lt;sup&gt;2&lt;/sup&gt;&lt;/span&gt;
 下标：&lt;span&gt;x&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;
 上划线：&lt;span style=&quot;text-decoration: overline&quot;&gt;a + b + c&lt;/SPAN&gt;
 </code></pre>
-<h3><a class="header" href="#2-呈现效果-5" id="2-呈现效果-5">2. 呈现效果</a></h3>
+<h3><a class="header" href="#2-呈现效果-7" id="2-呈现效果-7">2. 呈现效果</a></h3>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p>上标：<span>x<sup>2</sup></span></p>
 <p>下标：<span>y<sub>3</sub></span></p>
