@@ -2,7 +2,7 @@
 
 Markdown中，支持完整的`LaTeX`数学公式语法。
 
-*注：* 此章节包含`LaTeX`数学公式语法，须通过工具（如 [mdBook](https://mdbook.budshome.com)、gitBook），或者已嵌`LaTeX`公式的编辑器，方可预览或构建。
+> *注：* 此章节包含`LaTeX`数学公式语法，须通过工具（如 [mdBook](https://mdbook.budshome.com)、gitBook），或者已嵌`LaTeX`公式的编辑器，方可预览或构建。
 
 - [公式样式及注释](#公式样式及注释)
 - [上标和下标](#上标和下标)
@@ -12,6 +12,8 @@ Markdown中，支持完整的`LaTeX`数学公式语法。
 
 ## 公式样式及注释
 
+> 数学公式样式的支持程度，取决于你使用的构建工具（如 [mdBook](https://mdbook.budshome.com)、gitBook）或编辑器。
+
 - 换行：`\\`、`\\\\`
 - 空格：`\`、`\,`、`\;`、`\quad`、`\qquad`
 - 居中：用 `$$` 包裹
@@ -19,8 +21,6 @@ Markdown中，支持完整的`LaTeX`数学公式语法。
 - 字体大小：`\tiny`、`\scriptsize`、`\small`、`\normalsize`、`\large`、`\Large`、`\huge`、`\Huge`
 - 颜色：`\color{颜色值}{数/字/符}`
 - 注释：`\text{内容}`
-
-*注：* 数学公式样式的支持程度，取决于你使用的构建工具（如 [mdBook](https://mdbook.budshome.com)、gitBook）或编辑器。
 
 ### 1. 实例代码
 
