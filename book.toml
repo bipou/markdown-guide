@@ -2,14 +2,14 @@
 title = "Markdown指南 - Markdown Guide"
 authors = ["zzy"]
 description = "Markdown指南, markdown guide, 精通Markdown, Markdown教程, Markdown语法, Markdown实例, Markdown实践"
-src = "./src"
+src = "src"
 multilingual = true
 
 [build]
-build-dir = "./docs"
+build-dir = "docs"
 
 [output.html]
-theme = "./theme"
+theme = "theme"
 # default-theme = "rust"
 curly-quotes = true
 mathjax-support = true
