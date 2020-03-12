@@ -144,14 +144,14 @@ value引用：[未定义文本][Markdown指南]
 ### 1. 实例代码
 
 ``` Markdown
-![Demo Image](./theme/demo-image.png)
+![Demo Image](./imgs/demo-image.png)
 ```
 
 ### 2. 呈现效果
 
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 
-![Demo Image](./theme/demo-image.png)
+![Demo Image](./imgs/demo-image.png)
 
 </div>
 
@@ -230,7 +230,7 @@ Markdown中通过`>`实现引用。引用可以多级嵌套：`>>`,`>>>`；也�
 
 **Markdown预览呈现**
 
-![blockquotes](./theme/blockquotes.png)
+![blockquotes](./imgs/blockquotes.png)
 
 **输出HTML呈现**
 
@@ -455,7 +455,7 @@ HACK方法注释（此处仅是举例，读者可以利用Markdown解析原理�
 
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 
-![task lists](./theme/tasklists.png)
+![task lists](./imgs/tasklists.png)
 
 </div>
 
@@ -527,7 +527,7 @@ GitHub支持[表情符号](https://help.github.com/en/articles/basic-writing-and
 
 在GitHub中，会渲染为如下效果——
 
-![emoji](./theme/emoji.png)
+![emoji](./imgs/emoji.png)
 
 GitHub支持的表情符号很多，详细请查看[表情符号清单](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)。
 
