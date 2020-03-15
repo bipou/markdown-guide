@@ -1,10 +1,10 @@
-# Markdown指南
+# Markdown 指南
 
-[Markdown指南-https://markdown.budshome.com](https://markdown.budshome.com)，部分Markdown基础语法译自GitHub官方Mastering Markdown文档。
+[Markdown 指南-https://markdown.budshome.com](https://markdown.budshome.com)，部分 Markdown 基础语法译自 GitHub 官方 Mastering Markdown 文档。
 
-💥 笔者在GitHub官方文档基础上补充了未提及的Markdown语法、重组了内容结构、将实例中文化、增加了数学公式、Markdown和HTML融合应用，以及Markdown工具链等内容。
+💥 笔者在 GitHub 官方文档基础上补充了未提及的 Markdown 语法、重组了内容结构、将实例中文化、增加了数学公式、Markdown 和 HTML 融合应用，以及 Markdown 工具链等内容。
 
-本文目的为整理Markdown知识，希望可以帮助到读者。
+本文目的为整理 Markdown 知识，希望可以帮助到读者。
 
 ------
 

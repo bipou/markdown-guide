@@ -1,12 +1,12 @@
-# Markdown介绍
+# Markdown 介绍
 
-Markdown是一种在web上设置文本样式的方法：使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
+Markdown 是一种在 web 上设置文本样式的方法：使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
 
-你可以使用Markdown对文档的展示格式进行排版：如将文本格式化为粗体或斜体、添加图像，以及创建列表等。大多数情况下，Markdown只是一些普通文本加上一些非字母字符，比如 `#` 或者 `*`。
+你可以使用 Markdown 对文档的展示格式进行排版：如将文本格式化为粗体或斜体、添加图像，以及创建列表等。大多数情况下，Markdown只是一些普通文本加上一些非字母字符，比如 `#` 或者 `*`。
 
-Markdown文档可以通过一些如mdBook、gitBook等应用转换为HTML、PDF、DOC等格式，提供给不同的应用场景。
+Markdown 文档可以通过一些如 mdBook、gitBook 等应用转换为 HTML、PDF、DOC 等格式，提供给不同的应用场景。
 
-Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此使用非常广泛。如GitHub、WordPress等，使用Markdown对平台上的写作形式进行样式化，提供了Markdown文档直接展示的功能。比如你可以在GitHub的大部分场景中使用Markdown：
+Markdown 的语法简洁明了、学习容易，而且功能比纯文本更强，因此使用非常广泛。如 GitHub、WordPress 等，使用 Markdown 对平台上的写作形式进行样式化，提供了 Markdown 文档直接展示的功能。比如你可以在 GitHub 的大部分场景中使用 Markdown：
 
 - 扩展名为`.md`或者`.markdown`的文件；
 - 对Issues和拉取请求的评论；

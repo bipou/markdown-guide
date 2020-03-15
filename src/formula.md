@@ -1,8 +1,8 @@
-# Markdown数学公式
+# Markdown 数学公式
 
-Markdown中，支持完整的`LaTeX`数学公式语法。
+Markdown中，支持完整的 `LaTeX` 数学公式语法。
 
-> *注：* 此章节包含`LaTeX`数学公式语法，须通过工具（如 [mdBook](https://mdbook.budshome.com)、gitBook），或者已嵌`LaTeX`公式的编辑器，方可预览或构建（[阅读已构建电子书](https://markdown.budshome.com/formula.html)）。
+> *注：* 此章节包含 `LaTeX` 数学公式语法，须通过工具（如 [mdBook](https://mdbook.budshome.com)、gitBook），或者已嵌 `LaTeX` 公式的编辑器，方可预览或构建（[阅读已构建电子书](https://markdown.budshome.com/formula.html)）。
 
 - [公式样式及注释](#公式样式及注释)
 - [上标和下标](#上标和下标)
@@ -280,14 +280,158 @@ $$ \forall $$ | \forall | $$ \exists $$ | \exists
 
 ## 使用`HTML`语法表达数学公式
 
-使用`HTML`标签表达上标（`<sup>`）、下标（`<sub>`），以及上划线（`<span>`）。
+HTML5 支持在文档中使用 MathML 元素，在对应的标签是 `<math>...</math>` 中，使用`HTML`标签表达上标（`<sup>`）、下标（`<sub>`），以及上划线（`<span>`）等……
+
+MathML 是数学标记语言，是一种基于XML（标准通用标记语言的子集）的标准，用来在互联网上书写数学符号和公式的置标语言。
+
+- MathML 呈现型元素（类别分类）
+    - 顶层元素
+      - `<math>`
+    - 字符/符号元素
+      - `<mglyph>`
+      - `<mi>`
+      - `<mn>`
+      - `<mo>`
+      - `<ms>`
+      - `<mspace>`
+      - `<mtext>`
+    - 通用布局元素
+      - `<menclose>`
+      - `<merror>`
+      - `<mfenced>`
+      - `<mfrac>`
+      - `<mpadded>`
+      - `<mphantom>`
+      - `<mroot>`
+      - `<mrow>`
+      - `<msqrt>`
+      - `<mstyle>`
+    - Script and limit elements
+      - `<mmultiscripts>`
+      - `<mover>`
+      - `<mprescripts>`
+      - `<msub>`
+      - `<msubsup>`
+      - `<msup>`
+      - `<munder>`
+      - `<munderover>`
+      - `<none>`
+    - Tabular math
+      - `<maligngroup>`
+      - `<malignmark>`
+      - `<mlabeledtr>`
+      - `<mtable>`
+      - `<mtd>`
+      - `<mtr>`
+    - Elementary math
+      - `<mlongdiv>`
+      - `<mscarries>`
+      - `<mscarry>`
+      - `<msgroup>`
+      - `<msline>`
+      - `<msrow>`
+      - `<mstack>`
+    - 尚无分类的元素
+      - `<maction>`
+    - 语义附注元素
+      - `<annotation>`
+      - `<annotation-xml>`
+      - `<semantics>`
+- MathML 呈现型元素（字母排序）
+  - math
+    - `<math>`（顶层元素）
+  - A
+    - `<maction>`（将动作绑定到子表达式）
+    - `<maligngroup>`（对齐分组）
+    - `<malignmark>`（对齐点）
+  - E
+    - `<menclose>`（包含的内容）
+    - `<merror>`（包含的语法错误消息）
+  - F
+    - `<mfenced>`（圆括号）
+    - `<mfrac>`（因子 Fraction）
+  - G
+    - `<mglyph>`（显示非标准符号）
+  - I
+    - `<mi>`（标识符）
+  - L
+    - `<mlabeledtr>`（表格或矩阵中的行标签）
+    - `<mlongdiv>`（长除法记号）
+  - M
+    - `<mmultiscripts>`（惯例和张量指标）
+  - N
+    - `<mn>`（数量）
+  - O
+    - `<mo>`（运算符）
+    - `<mover>`（上标）
+  - P
+    - `<mpadded>`（内容周围的填充空间）
+    - `<mphantom>`（预留空间的不可见内容）
+  - R
+    - `<mroot>`（带指定根数的根号）
+    - `<mrow>`（分组后的子表达式）
+  - S
+    - `<ms>`（字符串字面量）
+    - `<mscarries>`（诸如进位的附注）
+    - `<mscarry>`（单位进位， `<mscarries>` 的子元素）
+    - `<msgroup>`（在 `<mstack>` 和 `<mlongdiv>` 元素中分组后的若干行）
+    - `<msline>`（在 `<mstack>` 内部的水平行）
+    - `<mspace>`（空格）
+    - `<msqrt>`（不带根数的平方根）
+    - `<msrow>`（在 `<mstack>` 元素中的行）
+    - `<mstack>`（堆叠式对齐）
+    - `<mstyle>`（样式变更）
+    - `<msub>`（下角标）
+    - `<msup>`（上角标）
+    - `<msubsup>`（上下角标对）
+  - T
+    - `<mtable>`（表格或矩阵）
+    - `<mtd>`（表格或矩阵中的单元格）
+    - `<mtext>`（文本）
+    - `<mtr>`（表格或矩阵中的行）
+  - U
+    - `<munder>`（下标）
+    - `<munderover>`（上标-下标对）
+  - 其他元素
+    - `<semantics>`（语义附注的容器）
+    - `<annotation>`（数据附注）
+    - `<annotation-xml>`（XML 附注）
 
 ### 1. 实例代码
 
 ``` Markdown
 上标：<span>x<sup>2</sup></span>
 下标：<span>x<sub>2</sub></span>
-上划线：<span style="text-decoration: overline">a + b + c</SPAN>
+上划线：<span style="text-decoration: overline">a + b + c</span>
+
+<span><math>
+    <mrow>
+        <msup><mi>a</mi><mn>2</mn></msup>
+        <mo>+</mo>
+        <msup><mi>b</mi><mn>2</mn></msup>
+        <mo>=</mo>
+        <msup><mi>c</mi><mn>2</mn></msup>
+    </mrow>
+</math></span>
+
+<span><math>
+    <mrow>
+        <mi>A</mi>
+        <mo>=</mo>
+        <mfenced open="[" close="]">
+            <mtable>
+                <mtr>
+                    <mtd><mi>x</mi></mtd>
+                    <mtd><mi>y</mi></mtd>
+                </mtr>
+                <mtr>
+                    <mtd><mi>z</mi></mtd>
+                    <mtd><mi>w</mi></mtd>
+                </mtr>
+            </mtable>
+        </mfenced>
+    </mrow>
+</math></span>
 ```
 
 ### 2. 呈现效果
@@ -298,8 +442,35 @@ $$ \forall $$ | \forall | $$ \exists $$ | \exists
 
 下标：<span>y<sub>3</sub></span>
 
-上划线：<span style="text-decoration: overline">a + b + c</SPAN>
+上划线：<span style="text-decoration: overline">a + b + c</span>
+
+<span><math>
+    <mrow>
+        <msup><mi>a</mi><mn>2</mn></msup>
+        <mo>+</mo>
+        <msup><mi>b</mi><mn>2</mn></msup>
+        <mo>=</mo>
+        <msup><mi>c</mi><mn>2</mn></msup>
+    </mrow>
+</math></span>
+
+<span><math>
+    <mrow>
+        <mi>A</mi>
+        <mo>=</mo>
+        <mfenced open="[" close="]">
+            <mtable>
+                <mtr>
+                    <mtd><mi>x</mi></mtd>
+                    <mtd><mi>y</mi></mtd>
+                </mtr>
+                <mtr>
+                    <mtd><mi>z</mi></mtd>
+                    <mtd><mi>w</mi></mtd>
+                </mtr>
+            </mtable>
+        </mfenced>
+    </mrow>
+</math></span>
 
 </div>
-
-

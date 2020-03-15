@@ -1,6 +1,6 @@
-# Markdown和HTML融合
+# Markdown 和 HTML 融合
 
-Markdown中，可以直接嵌入`HTML`内容，包括：`tags`，`css`等。
+Markdown中，可以直接嵌入 `HTML` 内容，包括：`tags`，`css`等。
 
 - [嵌入HTML-tags](#嵌入html-tags)
 - [嵌入CSS](#嵌入css)
