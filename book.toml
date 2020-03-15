@@ -1,6 +1,7 @@
 [book]
 title = "Markdown指南 - Markdown Guide"
 authors = ["zzy"]
+language = "zh"
 description = "Markdown指南, markdown guide, 精通Markdown, Markdown教程, Markdown语法, Markdown实例, Markdown实践"
 src = "src"
 multilingual = true
@@ -10,11 +11,10 @@ build-dir = "docs"
 
 [output.html]
 theme = "theme"
+git-repository-url = "https://github.com/zzy/markdown-guide"
 # default-theme = "rust"
 curly-quotes = true
 mathjax-support = true
-# git_repository_url = "https://github.com/zzy/markdown-guide"
-# git-repository-icon = "fa-code-fork"
 
 [output.html.playpen]
 editable = true
