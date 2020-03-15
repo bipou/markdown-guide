@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Markdown数学公式 - Markdown指南 - Markdown Guide</title>
+        <title>Markdown 数学公式 - Markdown指南 - Markdown Guide</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -94,7 +94,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 序言</a></li><li class="expanded "><a href="intro.html"><strong aria-hidden="true">2.</strong> Markdown介绍</a></li><li class="expanded "><a href="syntax-examples.html"><strong aria-hidden="true">3.</strong> Markdown语法和实例</a></li><li class="expanded "><a href="formula.html" class="active"><strong aria-hidden="true">4.</strong> Markdown数学公式</a></li><li class="expanded "><a href="html.html"><strong aria-hidden="true">5.</strong> Markdown和HTML融合</a></li><li class="expanded "><a href="toolchain.html"><strong aria-hidden="true">6.</strong> Markdown工具链</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 序言</a></li><li class="expanded "><a href="intro.html"><strong aria-hidden="true">2.</strong> Markdown介 绍</a></li><li class="expanded "><a href="syntax-examples.html"><strong aria-hidden="true">3.</strong> Markdown 语法和实例</a></li><li class="expanded "><a href="formula.html" class="active"><strong aria-hidden="true">4.</strong> Markdown 数学公式</a></li><li class="expanded "><a href="html.html"><strong aria-hidden="true">5.</strong> Markdown 和 HTML 融合</a></li><li class="expanded "><a href="toolchain.html"><strong aria-hidden="true">6.</strong> Markdown 工具链</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -165,10 +165,10 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#markdown数学公式" id="markdown数学公式">Markdown数学公式</a></h1>
-<p>Markdown中，支持完整的<code>LaTeX</code>数学公式语法。</p>
+                        <h1><a class="header" href="#markdown-数学公式" id="markdown-数学公式">Markdown 数学公式</a></h1>
+<p>Markdown中，支持完整的 <code>LaTeX</code> 数学公式语法。</p>
 <blockquote>
-<p><em>注：</em> 此章节包含<code>LaTeX</code>数学公式语法，须通过工具（如 <a href="https://mdbook.budshome.com">mdBook</a>、gitBook），或者已嵌<code>LaTeX</code>公式的编辑器，方可预览或构建（<a href="https://markdown.budshome.com/formula.html">阅读已构建电子书</a>）。</p>
+<p><em>注：</em> 此章节包含 <code>LaTeX</code> 数学公式语法，须通过工具（如 <a href="https://mdbook.budshome.com">mdBook</a>、gitBook），或者已嵌 <code>LaTeX</code> 公式的编辑器，方可预览或构建（<a href="https://markdown.budshome.com/formula.html">阅读已构建电子书</a>）。</p>
 </blockquote>
 <ul>
 <li><a href="#%E5%85%AC%E5%BC%8F%E6%A0%B7%E5%BC%8F%E5%8F%8A%E6%B3%A8%E9%87%8A">公式样式及注释</a></li>
@@ -376,17 +376,266 @@ $$</p>
 <tr><td>向量符号</td><td>$$ \vec{} $$</td><td>\vec{}</td><td>$$ \vec{M} $$</td></tr>
 </tbody></table>
 <h2><a class="header" href="#使用html语法表达数学公式" id="使用html语法表达数学公式">使用<code>HTML</code>语法表达数学公式</a></h2>
-<p>使用<code>HTML</code>标签表达上标（<code>&lt;sup&gt;</code>）、下标（<code>&lt;sub&gt;</code>），以及上划线（<code>&lt;span&gt;</code>）。</p>
+<p>HTML5 支持在文档中使用 MathML 元素，在对应的标签是 <code>&lt;math&gt;...&lt;/math&gt;</code> 中，使用<code>HTML</code>标签表达上标（<code>&lt;sup&gt;</code>）、下标（<code>&lt;sub&gt;</code>），以及上划线（<code>&lt;span&gt;</code>）等……</p>
+<p>MathML 是数学标记语言，是一种基于XML（标准通用标记语言的子集）的标准，用来在互联网上书写数学符号和公式的置标语言。</p>
+<ul>
+<li>MathML 呈现型元素（类别分类）
+<ul>
+<li>顶层元素
+<ul>
+<li><code>&lt;math&gt;</code></li>
+</ul>
+</li>
+<li>字符/符号元素
+<ul>
+<li><code>&lt;mglyph&gt;</code></li>
+<li><code>&lt;mi&gt;</code></li>
+<li><code>&lt;mn&gt;</code></li>
+<li><code>&lt;mo&gt;</code></li>
+<li><code>&lt;ms&gt;</code></li>
+<li><code>&lt;mspace&gt;</code></li>
+<li><code>&lt;mtext&gt;</code></li>
+</ul>
+</li>
+<li>通用布局元素
+<ul>
+<li><code>&lt;menclose&gt;</code></li>
+<li><code>&lt;merror&gt;</code></li>
+<li><code>&lt;mfenced&gt;</code></li>
+<li><code>&lt;mfrac&gt;</code></li>
+<li><code>&lt;mpadded&gt;</code></li>
+<li><code>&lt;mphantom&gt;</code></li>
+<li><code>&lt;mroot&gt;</code></li>
+<li><code>&lt;mrow&gt;</code></li>
+<li><code>&lt;msqrt&gt;</code></li>
+<li><code>&lt;mstyle&gt;</code></li>
+</ul>
+</li>
+<li>Script and limit elements
+<ul>
+<li><code>&lt;mmultiscripts&gt;</code></li>
+<li><code>&lt;mover&gt;</code></li>
+<li><code>&lt;mprescripts&gt;</code></li>
+<li><code>&lt;msub&gt;</code></li>
+<li><code>&lt;msubsup&gt;</code></li>
+<li><code>&lt;msup&gt;</code></li>
+<li><code>&lt;munder&gt;</code></li>
+<li><code>&lt;munderover&gt;</code></li>
+<li><code>&lt;none&gt;</code></li>
+</ul>
+</li>
+<li>Tabular math
+<ul>
+<li><code>&lt;maligngroup&gt;</code></li>
+<li><code>&lt;malignmark&gt;</code></li>
+<li><code>&lt;mlabeledtr&gt;</code></li>
+<li><code>&lt;mtable&gt;</code></li>
+<li><code>&lt;mtd&gt;</code></li>
+<li><code>&lt;mtr&gt;</code></li>
+</ul>
+</li>
+<li>Elementary math
+<ul>
+<li><code>&lt;mlongdiv&gt;</code></li>
+<li><code>&lt;mscarries&gt;</code></li>
+<li><code>&lt;mscarry&gt;</code></li>
+<li><code>&lt;msgroup&gt;</code></li>
+<li><code>&lt;msline&gt;</code></li>
+<li><code>&lt;msrow&gt;</code></li>
+<li><code>&lt;mstack&gt;</code></li>
+</ul>
+</li>
+<li>尚无分类的元素
+<ul>
+<li><code>&lt;maction&gt;</code></li>
+</ul>
+</li>
+<li>语义附注元素
+<ul>
+<li><code>&lt;annotation&gt;</code></li>
+<li><code>&lt;annotation-xml&gt;</code></li>
+<li><code>&lt;semantics&gt;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>MathML 呈现型元素（字母排序）
+<ul>
+<li>math
+<ul>
+<li><code>&lt;math&gt;</code>（顶层元素）</li>
+</ul>
+</li>
+<li>A
+<ul>
+<li><code>&lt;maction&gt;</code>（将动作绑定到子表达式）</li>
+<li><code>&lt;maligngroup&gt;</code>（对齐分组）</li>
+<li><code>&lt;malignmark&gt;</code>（对齐点）</li>
+</ul>
+</li>
+<li>E
+<ul>
+<li><code>&lt;menclose&gt;</code>（包含的内容）</li>
+<li><code>&lt;merror&gt;</code>（包含的语法错误消息）</li>
+</ul>
+</li>
+<li>F
+<ul>
+<li><code>&lt;mfenced&gt;</code>（圆括号）</li>
+<li><code>&lt;mfrac&gt;</code>（因子 Fraction）</li>
+</ul>
+</li>
+<li>G
+<ul>
+<li><code>&lt;mglyph&gt;</code>（显示非标准符号）</li>
+</ul>
+</li>
+<li>I
+<ul>
+<li><code>&lt;mi&gt;</code>（标识符）</li>
+</ul>
+</li>
+<li>L
+<ul>
+<li><code>&lt;mlabeledtr&gt;</code>（表格或矩阵中的行标签）</li>
+<li><code>&lt;mlongdiv&gt;</code>（长除法记号）</li>
+</ul>
+</li>
+<li>M
+<ul>
+<li><code>&lt;mmultiscripts&gt;</code>（惯例和张量指标）</li>
+</ul>
+</li>
+<li>N
+<ul>
+<li><code>&lt;mn&gt;</code>（数量）</li>
+</ul>
+</li>
+<li>O
+<ul>
+<li><code>&lt;mo&gt;</code>（运算符）</li>
+<li><code>&lt;mover&gt;</code>（上标）</li>
+</ul>
+</li>
+<li>P
+<ul>
+<li><code>&lt;mpadded&gt;</code>（内容周围的填充空间）</li>
+<li><code>&lt;mphantom&gt;</code>（预留空间的不可见内容）</li>
+</ul>
+</li>
+<li>R
+<ul>
+<li><code>&lt;mroot&gt;</code>（带指定根数的根号）</li>
+<li><code>&lt;mrow&gt;</code>（分组后的子表达式）</li>
+</ul>
+</li>
+<li>S
+<ul>
+<li><code>&lt;ms&gt;</code>（字符串字面量）</li>
+<li><code>&lt;mscarries&gt;</code>（诸如进位的附注）</li>
+<li><code>&lt;mscarry&gt;</code>（单位进位， <code>&lt;mscarries&gt;</code> 的子元素）</li>
+<li><code>&lt;msgroup&gt;</code>（在 <code>&lt;mstack&gt;</code> 和 <code>&lt;mlongdiv&gt;</code> 元素中分组后的若干行）</li>
+<li><code>&lt;msline&gt;</code>（在 <code>&lt;mstack&gt;</code> 内部的水平行）</li>
+<li><code>&lt;mspace&gt;</code>（空格）</li>
+<li><code>&lt;msqrt&gt;</code>（不带根数的平方根）</li>
+<li><code>&lt;msrow&gt;</code>（在 <code>&lt;mstack&gt;</code> 元素中的行）</li>
+<li><code>&lt;mstack&gt;</code>（堆叠式对齐）</li>
+<li><code>&lt;mstyle&gt;</code>（样式变更）</li>
+<li><code>&lt;msub&gt;</code>（下角标）</li>
+<li><code>&lt;msup&gt;</code>（上角标）</li>
+<li><code>&lt;msubsup&gt;</code>（上下角标对）</li>
+</ul>
+</li>
+<li>T
+<ul>
+<li><code>&lt;mtable&gt;</code>（表格或矩阵）</li>
+<li><code>&lt;mtd&gt;</code>（表格或矩阵中的单元格）</li>
+<li><code>&lt;mtext&gt;</code>（文本）</li>
+<li><code>&lt;mtr&gt;</code>（表格或矩阵中的行）</li>
+</ul>
+</li>
+<li>U
+<ul>
+<li><code>&lt;munder&gt;</code>（下标）</li>
+<li><code>&lt;munderover&gt;</code>（上标-下标对）</li>
+</ul>
+</li>
+<li>其他元素
+<ul>
+<li><code>&lt;semantics&gt;</code>（语义附注的容器）</li>
+<li><code>&lt;annotation&gt;</code>（数据附注）</li>
+<li><code>&lt;annotation-xml&gt;</code>（XML 附注）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h3><a class="header" href="#1-实例代码-7" id="1-实例代码-7">1. 实例代码</a></h3>
 <pre><code class="language-Markdown">上标：&lt;span&gt;x&lt;sup&gt;2&lt;/sup&gt;&lt;/span&gt;
 下标：&lt;span&gt;x&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;
-上划线：&lt;span style=&quot;text-decoration: overline&quot;&gt;a + b + c&lt;/SPAN&gt;
+上划线：&lt;span style=&quot;text-decoration: overline&quot;&gt;a + b + c&lt;/span&gt;
+
+&lt;span&gt;&lt;math&gt;
+    &lt;mrow&gt;
+        &lt;msup&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;
+        &lt;mo&gt;+&lt;/mo&gt;
+        &lt;msup&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;
+        &lt;mo&gt;=&lt;/mo&gt;
+        &lt;msup&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;
+    &lt;/mrow&gt;
+&lt;/math&gt;&lt;/span&gt;
+
+&lt;span&gt;&lt;math&gt;
+    &lt;mrow&gt;
+        &lt;mi&gt;A&lt;/mi&gt;
+        &lt;mo&gt;=&lt;/mo&gt;
+        &lt;mfenced open=&quot;[&quot; close=&quot;]&quot;&gt;
+            &lt;mtable&gt;
+                &lt;mtr&gt;
+                    &lt;mtd&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mtd&gt;
+                    &lt;mtd&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/mtd&gt;
+                &lt;/mtr&gt;
+                &lt;mtr&gt;
+                    &lt;mtd&gt;&lt;mi&gt;z&lt;/mi&gt;&lt;/mtd&gt;
+                    &lt;mtd&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;/mtd&gt;
+                &lt;/mtr&gt;
+            &lt;/mtable&gt;
+        &lt;/mfenced&gt;
+    &lt;/mrow&gt;
+&lt;/math&gt;&lt;/span&gt;
 </code></pre>
 <h3><a class="header" href="#2-呈现效果-7" id="2-呈现效果-7">2. 呈现效果</a></h3>
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 <p>上标：<span>x<sup>2</sup></span></p>
 <p>下标：<span>y<sub>3</sub></span></p>
-<p>上划线：<span style="text-decoration: overline">a + b + c</SPAN></p>
+<p>上划线：<span style="text-decoration: overline">a + b + c</span></p>
+<p><span><math>
+<mrow>
+<msup><mi>a</mi><mn>2</mn></msup>
+<mo>+</mo>
+<msup><mi>b</mi><mn>2</mn></msup>
+<mo>=</mo>
+<msup><mi>c</mi><mn>2</mn></msup>
+</mrow>
+</math></span></p>
+<p><span><math>
+<mrow>
+<mi>A</mi>
+<mo>=</mo>
+<mfenced open="[" close="]">
+<mtable>
+<mtr>
+<mtd><mi>x</mi></mtd>
+<mtd><mi>y</mi></mtd>
+</mtr>
+<mtr>
+<mtd><mi>z</mi></mtd>
+<mtd><mi>w</mi></mtd>
+</mtr>
+</mtable>
+</mfenced>
+</mrow>
+</math></span></p>
 </div>
 
                     </main>
