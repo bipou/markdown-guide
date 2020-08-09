@@ -12,7 +12,7 @@
 
 水平有限，错漏难免。若有指教，请[发issue到GitHub](https://github.com/zzy/markdown-guide)，或者直接联系。
 
-> 电子邮箱：linshi@budshome.com；微信：cd-zzy；QQ：9809920。
+> 电子邮箱：linshi@budshome.com；微信：budshome；QQ：9809920。
 
 💥 笔者无意侵犯GitHub及任何人的权利和利益，故若有不适，请联系我。
 
