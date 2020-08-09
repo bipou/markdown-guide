@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Markdown 工具链 - Markdown指南 - Markdown Guide</title>
+        <title></title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -94,7 +94,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 序言</a></li><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">2.</strong> Markdown介 绍</a></li><li class="chapter-item expanded "><a href="syntax-examples.html"><strong aria-hidden="true">3.</strong> Markdown 语法和实例</a></li><li class="chapter-item expanded "><a href="formula.html"><strong aria-hidden="true">4.</strong> Markdown 数学公式</a></li><li class="chapter-item expanded "><a href="html.html"><strong aria-hidden="true">5.</strong> Markdown 和 HTML 融合</a></li><li class="chapter-item expanded "><a href="toolchain.html" class="active"><strong aria-hidden="true">6.</strong> Markdown 工具链</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 序言</a></li><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">2.</strong> Markdown介 绍</a></li><li class="chapter-item expanded "><a href="syntax-examples.html"><strong aria-hidden="true">3.</strong> Markdown 语法和实例</a></li><li class="chapter-item expanded "><a href="formula.html"><strong aria-hidden="true">4.</strong> Markdown 数学公式</a></li><li class="chapter-item expanded "><a href="html.html"><strong aria-hidden="true">5.</strong> Markdown 和 HTML 融合</a></li><li class="chapter-item expanded "><a href="toolchain.html"><strong aria-hidden="true">6.</strong> Markdown 工具链</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -165,56 +165,13 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#markdown-工具链" id="markdown-工具链">Markdown 工具链</a></h1>
-<p>目前，使用 Markdown 进行书籍或者文章编写的工具很多，且大多开源，基础功能免费。概括来说，分为命令行工具和编辑器两种，下面介绍一些受众较多的工具链。</p>
-<h2><a class="header" href="#命令行工具" id="命令行工具">命令行工具</a></h2>
-<h3><a class="header" href="#mdbook" id="mdbook">mdBook</a></h3>
-<p>本指南即采用<code>mdBook</code>编写，在此强烈推荐。</p>
-<blockquote>
-<p>💥 mdBook的使用教程，可访问<strong>同步最新开发版</strong>的<a href="https://mdbook.budshome.com">中文用户指南-https://mdbook.budshome.com</a>。</p>
-</blockquote>
-<p><code>mdBook</code>是一个命令行工具，可以使用<code>Markdown</code>文件创建书籍。采用<a href="http://www.rust-lang.org">Rust</a>语言编写，运行速度非常快。</p>
-<p>可以输出<code>HTML</code>、<code>PDF</code>、<code>eBook</code>等格式的电子书，功能强大，使用方便。</p>
-<p><code>mdBook</code>提供更低层次API的封装，除了编写书籍、文档外，还可以由Rustdoc生成API文档。</p>
-<p><code>mdBook</code>是免费的开源软件，可以在<a href="https://github.com/rust-lang-nursery/mdBook">GitHub上找到源代码</a>。开发团队非常活跃，响应和维护都很积极，使用问题和Bug可以发布在<a href="https://github.com/rust-lang-nursery/mdBook/issues">GitHub Issue跟踪器</a>。</p>
-<h3><a class="header" href="#gitbook" id="gitbook">gitBook</a></h3>
-<p>gitBook是一个基于Node.js的命令行工具，开发周期长，比较成熟。支持Markdown和AsciiDoc两种语法格式，可以输出HTML、PDF、eBook等格式的电子书。</p>
-<p>gitBook是开源软件，可以在<a href="https://github.com/GitbookIO/gitbook">GitHub上找到源代码</a>。</p>
-<h2><a class="header" href="#编辑器" id="编辑器">编辑器</a></h2>
-<p>Markdown编辑器众多，简单易用。</p>
-<ol>
-<li>通过安装插件支持Markdown开发：vsCode、vim、sublime text、JetBrains IDE和Eclipse IDE等。</li>
-</ol>
-<p>下表是笔者推荐的、较受欢迎的、通过插件支持Markdown开发的编辑器，仅供参考。</p>
-<table><thead><tr><th>名称</th><th>插件</th><th>运行平台</th><th>是否免费</th></tr></thead><tbody>
-<tr><td>Visual Studio Code</td><td>插件很多，如：</br>Markdownlint、</br>Markdown All in One、</br>Markdown PDF</td><td>macOS、Windows、Linux</td><td>免费</td></tr>
-<tr><td>Vim</td><td>插件很多，如：</br>vim-markdown、</br>markdown-preview、</br>vim-instant-markdown</td><td>macOS、Windows、Linux</td><td>免费</td></tr>
-<tr><td>Sublime Text</td><td>插件很多，如：</br>MarkdownEditing、</br>OmniMarkupPreviewer</td><td>macOS、Windows、Linux</td><td>免费+收费</td></tr>
-<tr><td>JetBrains IDE、</br>Eclipse IDE</td><td>可从IDE市场搜索插件，</br>官方和开发者均有提供</td><td>macOS、Windows、Linux</td><td>免费+收费</td></tr>
-</tbody></table>
-<ol start="2">
-<li>专用于支持Markdown开发：typora、macDown、bear、markdownPad、markdownX、Atom、简书、CSDN以及GitBook自家的GitBook Editor等等。</li>
-</ol>
-<p>下表是部分较受欢迎的、专用于支持Markdown开发的编辑器，仅供参考。</p>
-<table><thead><tr><th>名称</th><th>说明</th><th>运行平台</th><th>是否免费</th></tr></thead><tbody>
-<tr><td>gitBook Editor</td><td>和gitBook无缝集成的编辑器</td><td>macOS、Windows、Linux</td><td>免费 + 收费</td></tr>
-<tr><td>markdownPad</td><td>Windows上强大的编辑器</td><td>Windows</td><td>免费 + 收费</td></tr>
-<tr><td>bear</td><td>功能齐全的编辑器</td><td>iPhone、iPad、macOS</td><td>免费 + 内购</td></tr>
-<tr><td>typora</td><td>所见即所得的编辑器</td><td>macOS、Windows、Linux</td><td>免费</td></tr>
-<tr><td>macDown</td><td>macOS上强大的编辑器</td><td>macOS</td><td>免费</td></tr>
-<tr><td>markdownX</td><td>Android上的轻量编辑器</td><td>Android</td><td>免费</td></tr>
-</tbody></table>
-<p><br /><br /><br /></p>
-<hr />
+                        <h1><a class="header" href="#document-not-found-404" id="document-not-found-404">Document not found (404)</a></h1>
+<p>This URL is invalid, sorry. Please use the navigation bar or search to continue.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
-                            <a rel="prev" href="html.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
                         
 
                         
@@ -225,10 +182,6 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
-                    <a href="html.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
                 
 
                 
