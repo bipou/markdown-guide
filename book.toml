@@ -1,8 +1,8 @@
 [book]
-title = "Markdown指南 - Markdown Guide"
+title = "Markdown 指南 - Markdown Guide"
 authors = ["zzy"]
 language = "zh"
-description = "Markdown指南, markdown guide, 精通Markdown, Markdown教程, Markdown语法, Markdown实例, Markdown实践"
+description = "markdown guide, markdown 教程, markdown 语法实例, markdown 文档, md 文档"
 src = "src"
 multilingual = true
 
