@@ -8,7 +8,7 @@
 
 本指南即采用`mdBook`编写，在此强烈推荐。
 
-> 💥 mdBook的使用教程，可访问**同步最新开发版**的[中文用户指南-https://mdbook.budshome.com](https://mdbook.budshome.com)。
+> 💥 mdBook的使用教程，可访问**同步最新开发版**的[中文用户指南-https://books.budshome.com/mdbook](https://books.budshome.com/mdbook)。
 
 `mdBook`是一个命令行工具，可以使用`Markdown`文件创建书籍。采用[Rust](http://www.rust-lang.org)语言编写，运行速度非常快。
 
