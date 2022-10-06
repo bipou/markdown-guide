@@ -114,7 +114,7 @@ Markdown 中支持**变量定义**和**变量引用**，且支持**中文**。
 ### 1. 实例代码
 
 ``` Markdown
-定义链接：[Markdown指南]: https://markdown.budshome.com
+定义链接：[Markdown指南]: https://markdown-guide.rusthub.org
 
 引用链接：
 
@@ -127,7 +127,7 @@ value引用：[未定义文本][Markdown指南]
 
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 
-[Markdown指南]: https://markdown.budshome.com
+[Markdown指南]: https://markdown-guide.rusthub.org
 
 引用链接：
 
@@ -164,22 +164,22 @@ Markdown中可对url链接自动识别，但有些Markdown工具不支持（GitH
 ### 1. 实例代码
 
 ``` Markdown
-[Markdown指南](https://markdown.budshome.com)
+[Markdown指南](https://markdown-guide.rusthub.org)
 
-https://markdown.budshome.com
+https://markdown-guide.rusthub.org
 
-markdown.budshome.com
+markdown-guide.rusthub.org
 ```
 
 ### 2. 呈现效果
 
 <div style="border:1px solid;margin:0px;padding:0px 0px 0px 15px">
 
-[Markdown指南](https://markdown.budshome.com)
+[Markdown指南](https://markdown-guide.rusthub.org)
 
-[https://markdown.budshome.com](https://markdown.budshome.com)
+[https://markdown-guide.rusthub.org](https://markdown-guide.rusthub.org)
 
-[markdown.budshome.com](https://markdown.budshome.com)
+[markdown-guide.rusthub.org](https://markdown-guide.rusthub.org)
 
 </div>
 

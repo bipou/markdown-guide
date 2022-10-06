@@ -1,23 +1,27 @@
 [book]
-title = "Markdown 指南 - Markdown Guide"
 authors = ["zzy"]
-language = "zh"
+title = "Markdown 指南 - Markdown Guide"
 description = "markdown guide, markdown 教程, markdown 语法实例, markdown 文档, md 文档"
 src = "src"
+language = "zh"
 multilingual = true
 
-[build]
-build-dir = "docs"
+[rust]
+edition = "2021"
 
 [output.html]
-theme = "theme"
-git-repository-url = "https://github.com/zzy/markdown-guide"
-# default-theme = "rust"
+theme = "../../books-theme/theme"
+git-repository-url = "https://github.com/zzy"
 curly-quotes = true
 mathjax-support = true
 
+[output.html.fold]
+enable = true
+level = 4
+
 [output.html.playpen]
 editable = true
+line-numbers = true
 copy-js = true
 
 [output.html.search]
@@ -29,3 +33,6 @@ boost-paragraph = 1
 expand = true
 heading-split-level = 3
 copy-js = true
+
+[output.html.print]
+enable = false
